@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-10-02 08:42 PM
+5.0.270.1002578 (1002351)
+6dff462 (11-Apr-2024 6:17:55 pm)
+-->
+<scene title="Pro Apple Glass" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="4365" fps="60" modifiedTime="1759417929429" amver="1002351" ffver="106" am="com.alightcreative.motioo/5.0.270.1002578" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <text id="10165717" startTime="0" endTime="4365" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Open Sans&amp;weight=700" wrapWidth="431" align="left">
+    <transform>
+      <location value="540.000000,1406.329346,0.000000" />
+    </transform>
+    <content>By @FrameFl0w </content>
+  </text>
+  <shape id="10167122" label="Rounded Rectangle 1" startTime="0" endTime="4365" fillType="color" mediaFillMode="fill" parent="10167123" s=".roundrect">
+    <transform />
+    <fillColor value="#ffa75cdc" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.innerblur" locallyApplied="true">
+      <property name="strength" type="float" value="0.100000" />
+      <property name="iter" type="float" value="2.000000" />
+    </effect>
+    <shadow direction="outside">
+      <opacity value="0.470000" />
+      <size value="149.000000" />
+      <offset value="11.000000,75.000000" />
+    </shadow>
+    <property name="size" type="vec2">
+      <kf t="0.215578" v="297.000000,77.000000" e="elastic 0.13855721 1.0 0.34919786 0.29122996" />
+      <kf t="0.000000" v="0.000000,77.000000" />
+    </property>
+    <property name="cornerRadius" type="float" value="204.000000" />
+  </shape>
+  <shape id="10167123" label="Rounded Rectangle 1 Copy" startTime="0" endTime="4365" fillType="color" mediaFillMode="fill" s=".roundrect">
+    <transform>
+      <location value="542.822693,552.598877,0.000000" />
+      <scale value="1.084831,1.084831" />
+    </transform>
+    <fillColor value="#ffa75cdc" />
+    <effect id="com.alightcreative.effect.glass2" locallyApplied="true">
+      <property name="radius" type="float" value="15.000000" />
+      <property name="angle" type="float" value="80.000000" />
+      <property name="elevation" type="float" value="1.800000" />
+      <property name="intensity" type="float" value="1.440000" />
+      <property name="color_d" type="color" value="#ffffffff" />
+      <property name="color_s" type="color" value="#ffffffff" />
+      <property name="refract" type="float" value="0.180000" />
+      <property name="shine" type="float" value="1.000000" />
+      <property name="spec" type="float" value="18.500000" />
+      <property name="fill" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2">
+      <kf t="0.215578" v="297.000000,77.000000" e="elastic 0.13855721 1.0 0.34919786 0.29122996" />
+      <kf t="0.000000" v="0.000000,77.000000" />
+    </property>
+    <property name="cornerRadius" type="float" value="204.000000" />
+  </shape>
+  <text id="10167124" label="Apple Style Glass Copy" startTime="0" endTime="4365" clippingMask="true" fillType="color" mediaFillMode="fill" size="32.000000" font="imported?name=SFPRODISPLAYBOLD.ttf" wrapWidth="772" align="left">
+    <transform>
+      <location value="542.822693,549.350342,0.000000" />
+      <scale value="0.700048,0.700048" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <content>Apple Style Glass </content>
+  </text>
+</scene>

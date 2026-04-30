@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2022-09-21 01:13 PM
+4.2.0 (0594)
+40c3633 (Jun 24, 2022 2:33:30 PM)
+-->
+<scene title="3" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5833" fps="30" modifiedTime="1663746204125" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <shape id="634455" label="Rectangle 1" startTime="0" endTime="5832" fillType="color" s=".rect">
+    <transform lockAspectRatio="false">
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="10.700000,5.760000" />
+    </transform>
+    <fillColor value="#ff0e0e0e" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <embedScene id="634615" label="Group 2" startTime="0" endTime="5833" fillType="intrinsic" outTime="5833">
+    <transform>
+      <location value="960.000000,527.500000,0.000000" />
+      <pivot value="0.000000,26.620605" />
+      <scale value="0.617748,0.617748" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5833" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="634608" label="Circle 3" startTime="1666" endTime="3199" fillType="none" s=".circle">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <scale value="1.340000,1.340000" />
+        </transform>
+        <fillColor value="#fffae965" />
+        <effect id="com.alightcreative.effects.drawing.progress" locallyApplied="true">
+          <property name="start" type="float">
+            <kf t="0.010437" v="100.000000" />
+            <kf t="0.988911" v="0.000000" e="cubicBezier 1.0 0.0 0.63666666 1.0" />
+          </property>
+          <property name="end" type="float" value="100.000000" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="29.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="634609" label="Outline" startTime="0" endTime="5833" fillType="none" s=".roundrect">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <scale value="1.122605,1.122605" />
+        </transform>
+        <fillColor value="#ffb59b70" />
+        <effect id="com.alightcreative.solidcolor" locallyApplied="true">
+          <property name="color" type="color">
+            <kf t="0.694326" v="#ffffffff" />
+            <kf t="0.705640" v="#ff14fd6a" />
+          </property>
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ff009dff" />
+          <size value="10.000000" />
+        </path-stroke>
+        <property name="size" type="vec2">
+          <kf t="0.174182" v="522.000000,136.000000" />
+          <kf t="0.259900" v="136.000000,136.000000" e="cubicBezier 0.49 0.0 0.22 1.0" />
+          <kf t="0.545688" v="136.000000,136.000000" />
+          <kf t="0.660038" v="372.000000,136.000000" e="cubicBezier 0.49 0.0 0.22 1.0" />
+        </property>
+        <property name="cornerRadius" type="float" value="373.000000" />
+      </shape>
+      <embedScene id="634610" label="Text" startTime="0" endTime="5832" fillType="intrinsic" inTime="33" outTime="5965">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5398" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <text id="634464" startTime="0" endTime="5398" fillType="color" size="20.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="512" align="left">
+            <transform>
+              <location>
+                <kf t="0.169692" v="1151.978882,530.500000,0.000000" />
+                <kf t="0.262320" v="1151.978882,728.973022,0.000000" e="cubicBezier 0.49 0.0 0.22 1.0" />
+              </location>
+              <scale value="1.380859,1.380859" />
+            </transform>
+            <content>Download</content>
+          </text>
+          <text id="634488" label="Download Copy" startTime="3133" endTime="5398" fillType="color" size="20.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="512" align="center">
+            <transform>
+              <location>
+                <kf t="0.404856" v="957.978882,719.473022,0.000000" />
+                <kf t="0.640177" v="957.978882,530.500000,0.000000" e="cubicBezier 0.49 0.0 0.22 1.0" />
+              </location>
+              <scale value="1.380859,1.380859" />
+            </transform>
+            <content>Download</content>
+          </text>
+          <shape id="634465" label="Rounded Rectangle 1 Copy" startTime="33" endTime="5398" fillType="color" blending="mask" s=".roundrect">
+            <transform>
+              <location value="960.000000,540.000000,0.000000" />
+              <scale value="1.070881,1.070881" />
+            </transform>
+            <fillColor value="#ff1ed91e" />
+            <path-stroke direction="centered" enabled="false" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="13.000000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="522.000000,136.000000" />
+            <property name="cornerRadius" type="float" value="373.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="634611" label="Group 1" startTime="0" endTime="3199" fillType="intrinsic" outTime="3199">
+        <transform>
+          <location>
+            <kf t="0.317599" v="959.500000,540.000000,0.000000" />
+            <kf t="0.473898" v="1394.030762,540.000000,0.000000" e="cubicBezier 0.49 0.0 0.22333324 1.0" />
+          </location>
+          <pivot value="-432.019958,0.000000" />
+          <scale value="1.093878,1.093878" />
+          <rotation>
+            <kf t="0.317599" v="0.000000" />
+            <kf t="0.473898" v="180.000000" e="cubicBezier 0.49 0.0 0.22 1.0" />
+          </rotation>
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3199" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="634457" label="Circle 1" startTime="0" endTime="3199" fillType="color" s=".circle">
+            <transform>
+              <location value="528.980042,540.000000,0.000000" />
+              <scale value="1.225000,1.225000" />
+            </transform>
+            <fillColor value="#ff0898ff" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <embedScene id="634478" label="Group and Mask 1" startTime="1666" endTime="3199" fillType="intrinsic" outTime="3231">
+            <transform>
+              <location value="960.000000,540.000000,0.000000" />
+              <pivot value="-431.019958,0.000000" />
+              <scale value="0.892593,0.892593" />
+              <rotation value="180.000000" />
+              <opacity value="0.199219" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2132" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+              <shape id="634475" label="Circle 4" startTime="0" endTime="2100" fillType="color" s=".circle">
+                <transform lockAspectRatio="false">
+                  <location>
+                    <kf t="0.015714" v="528.980042,810.000000,0.000000" />
+                    <kf t="0.730000" v="528.980042,540.000000,0.000000" e="cubicBezier 1.0 0.0 0.64 1.0" />
+                  </location>
+                  <scale value="2.025001,1.320000" />
+                </transform>
+                <fillColor value="#ff000000" />
+                <property name="size" type="vec2" value="100.000000,100.000000" />
+              </shape>
+              <shape id="634476" label="Circle 4 Copy" startTime="0" endTime="2132" fillType="color" blending="mask" s=".circle">
+                <transform>
+                  <location value="528.980042,540.000000,0.000000" />
+                  <scale value="1.350000,1.350000" />
+                </transform>
+                <fillColor value="#ff1ed91e" />
+                <property name="size" type="vec2" value="100.000000,100.000000" />
+              </shape>
+            </scene>
+          </embedScene>
+          <shape id="634458" label="Arrow 1" startTime="0" endTime="1132" fillType="color" s=".arrow">
+            <transform>
+              <location value="691.895996,328.907013,0.000000" />
+              <pivot value="-161.500000,221.500000" />
+              <scale value="0.419444,0.419444" />
+            </transform>
+            <property name="start" type="vec2" value="-164.000000,78.000000" />
+            <property name="end" type="vec2" value="-164.000000,360.000000" />
+            <property name="lineWidth" type="float" value="27.000000" />
+            <property name="headWidth" type="float" value="106.000000" />
+            <property name="headLength" type="float" value="130.000000" />
+          </shape>
+          <shape id="634463" label="Rounded Rectangle 1" startTime="1133" endTime="3199" fillType="color" s=".roundrect">
+            <transform>
+              <location value="528.980042,540.000000,0.000000" />
+              <scale value="0.450000,0.450000" />
+            </transform>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+            <property name="cornerRadius" type="float" value="32.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <shape id="634612" label="Circle 2" startTime="1666" endTime="3199" fillType="none" s=".circle">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <scale value="1.340000,1.340000" />
+          <opacity value="0.000000" />
+        </transform>
+        <fillColor value="#fffae965" />
+        <effect id="com.alightcreative.effects.drawing.progress" locallyApplied="true">
+          <property name="start" type="float">
+            <kf t="0.010437" v="100.000000" />
+            <kf t="0.988911" v="0.000000" e="cubicBezier 1.0 0.0 0.64 1.0" />
+          </property>
+          <property name="end" type="float" value="100.000000" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="29.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="634613" label="Circle 1" startTime="1466" endTime="3199" fillType="color" s=".circle">
+        <transform>
+          <location value="819.000000,564.500000,0.000000" />
+          <scale>
+            <kf t="0.990190" v="0.365000,0.365000" e="cubicBezier 0.61 0.0 0.64 1.0" />
+            <kf t="0.009810" v="0.000000,0.000000" />
+            <kf t="0.124639" v="0.245000,0.245000" e="cubicBezier 0.4 0.0 0.26333332 1.0" />
+          </scale>
+        </transform>
+        <fillColor value="#fffef6fa" />
+        <effect id="com.alightcreative.effect.movealongpath3" locallyApplied="true">
+          <property name="progress" type="float">
+            <kf t="0.124639" v="1.000000" />
+            <kf t="0.990190" v="0.000000" e="cubicBezier 1.0 0.0 0.64 1.0" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="tangent" type="bool" value="true" />
+          <property name="inset" type="float" value="5.000000" />
+        </effect>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <embedScene id="634614" label="Shape" startTime="3200" endTime="5365" fillType="intrinsic" outTime="2165">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <pivot value="1.500000,26.620605" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2165" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="634483" label="Circle 3 Copy" startTime="0" endTime="1532" fillType="color" s=".circle">
+            <transform>
+              <location>
+                <kf t="0.011097" v="960.000000,401.000000,0.000000" />
+                <kf t="0.228460" v="960.000000,192.821716,0.000000" e="cubicBezier 0.18333337 0.0 0.25999996 1.0" />
+                <kf t="0.598564" v="960.000000,751.463745,0.000000" e="cubicBezier 0.74 0.0 1.0 0.62" />
+              </location>
+              <scale value="0.365000,0.365000" />
+            </transform>
+            <fillColor value="#ff14fd6a" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="634489" label="Rounded Rectangle 1 Copy" startTime="0" endTime="2165" fillType="color" blending="exclude" s=".roundrect">
+            <transform>
+              <location value="961.500000,831.279663,0.000000" />
+              <scale value="1.070881,1.070881" />
+            </transform>
+            <fillColor value="#ff1ed91e" />
+            <path-stroke direction="centered" enabled="false" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="13.000000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="522.000000,136.000000" />
+            <property name="cornerRadius" type="float" value="373.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+    </scene>
+  </embedScene>
+  <text id="634620" startTime="0" endTime="5832" fillType="color" size="20.000000" font="imported?name=ArgentumSans-Regular.ttf" wrapWidth="1074" align="center">
+    <transform>
+      <location value="960.000000,960.000000,0.000000" />
+      <scale value="0.675047,0.675047" />
+      <opacity value="0.699219" />
+    </transform>
+    <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+      <property name="letterspacing" type="float" value="0.200000" />
+      <property name="linespacing" type="float" value="1.000000" />
+    </effect>
+    <content>Download Animation</content>
+  </text>
+</scene>

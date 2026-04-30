@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-09-28 06:25 PM
+5.0.270.1002578 (1002351)
+6dff462 (11 Apr 2024 6:17:55 pm)
+-->
+<scene title="Quality Cc" width="1080" height="1080" exportWidth="1080" exportHeight="1350" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="1632" fps="30" modifiedTime="1759064154561" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <media uri="content://media/external/video/media/1000067014" filename="20250928125404907.mp4" title="20250928125404907.mp4" type="video/mp4" duration="1579000" size="10758744" fps="0.61" orientation="0" infoUpdated="1759064142871" width="1080" height="1080" />
+  <shape id="20002982" label="20250928125404907.mp4" startTime="0" endTime="1611" fillType="media" fillVideo="content://media/external/video/media/1000067014" outTime="1579" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="20002973" label="Rectangle 1" startTime="0" endTime="1632" fillType="color" blending="overlay" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale value="5.400000,5.400000" />
+    </transform>
+    <fillColor value="#ff68bbe5" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.innerblur" locallyApplied="true">
+      <property name="strength" type="float" value="0.000000" />
+      <property name="iter" type="float" value="2.000000" />
+    </effect>
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <shape id="20002974" label="Rectangle 2" startTime="0" endTime="1632" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale value="5.400000,5.400000" />
+    </transform>
+    <fillColor value="#fffe47e3" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.hdr" locallyApplied="true">
+      <property name="strength" type="float" value="0.100000" />
+      <property name="exposure" type="float" value="1.100000" />
+      <property name="alpha" type="float" value="0.700000" />
+      <property name="iter" type="float" value="2.000000" />
+    </effect>
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <shape id="20002975" label="Rectangle 3" startTime="0" endTime="1632" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale value="5.400000,5.400000" />
+    </transform>
+    <fillColor value="#ffb1f448" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.qualityfixer" locallyApplied="true" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+</scene>

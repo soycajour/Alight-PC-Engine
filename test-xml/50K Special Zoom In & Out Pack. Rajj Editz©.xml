@@ -1,0 +1,1187 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-11-09 09:11 PM
+5.0.275 (1002592)
+a34a6c0 (7 Oct 2024 3:47:29 pm)
+-->
+<scene title="50K Special Zoom In &amp; Out Pack. Rajj Editz©" width="1080" height="1080" exportWidth="1080" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="22665" fps="60" modifiedTime="1762702896876" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.275" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <bookmark t="8" />
+  <bookmark t="2258" />
+  <bookmark t="4525" />
+  <bookmark t="6791" />
+  <bookmark t="9058" />
+  <bookmark t="11325" />
+  <bookmark t="13591" />
+  <bookmark t="15858" />
+  <bookmark t="18125" />
+  <bookmark t="20391" />
+  <bookmark t="22658" />
+  <shape id="40025363" label="Rajj Editz. Image" startTime="0" endTime="765" fillType="media" fillImage="content://media/external/images/media/1000117638" mediaFillMode="fill" parent="40025366" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025366" label="Null 1" startTime="0" endTime="765" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025367" label="Rajj Editz. Image" startTime="750" endTime="1515" fillType="media" fillImage="content://media/external/images/media/1000117639" mediaFillMode="fill" parent="40025368" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025368" label="Null 1" startTime="750" endTime="1515" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025370" label="Rajj Editz. Image" startTime="1500" endTime="2265" fillType="media" fillImage="content://media/external/images/media/1000117640" mediaFillMode="fill" parent="40025371" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025371" label="Null 1" startTime="1500" endTime="2265" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025372" label="Rajj Editz. Image" startTime="2266" endTime="3031" fillType="media" fillImage="content://media/external/images/media/1000117638" mediaFillMode="fill" parent="40025373" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025373" label="Null 1" startTime="2266" endTime="3031" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.1 0.55 0.9 0.45" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.28 0.7 0.7 0.22" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025374" label="Rajj Editz. Image" startTime="3016" endTime="3781" fillType="media" fillImage="content://media/external/images/media/1000117639" mediaFillMode="fill" parent="40025375" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025375" label="Null 1" startTime="3016" endTime="3781" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.1 0.55 0.9 0.45" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025376" label="Rajj Editz. Image" startTime="3766" endTime="4531" fillType="media" fillImage="content://media/external/images/media/1000117640" mediaFillMode="fill" parent="40025377" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025377" label="Null 1" startTime="3766" endTime="4531" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.1 0.55 0.9 0.45" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025378" label="Rajj Editz. Image" startTime="4533" endTime="5298" fillType="media" fillImage="content://media/external/images/media/1000117638" mediaFillMode="fill" parent="40025379" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025379" label="Null 1" startTime="4533" endTime="5298" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025380" label="Rajj Editz. Image" startTime="5283" endTime="6048" fillType="media" fillImage="content://media/external/images/media/1000117639" mediaFillMode="fill" parent="40025381" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025381" label="Null 1" startTime="5283" endTime="6048" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025382" label="Rajj Editz. Image" startTime="6033" endTime="6798" fillType="media" fillImage="content://media/external/images/media/1000117640" mediaFillMode="fill" parent="40025383" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025383" label="Null 1" startTime="6033" endTime="6798" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.28 0.7 0.7 0.22" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025384" label="Rajj Editz. Image" startTime="6800" endTime="7565" fillType="media" fillImage="content://media/external/images/media/1000117638" mediaFillMode="fill" parent="40025385" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025385" label="Null 1" startTime="6800" endTime="7565" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.28 0.7 0.7 0.22" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025386" label="Rajj Editz. Image" startTime="7550" endTime="8315" fillType="media" fillImage="content://media/external/images/media/1000117639" mediaFillMode="fill" parent="40025387" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025387" label="Null 1" startTime="7550" endTime="8315" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025388" label="Rajj Editz. Image" startTime="8300" endTime="9065" fillType="media" fillImage="content://media/external/images/media/1000117640" mediaFillMode="fill" parent="40025389" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025389" label="Null 1" startTime="8300" endTime="9065" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025390" label="Rajj Editz. Image" startTime="9066" endTime="9831" fillType="media" fillImage="content://media/external/images/media/1000117638" mediaFillMode="fill" parent="40025391" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025391" label="Null 1" startTime="9066" endTime="9831" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025392" label="Rajj Editz. Image" startTime="9816" endTime="10581" fillType="media" fillImage="content://media/external/images/media/1000117639" mediaFillMode="fill" parent="40025393" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025393" label="Null 1" startTime="9816" endTime="10581" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025394" label="Rajj Editz. Image" startTime="10566" endTime="11331" fillType="media" fillImage="content://media/external/images/media/1000117640" mediaFillMode="fill" parent="40025395" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025395" label="Null 1" startTime="10566" endTime="11331" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.28 0.7 0.7 0.22" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025396" label="Rajj Editz. Image" startTime="11333" endTime="12098" fillType="media" fillImage="content://media/external/images/media/1000117638" mediaFillMode="fill" parent="40025397" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025397" label="Null 1" startTime="11333" endTime="12098" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.28 0.7 0.7 0.22" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.28 0.7 0.7 0.22" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025398" label="Rajj Editz. Image" startTime="12083" endTime="12848" fillType="media" fillImage="content://media/external/images/media/1000117639" mediaFillMode="fill" parent="40025399" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025399" label="Null 1" startTime="12083" endTime="12848" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.28 0.7 0.7 0.22" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025400" label="Rajj Editz. Image" startTime="12833" endTime="13598" fillType="media" fillImage="content://media/external/images/media/1000117640" mediaFillMode="fill" parent="40025401" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025401" label="Null 1" startTime="12833" endTime="13598" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.28 0.7 0.7 0.22" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025402" label="Rajj Editz. Image" startTime="13600" endTime="14365" fillType="media" fillImage="content://media/external/images/media/1000117638" mediaFillMode="fill" parent="40025403" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025403" label="Null 1" startTime="13600" endTime="14365" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.45152777 0.16139704 1.0 0.0" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025404" label="Rajj Editz. Image" startTime="14350" endTime="15115" fillType="media" fillImage="content://media/external/images/media/1000117639" mediaFillMode="fill" parent="40025405" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025405" label="Null 1" startTime="14350" endTime="15115" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="541.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.45 0.16 1.0 0.0" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025406" label="Rajj Editz. Image" startTime="15100" endTime="15865" fillType="media" fillImage="content://media/external/images/media/1000117640" mediaFillMode="fill" parent="40025407" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025407" label="Null 1" startTime="15100" endTime="15865" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" e="cubicBezier 0.35 0.6 0.65 0.31" />
+        <kf t="1.000000" v="1.400000,1.400000" e="cubicBezier 0.45 0.16 1.0 0.0" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025408" label="Rajj Editz. Image" startTime="15866" endTime="16631" fillType="media" fillImage="content://media/external/images/media/1000117638" mediaFillMode="fill" parent="40025409" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025409" label="Null 1" startTime="15866" endTime="16631" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.0 1.0 0.55 0.84000003" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.28 0.7 0.7 0.22" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025410" label="Rajj Editz. Image" startTime="16616" endTime="17381" fillType="media" fillImage="content://media/external/images/media/1000117639" mediaFillMode="fill" parent="40025411" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025411" label="Null 1" startTime="16616" endTime="17381" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.0 1.0 0.55 0.84000003" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025412" label="Rajj Editz. Image" startTime="17366" endTime="18131" fillType="media" fillImage="content://media/external/images/media/1000117640" mediaFillMode="fill" parent="40025413" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025413" label="Null 1" startTime="17366" endTime="18131" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.0 1.0 0.55 0.84000003" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025414" label="Rajj Editz. Image" startTime="18133" endTime="18898" fillType="media" fillImage="content://media/external/images/media/1000117638" mediaFillMode="fill" parent="40025415" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025415" label="Null 1" startTime="18133" endTime="18898" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" />
+        <kf t="1.000000" v="1.200000,1.200000" e="cubicBezier 1.0 0.0 0.7841667 1.0" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025416" label="Rajj Editz. Image" startTime="18883" endTime="19648" fillType="media" fillImage="content://media/external/images/media/1000117639" mediaFillMode="fill" parent="40025417" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025417" label="Null 1" startTime="18883" endTime="19648" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" />
+        <kf t="1.000000" v="1.200000,1.200000" e="cubicBezier 1.0 0.0 0.7841667 1.0" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025418" label="Rajj Editz. Image" startTime="19633" endTime="20398" fillType="media" fillImage="content://media/external/images/media/1000117640" mediaFillMode="fill" parent="40025419" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025419" label="Null 1" startTime="19633" endTime="20398" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" />
+        <kf t="1.000000" v="1.200000,1.200000" e="cubicBezier 1.0 0.0 0.7841667 1.0" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025421" label="Rajj Editz. Image" startTime="20400" endTime="21165" fillType="media" fillImage="content://media/external/images/media/1000117638" mediaFillMode="fill" parent="40025422" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025422" label="Null 1" startTime="20400" endTime="21165" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.0 1.0 0.55 0.84000003" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.28 0.7 0.7 0.22" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025423" label="Rajj Editz. Image" startTime="21150" endTime="21915" fillType="media" fillImage="content://media/external/images/media/1000117639" mediaFillMode="fill" parent="40025424" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025424" label="Null 1" startTime="21150" endTime="21915" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.0 1.0 0.55 0.84000003" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="40025425" label="Rajj Editz. Image" startTime="21900" endTime="22665" fillType="media" fillImage="content://media/external/images/media/1000117640" mediaFillMode="fill" parent="40025426" s=".rect">
+    <transform>
+      <scale value="1.004630,1.004630" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="40025426" label="Null 1" startTime="21900" endTime="22665" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.0 1.0 0.55 0.84000003" />
+        <kf t="0.000000" v="1.400000,1.400000" e="cubicBezier 0.09814698 0.5475367 0.89875406 0.45245916" />
+      </scale>
+    </transform>
+  </nullobj>
+  <embedScene id="40025442" label="Zoom In &amp; Out Counting Layer" startTime="0" endTime="22665" fillType="intrinsic" mediaFillMode="fill">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1080" height="1080" exportWidth="1080" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="22665" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.275" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <text id="40025428" startTime="0" endTime="2265" fillType="color" speed="1.109170" mediaFillMode="stretch" size="144.000000" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="7092" align="center">
+        <transform>
+          <location value="540.000000,540.000000,0.000000" />
+          <scale value="0.102933,0.102933" />
+          <opacity>
+            <kf t="5.034437" v="1.000000" />
+            <kf t="5.122144" v="0.000000" />
+            <kf t="3.798234" v="1.000000" />
+            <kf t="3.959823" v="0.000000" />
+            <kf t="1.928221" v="1.000000" />
+            <kf t="2.038411" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+          <property name="mag" type="float" value="0.005000" />
+          <property name="scale" type="float">
+            <kf t="-0.006872" v="1.000000" />
+            <kf t="5.122144" v="0.720000" />
+          </property>
+          <property name="screenSpace" type="bool" value="true" />
+          <property name="intensity" type="float" value="0.500000" />
+          <property name="octaves" type="float" value="6.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.texttransform" locallyApplied="false">
+          <property name="fillColor" type="color" value="#ffbebebe" />
+          <property name="randomOrder" type="bool" value="true" />
+          <property name="seed" type="float">
+            <kf t="-0.013245" v="0.000000" />
+            <kf t="5.122144" v="0.018947" />
+          </property>
+          <property name="shape" type="int" value="1" />
+          <property name="useFillColor" type="bool" value="true" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="component" type="int" value="1" />
+          <property name="anchor" type="int" value="0" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="0.000000" />
+          <property name="stretch" type="float" value="0.000000" />
+          <property name="alpha" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+          <property name="letterspacing" type="float" value="0.180000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.edgeglow" locallyApplied="false">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.310000" />
+          <property name="spread" type="float" value="1.500000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.fade" locallyApplied="false">
+          <property name="inTime" type="float" value="0.100000" />
+          <property name="outTime" type="float" value="0.100000" />
+        </effect>
+        <shadow direction="outside">
+          <hardness value="1.000000" />
+        </shadow>
+        <content>ZOOM #1</content>
+      </text>
+      <text id="40025433" startTime="2250" endTime="4532" fillType="color" speed="1.109170" mediaFillMode="stretch" size="144.000000" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="7092" align="center">
+        <transform>
+          <location value="540.000000,540.000000,0.000000" />
+          <scale value="0.102933,0.102933" />
+          <opacity>
+            <kf t="4.996933" v="1.000000" />
+            <kf t="5.083986" v="0.000000" />
+            <kf t="3.769938" v="1.000000" />
+            <kf t="3.930324" v="0.000000" />
+            <kf t="1.913856" v="1.000000" />
+            <kf t="2.023226" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+          <property name="mag" type="float" value="0.005000" />
+          <property name="scale" type="float">
+            <kf t="-0.006821" v="1.000000" />
+            <kf t="5.083986" v="0.720000" />
+          </property>
+          <property name="screenSpace" type="bool" value="true" />
+          <property name="intensity" type="float" value="0.500000" />
+          <property name="octaves" type="float" value="6.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.texttransform" locallyApplied="false">
+          <property name="fillColor" type="color" value="#ffbebebe" />
+          <property name="randomOrder" type="bool" value="true" />
+          <property name="seed" type="float">
+            <kf t="-0.013146" v="0.000000" />
+            <kf t="5.083986" v="0.018947" />
+          </property>
+          <property name="shape" type="int" value="1" />
+          <property name="useFillColor" type="bool" value="true" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="component" type="int" value="1" />
+          <property name="anchor" type="int" value="0" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="0.000000" />
+          <property name="stretch" type="float" value="0.000000" />
+          <property name="alpha" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+          <property name="letterspacing" type="float" value="0.180000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.edgeglow" locallyApplied="false">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.310000" />
+          <property name="spread" type="float" value="1.500000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.fade" locallyApplied="false">
+          <property name="inTime" type="float" value="0.100000" />
+          <property name="outTime" type="float" value="0.100000" />
+        </effect>
+        <shadow direction="outside">
+          <hardness value="1.000000" />
+        </shadow>
+        <content>ZOOM #2</content>
+      </text>
+      <text id="40025434" startTime="4516" endTime="6799" fillType="color" speed="1.109170" mediaFillMode="stretch" size="144.000000" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="7092" align="center">
+        <transform>
+          <location value="540.000000,540.000000,0.000000" />
+          <scale value="0.102933,0.102933" />
+          <opacity>
+            <kf t="4.994744" v="1.000000" />
+            <kf t="5.081759" v="0.000000" />
+            <kf t="3.768287" v="1.000000" />
+            <kf t="3.928602" v="0.000000" />
+            <kf t="1.913018" v="1.000000" />
+            <kf t="2.022340" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+          <property name="mag" type="float" value="0.005000" />
+          <property name="scale" type="float">
+            <kf t="-0.006818" v="1.000000" />
+            <kf t="5.081759" v="0.720000" />
+          </property>
+          <property name="screenSpace" type="bool" value="true" />
+          <property name="intensity" type="float" value="0.500000" />
+          <property name="octaves" type="float" value="6.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.texttransform" locallyApplied="false">
+          <property name="fillColor" type="color" value="#ffbebebe" />
+          <property name="randomOrder" type="bool" value="true" />
+          <property name="seed" type="float">
+            <kf t="-0.013140" v="0.000000" />
+            <kf t="5.081759" v="0.018947" />
+          </property>
+          <property name="shape" type="int" value="1" />
+          <property name="useFillColor" type="bool" value="true" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="component" type="int" value="1" />
+          <property name="anchor" type="int" value="0" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="0.000000" />
+          <property name="stretch" type="float" value="0.000000" />
+          <property name="alpha" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+          <property name="letterspacing" type="float" value="0.180000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.edgeglow" locallyApplied="false">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.310000" />
+          <property name="spread" type="float" value="1.500000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.fade" locallyApplied="false">
+          <property name="inTime" type="float" value="0.100000" />
+          <property name="outTime" type="float" value="0.100000" />
+        </effect>
+        <shadow direction="outside">
+          <hardness value="1.000000" />
+        </shadow>
+        <content>ZOOM #3</content>
+      </text>
+      <text id="40025435" startTime="6783" endTime="9065" fillType="color" speed="1.109170" mediaFillMode="stretch" size="144.000000" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="7092" align="center">
+        <transform>
+          <location value="540.000000,540.000000,0.000000" />
+          <scale value="0.102933,0.102933" />
+          <opacity>
+            <kf t="4.996933" v="1.000000" />
+            <kf t="5.083986" v="0.000000" />
+            <kf t="3.769938" v="1.000000" />
+            <kf t="3.930324" v="0.000000" />
+            <kf t="1.913856" v="1.000000" />
+            <kf t="2.023226" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+          <property name="mag" type="float" value="0.005000" />
+          <property name="scale" type="float">
+            <kf t="-0.006821" v="1.000000" />
+            <kf t="5.083986" v="0.720000" />
+          </property>
+          <property name="screenSpace" type="bool" value="true" />
+          <property name="intensity" type="float" value="0.500000" />
+          <property name="octaves" type="float" value="6.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.texttransform" locallyApplied="false">
+          <property name="fillColor" type="color" value="#ffbebebe" />
+          <property name="randomOrder" type="bool" value="true" />
+          <property name="seed" type="float">
+            <kf t="-0.013146" v="0.000000" />
+            <kf t="5.083986" v="0.018947" />
+          </property>
+          <property name="shape" type="int" value="1" />
+          <property name="useFillColor" type="bool" value="true" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="component" type="int" value="1" />
+          <property name="anchor" type="int" value="0" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="0.000000" />
+          <property name="stretch" type="float" value="0.000000" />
+          <property name="alpha" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+          <property name="letterspacing" type="float" value="0.180000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.edgeglow" locallyApplied="false">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.310000" />
+          <property name="spread" type="float" value="1.500000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.fade" locallyApplied="false">
+          <property name="inTime" type="float" value="0.100000" />
+          <property name="outTime" type="float" value="0.100000" />
+        </effect>
+        <shadow direction="outside">
+          <hardness value="1.000000" />
+        </shadow>
+        <content>ZOOM #4</content>
+      </text>
+      <text id="40025436" startTime="9050" endTime="11332" fillType="color" speed="1.109170" mediaFillMode="stretch" size="144.000000" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="7092" align="center">
+        <transform>
+          <location value="540.000000,540.000000,0.000000" />
+          <scale value="0.102933,0.102933" />
+          <opacity>
+            <kf t="4.996933" v="1.000000" />
+            <kf t="5.083986" v="0.000000" />
+            <kf t="3.769938" v="1.000000" />
+            <kf t="3.930324" v="0.000000" />
+            <kf t="1.913856" v="1.000000" />
+            <kf t="2.023226" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+          <property name="mag" type="float" value="0.005000" />
+          <property name="scale" type="float">
+            <kf t="-0.006821" v="1.000000" />
+            <kf t="5.083986" v="0.720000" />
+          </property>
+          <property name="screenSpace" type="bool" value="true" />
+          <property name="intensity" type="float" value="0.500000" />
+          <property name="octaves" type="float" value="6.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.texttransform" locallyApplied="false">
+          <property name="fillColor" type="color" value="#ffbebebe" />
+          <property name="randomOrder" type="bool" value="true" />
+          <property name="seed" type="float">
+            <kf t="-0.013146" v="0.000000" />
+            <kf t="5.083986" v="0.018947" />
+          </property>
+          <property name="shape" type="int" value="1" />
+          <property name="useFillColor" type="bool" value="true" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="component" type="int" value="1" />
+          <property name="anchor" type="int" value="0" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="0.000000" />
+          <property name="stretch" type="float" value="0.000000" />
+          <property name="alpha" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+          <property name="letterspacing" type="float" value="0.180000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.edgeglow" locallyApplied="false">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.310000" />
+          <property name="spread" type="float" value="1.500000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.fade" locallyApplied="false">
+          <property name="inTime" type="float" value="0.100000" />
+          <property name="outTime" type="float" value="0.100000" />
+        </effect>
+        <shadow direction="outside">
+          <hardness value="1.000000" />
+        </shadow>
+        <content>ZOOM #5</content>
+      </text>
+      <text id="40025437" startTime="11316" endTime="13599" fillType="color" speed="1.109170" mediaFillMode="stretch" size="144.000000" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="7092" align="center">
+        <transform>
+          <location value="540.000000,540.000000,0.000000" />
+          <scale value="0.102933,0.102933" />
+          <opacity>
+            <kf t="4.994744" v="1.000000" />
+            <kf t="5.081759" v="0.000000" />
+            <kf t="3.768287" v="1.000000" />
+            <kf t="3.928602" v="0.000000" />
+            <kf t="1.913018" v="1.000000" />
+            <kf t="2.022340" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+          <property name="mag" type="float" value="0.005000" />
+          <property name="scale" type="float">
+            <kf t="-0.006818" v="1.000000" />
+            <kf t="5.081759" v="0.720000" />
+          </property>
+          <property name="screenSpace" type="bool" value="true" />
+          <property name="intensity" type="float" value="0.500000" />
+          <property name="octaves" type="float" value="6.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.texttransform" locallyApplied="false">
+          <property name="fillColor" type="color" value="#ffbebebe" />
+          <property name="randomOrder" type="bool" value="true" />
+          <property name="seed" type="float">
+            <kf t="-0.013140" v="0.000000" />
+            <kf t="5.081759" v="0.018947" />
+          </property>
+          <property name="shape" type="int" value="1" />
+          <property name="useFillColor" type="bool" value="true" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="component" type="int" value="1" />
+          <property name="anchor" type="int" value="0" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="0.000000" />
+          <property name="stretch" type="float" value="0.000000" />
+          <property name="alpha" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+          <property name="letterspacing" type="float" value="0.180000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.edgeglow" locallyApplied="false">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.310000" />
+          <property name="spread" type="float" value="1.500000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.fade" locallyApplied="false">
+          <property name="inTime" type="float" value="0.100000" />
+          <property name="outTime" type="float" value="0.100000" />
+        </effect>
+        <shadow direction="outside">
+          <hardness value="1.000000" />
+        </shadow>
+        <content>ZOOM #6</content>
+      </text>
+      <text id="40025438" startTime="13583" endTime="15865" fillType="color" speed="1.109170" mediaFillMode="stretch" size="144.000000" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="7092" align="center">
+        <transform>
+          <location value="540.000000,540.000000,0.000000" />
+          <scale value="0.102933,0.102933" />
+          <opacity>
+            <kf t="4.996933" v="1.000000" />
+            <kf t="5.083986" v="0.000000" />
+            <kf t="3.769938" v="1.000000" />
+            <kf t="3.930324" v="0.000000" />
+            <kf t="1.913856" v="1.000000" />
+            <kf t="2.023226" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+          <property name="mag" type="float" value="0.005000" />
+          <property name="scale" type="float">
+            <kf t="-0.006821" v="1.000000" />
+            <kf t="5.083986" v="0.720000" />
+          </property>
+          <property name="screenSpace" type="bool" value="true" />
+          <property name="intensity" type="float" value="0.500000" />
+          <property name="octaves" type="float" value="6.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.texttransform" locallyApplied="false">
+          <property name="fillColor" type="color" value="#ffbebebe" />
+          <property name="randomOrder" type="bool" value="true" />
+          <property name="seed" type="float">
+            <kf t="-0.013146" v="0.000000" />
+            <kf t="5.083986" v="0.018947" />
+          </property>
+          <property name="shape" type="int" value="1" />
+          <property name="useFillColor" type="bool" value="true" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="component" type="int" value="1" />
+          <property name="anchor" type="int" value="0" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="0.000000" />
+          <property name="stretch" type="float" value="0.000000" />
+          <property name="alpha" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+          <property name="letterspacing" type="float" value="0.180000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.edgeglow" locallyApplied="false">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.310000" />
+          <property name="spread" type="float" value="1.500000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.fade" locallyApplied="false">
+          <property name="inTime" type="float" value="0.100000" />
+          <property name="outTime" type="float" value="0.100000" />
+        </effect>
+        <shadow direction="outside">
+          <hardness value="1.000000" />
+        </shadow>
+        <content>ZOOM #7</content>
+      </text>
+      <text id="40025439" startTime="15850" endTime="18132" fillType="color" speed="1.109170" mediaFillMode="stretch" size="144.000000" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="7092" align="center">
+        <transform>
+          <location value="540.000000,540.000000,0.000000" />
+          <scale value="0.102933,0.102933" />
+          <opacity>
+            <kf t="4.996933" v="1.000000" />
+            <kf t="5.083986" v="0.000000" />
+            <kf t="3.769938" v="1.000000" />
+            <kf t="3.930324" v="0.000000" />
+            <kf t="1.913856" v="1.000000" />
+            <kf t="2.023226" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+          <property name="mag" type="float" value="0.005000" />
+          <property name="scale" type="float">
+            <kf t="-0.006821" v="1.000000" />
+            <kf t="5.083986" v="0.720000" />
+          </property>
+          <property name="screenSpace" type="bool" value="true" />
+          <property name="intensity" type="float" value="0.500000" />
+          <property name="octaves" type="float" value="6.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.texttransform" locallyApplied="false">
+          <property name="fillColor" type="color" value="#ffbebebe" />
+          <property name="randomOrder" type="bool" value="true" />
+          <property name="seed" type="float">
+            <kf t="-0.013146" v="0.000000" />
+            <kf t="5.083986" v="0.018947" />
+          </property>
+          <property name="shape" type="int" value="1" />
+          <property name="useFillColor" type="bool" value="true" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="component" type="int" value="1" />
+          <property name="anchor" type="int" value="0" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="0.000000" />
+          <property name="stretch" type="float" value="0.000000" />
+          <property name="alpha" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+          <property name="letterspacing" type="float" value="0.180000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.edgeglow" locallyApplied="false">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.310000" />
+          <property name="spread" type="float" value="1.500000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.fade" locallyApplied="false">
+          <property name="inTime" type="float" value="0.100000" />
+          <property name="outTime" type="float" value="0.100000" />
+        </effect>
+        <shadow direction="outside">
+          <hardness value="1.000000" />
+        </shadow>
+        <content>ZOOM #8</content>
+      </text>
+      <text id="40025440" startTime="18116" endTime="20399" fillType="color" speed="1.109170" mediaFillMode="stretch" size="144.000000" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="7092" align="center">
+        <transform>
+          <location value="540.000000,540.000000,0.000000" />
+          <scale value="0.102933,0.102933" />
+          <opacity>
+            <kf t="4.994744" v="1.000000" />
+            <kf t="5.081759" v="0.000000" />
+            <kf t="3.768287" v="1.000000" />
+            <kf t="3.928602" v="0.000000" />
+            <kf t="1.913018" v="1.000000" />
+            <kf t="2.022340" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+          <property name="mag" type="float" value="0.005000" />
+          <property name="scale" type="float">
+            <kf t="-0.006818" v="1.000000" />
+            <kf t="5.081759" v="0.720000" />
+          </property>
+          <property name="screenSpace" type="bool" value="true" />
+          <property name="intensity" type="float" value="0.500000" />
+          <property name="octaves" type="float" value="6.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.texttransform" locallyApplied="false">
+          <property name="fillColor" type="color" value="#ffbebebe" />
+          <property name="randomOrder" type="bool" value="true" />
+          <property name="seed" type="float">
+            <kf t="-0.013140" v="0.000000" />
+            <kf t="5.081759" v="0.018947" />
+          </property>
+          <property name="shape" type="int" value="1" />
+          <property name="useFillColor" type="bool" value="true" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="component" type="int" value="1" />
+          <property name="anchor" type="int" value="0" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="0.000000" />
+          <property name="stretch" type="float" value="0.000000" />
+          <property name="alpha" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+          <property name="letterspacing" type="float" value="0.180000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.edgeglow" locallyApplied="false">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.310000" />
+          <property name="spread" type="float" value="1.500000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.fade" locallyApplied="false">
+          <property name="inTime" type="float" value="0.100000" />
+          <property name="outTime" type="float" value="0.100000" />
+        </effect>
+        <shadow direction="outside">
+          <hardness value="1.000000" />
+        </shadow>
+        <content>ZOOM #9</content>
+      </text>
+      <text id="40025441" startTime="20383" endTime="22665" fillType="color" speed="1.109170" mediaFillMode="stretch" size="144.000000" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="7092" align="center">
+        <transform>
+          <location value="540.000000,540.000000,0.000000" />
+          <scale value="0.102933,0.102933" />
+          <opacity>
+            <kf t="4.996933" v="1.000000" />
+            <kf t="5.083986" v="0.000000" />
+            <kf t="3.769938" v="1.000000" />
+            <kf t="3.930324" v="0.000000" />
+            <kf t="1.913856" v="1.000000" />
+            <kf t="2.023226" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+          <property name="mag" type="float" value="0.005000" />
+          <property name="scale" type="float">
+            <kf t="-0.006821" v="1.000000" />
+            <kf t="5.083986" v="0.720000" />
+          </property>
+          <property name="screenSpace" type="bool" value="true" />
+          <property name="intensity" type="float" value="0.500000" />
+          <property name="octaves" type="float" value="6.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.texttransform" locallyApplied="false">
+          <property name="fillColor" type="color" value="#ffbebebe" />
+          <property name="randomOrder" type="bool" value="true" />
+          <property name="seed" type="float">
+            <kf t="-0.013146" v="0.000000" />
+            <kf t="5.083986" v="0.018947" />
+          </property>
+          <property name="shape" type="int" value="1" />
+          <property name="useFillColor" type="bool" value="true" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="component" type="int" value="1" />
+          <property name="anchor" type="int" value="0" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="0.000000" />
+          <property name="stretch" type="float" value="0.000000" />
+          <property name="alpha" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+          <property name="letterspacing" type="float" value="0.180000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.edgeglow" locallyApplied="false">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.310000" />
+          <property name="spread" type="float" value="1.500000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.fade" locallyApplied="false">
+          <property name="inTime" type="float" value="0.100000" />
+          <property name="outTime" type="float" value="0.100000" />
+        </effect>
+        <shadow direction="outside">
+          <hardness value="1.000000" />
+        </shadow>
+        <content>ZOOM #10</content>
+      </text>
+    </scene>
+  </embedScene>
+</scene>

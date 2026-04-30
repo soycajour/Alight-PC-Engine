@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-04-10 06:37 PM
+5.0.272.1028368 (1002592)
+a34a6c0 (Oct 7, 2024 3:17:29 PM)
+-->
+<scene title="4" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="10032" fps="30" modifiedTime="1744292257791" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <shape id="634494" label="Rectangle 1" startTime="0" endTime="10032" fillType="color" mediaFillMode="stretch" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="9.900001,5.568749" />
+    </transform>
+    <fillColor value="#ff0e0e0e" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <embedScene id="634617" label="Group 1" startTime="0" endTime="10032" fillType="intrinsic" outTime="10032" mediaFillMode="stretch">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="0.616725,0.616725" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="10032" fps="30" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="634495" label="Shape " startTime="0" endTime="10032" fillType="color" mediaFillMode="stretch" s=".roundrect">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <scale value="1.052631,1.052631" />
+        </transform>
+        <fillColor value="#ff14fd6a" />
+        <effect id="com.alightcreative.effects.pulsate2" locallyApplied="false">
+          <property name="freq" type="float" value="1.000000" />
+          <property name="minsize" type="float" value="0.950000" />
+          <property name="maxsize" type="float" value="1.100000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="type" type="int" value="0" />
+        </effect>
+        <property name="size" type="vec2" value="266.000000,115.000000" />
+        <property name="cornerRadius" type="float" value="130.000000" />
+      </shape>
+      <shape id="634498" label="Circle 3" startTime="0" endTime="10032" fillType="color" mediaFillMode="stretch" s=".circle">
+        <transform>
+          <location value="1087.500000,540.000000,0.000000" />
+          <scale value="0.430000,0.430000" />
+        </transform>
+        <effect id="com.alightcreative.effects.pulseopacity2" locallyApplied="false">
+          <property name="freq" type="float">
+            <kf t="0.101276" v="1.000000" />
+            <kf t="0.051435" v="0.100000" />
+          </property>
+          <property name="strength" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="type" type="int" value="1" />
+        </effect>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="634496" label="Circle 2" startTime="0" endTime="10032" fillType="color" mediaFillMode="stretch" s=".circle">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <scale value="0.430000,0.430000" />
+        </transform>
+        <effect id="com.alightcreative.effects.pulseopacity2" locallyApplied="false">
+          <property name="freq" type="float">
+            <kf t="0.051435" v="1.000000" />
+            <kf t="0.001595" v="0.100000" />
+          </property>
+          <property name="strength" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="type" type="int" value="1" />
+        </effect>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="634497" label="Circle 1" startTime="0" endTime="10032" fillType="color" mediaFillMode="stretch" s=".circle">
+        <transform>
+          <location value="832.500000,540.000000,0.000000" />
+          <scale value="0.430000,0.430000" />
+        </transform>
+        <effect id="com.alightcreative.effects.pulseopacity2" locallyApplied="false">
+          <property name="freq" type="float" value="1.000000" />
+          <property name="strength" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="type" type="int" value="1" />
+        </effect>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <text id="634619" startTime="0" endTime="10032" fillType="color" mediaFillMode="stretch" size="20.000000" font="imported?name=ArgentumSans-Regular.ttf" wrapWidth="1074" align="center">
+    <transform>
+      <location value="960.000000,960.000000,0.000000" />
+      <scale value="0.675047,0.675047" />
+      <opacity value="0.699219" />
+    </transform>
+    <effect id="com.alightcreative.effects.textspacing" locallyApplied="false">
+      <property name="letterspacing" type="float" value="0.200000" />
+      <property name="linespacing" type="float" value="1.000000" />
+    </effect>
+    <content>Processing Animation</content>
+  </text>
+</scene>

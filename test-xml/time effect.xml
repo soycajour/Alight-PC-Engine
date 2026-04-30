@@ -1,0 +1,1225 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-04-10 06:33 PM
+5.0.272.1028368 (1002592)
+a34a6c0 (Oct 7, 2024 3:17:29 PM)
+-->
+<scene title="time effect" width="1920" height="1080" exportWidth="1080" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="5116" fps="30" modifiedTime="1744292028199" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <embedScene id="618909" label="Change Your Name Here &#128071;" startTime="0" endTime="5116" fillType="intrinsic" outTime="5116" mediaFillMode="stretch">
+    <transform>
+      <location value="960.000000,542.565796,0.000000" />
+      <pivot value="4.231323,0.000000" />
+      <scale>
+        <kf t="0.001564" v="0.429547,0.429547" />
+        <kf t="0.503323" v="1.075729,1.075729" e="cubicBezier 0.2544086 0.7092498 0.58 1.0" />
+        <kf t="0.741009" v="1.075729,1.075729" />
+        <kf t="0.998436" v="0.596846,0.596846" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.589523" v="1.058567,1.058567" />
+      </scale>
+      <rotation>
+        <kf t="0.001564" v="-135.000000" />
+        <kf t="0.310985" v="0.000000" e="cubicBezier 0.0 0.5603468 0.58 1.0" />
+      </rotation>
+      <opacity>
+        <kf t="0.115520" v="1.000000" />
+        <kf t="0.001564" v="0.000000" />
+        <kf t="0.890930" v="1.000000" />
+        <kf t="0.991986" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.jitter" locallyApplied="false">
+      <property name="angle" type="float" value="0.000000" />
+      <property name="freq" type="float">
+        <kf t="0.304535" v="30.000000" />
+        <kf t="0.278538" v="1.000000" />
+        <kf t="0.333855" v="1.000000" />
+      </property>
+      <property name="mag" type="float">
+        <kf t="0.278538" v="1.000000" />
+        <kf t="0.304535" v="254.490005" />
+        <kf t="0.337177" v="1.000000" />
+      </property>
+      <property name="seed" type="float" value="0.000000" />
+      <property name="slack" type="float" value="0.000000" />
+      <property name="zjitter" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur" locallyApplied="false">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <effect id="com.alightcreative.effects.swing" locallyApplied="false">
+      <property name="freq" type="float" value="0.795000" />
+      <property name="a1" type="float" value="-2.507153" />
+      <property name="a2" type="float" value="3.152705" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="type" type="int" value="0" />
+    </effect>
+    <scene title="" width="1296" height="961" exportWidth="1296" exportHeight="961" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5116" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="205718" label="cc786" startTime="0" endTime="5115" fillType="none" mediaFillMode="stretch" s=".circle">
+        <transform>
+          <location>
+            <kf t="0.294819" v="653.684753,483.136688,0.000000" />
+            <kf t="0.979081" v="653.684753,483.136688,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+            <kf t="0.754252" v="653.684753,769.529541,0.000000" e="cubicBezier 0.0 0.69749445 0.58 1.0" />
+          </location>
+          <scale value="1.219941,1.219941" />
+        </transform>
+        <fillColor value="#ffadaadc" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="29.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="205785" label="Don't Touch This Image" startTime="1500" endTime="5115" fillType="media" fillImage="content://media/external/images/media/477589" mediaFillMode="stretch">
+        <transform>
+          <location>
+            <kf t="0.002213" v="671.765869,595.728027,0.000000" />
+            <kf t="0.716736" v="671.765869,529.951050,0.000000" e="cubicBezier 0.0 0.6779017 0.58 1.0" />
+          </location>
+          <scale value="0.506188,0.506188" />
+          <opacity>
+            <kf t="0.928907" v="1.000000" />
+            <kf t="0.970402" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.solidcolor" locallyApplied="false">
+          <property name="color" type="color" value="#ffffffff" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <path d="M -404.0 -360.0L 404.0 -360.0L 404.0 360.0L -404.0 360.0L -404.0 -360.0Z" />
+      </shape>
+      <text id="205815" label="Your Name" startTime="1500" endTime="5115" fillType="color" mediaFillMode="stretch" size="24.000000" font="imported?name=airstrike.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location value="653.684753,502.136688,0.000000" />
+          <scale>
+            <kf t="0.587829" v="1.353516,1.353516" />
+            <kf t="0.002213" v="0.974609,0.974609" />
+            <kf t="0.790595" v="0.826172,0.826172" />
+          </scale>
+          <opacity>
+            <kf t="0.928907" v="1.000000" />
+            <kf t="0.970401" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.glow" locallyApplied="false">
+          <property name="radius" type="float" value="39.000000" />
+          <property name="alpha" type="float" value="0.440000" />
+          <property name="hardness" type="float" value="0.000000" />
+          <property name="color" type="color" value="#ff000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <content>Time 
+waste </content>
+      </text>
+      <embedScene id="205719" label="Sakthi tech" startTime="0" endTime="5115" fillType="intrinsic" mediaFillMode="stretch">
+        <transform>
+          <location>
+            <kf t="0.294819" v="577.407471,636.701660,0.000000" />
+            <kf t="0.760703" v="322.919952,811.059021,0.000000" e="cubicBezier 0.0 0.61912435 0.58 1.0" />
+            <kf t="0.979081" v="577.407471,636.701660,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </location>
+          <scale value="0.448950,0.448950" />
+          <rotation>
+            <kf t="0.001564" v="0.000000" />
+            <kf t="0.979081" v="80.121948" />
+          </rotation>
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1282" height="722" exportWidth="1282" exportHeight="722" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3515" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeOut="3515" retimeAdaptFPS="false">
+          <shape id="205720" label="Circle 5" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="2.455001,2.455001" />
+            </transform>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205721" label="Rectangle 2" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="14.000000" />
+              <property name="radius" type="float" value="231.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="25.000000,33.000000" />
+          </shape>
+          <shape id="205722" label="Circle 6" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.905001,0.905001" />
+            </transform>
+            <fillColor value="#fffb694b" />
+            <path-stroke direction="centered" end-size="1.500000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205723" label="Circle 6" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.440001,0.440001" />
+            </transform>
+            <fillColor value="#fffb694b" />
+            <path-stroke direction="centered" end-size="1.500000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205724" label="Circle 6" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="1.310001,1.310001" />
+            </transform>
+            <fillColor value="#fffb694b" />
+            <path-stroke direction="centered" end-size="1.500000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205725" label="Circle 6" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="2.255000,2.255000" />
+            </transform>
+            <fillColor value="#fffb694b" />
+            <path-stroke direction="centered" end-size="1.500000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205726" label="Circle 6" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="1.805000,1.805000" />
+            </transform>
+            <fillColor value="#fffb694b" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <size value="22.000000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205727" label="Rectangle 3" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="14.000000" />
+              <property name="radius" type="float" value="110.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <path-stroke direction="centered" end-size="1.500000" />
+            <property name="size" type="vec2" value="7.000000,19.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="205728" label="Sakthi tech" startTime="0" endTime="5115" fillType="intrinsic" mediaFillMode="stretch">
+        <transform>
+          <location>
+            <kf t="0.294819" v="766.540161,627.367981,0.000000" />
+            <kf t="0.718475" v="907.467346,748.743225,0.000000" e="cubicBezier 0.0 0.58189815 0.58 1.0" />
+            <kf t="0.979081" v="766.540161,627.367981,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </location>
+          <scale value="0.357595,0.357595" />
+          <rotation>
+            <kf t="0.001564" v="0.000000" />
+            <kf t="0.979081" v="-60.365845" />
+          </rotation>
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1282" height="722" exportWidth="1282" exportHeight="722" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3515" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeOut="3515" retimeAdaptFPS="false">
+          <shape id="205729" label="Circle 8" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="2.825000,2.825000" />
+            </transform>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205730" label="Circle 8" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.935001,0.935001" />
+            </transform>
+            <path-stroke direction="centered" end-size="1.500000">
+              <size value="5.000000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205731" label="Circle 8" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="1.780001,1.780001" />
+            </transform>
+            <path-stroke direction="centered" end-size="1.500000">
+              <size value="14.500000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205732" label="Circle 8" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="2.270000,2.270000" />
+            </transform>
+            <path-stroke direction="centered" end-size="1.500000">
+              <size value="27.500000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="205743" label="Sakthi tech" startTime="0" endTime="5115" fillType="intrinsic" mediaFillMode="stretch">
+        <transform>
+          <location>
+            <kf t="0.294819" v="715.419189,362.397125,0.000000" />
+            <kf t="0.676050" v="922.340271,127.327805,0.000000" e="cubicBezier 0.0 0.8189683 0.58 1.0" />
+            <kf t="0.979081" v="715.419189,362.397125,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </location>
+          <scale value="0.392494,0.392494" />
+          <rotation>
+            <kf t="0.001564" v="0.000000" />
+            <kf t="0.979081" v="90.000000" />
+          </rotation>
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1282" height="722" exportWidth="1282" exportHeight="722" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3515" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeOut="3515" retimeAdaptFPS="false">
+          <shape id="205744" label="Circle 5" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="2.385000,2.385000" />
+            </transform>
+            <fillColor value="#ff47ce75" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="29.500000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205745" label="Rectangle 2" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.946429,0.946429" />
+            </transform>
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="13.000000" />
+              <property name="radius" type="float" value="226.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="15.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="22.000000,12.000000" />
+          </shape>
+          <shape id="205746" label="Rectangle 2" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="13.000000" />
+              <property name="radius" type="float" value="261.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="28.000000,16.000000" />
+          </shape>
+          <shape id="205747" label="Circle 6" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="2.080001,2.080001" />
+            </transform>
+            <path-stroke direction="centered" end-size="1.500000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205748" label="Circle 8" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="1.625000,1.625000" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <size value="17.000000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205749" label="Circle 9" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.875000,0.875000" />
+            </transform>
+            <path-stroke direction="centered" end-size="1.500000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205750" label="Rectangle 3" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="8.000000" />
+              <property name="radius" type="float" value="122.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="16.000000,35.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="205751" label="Sakthi tech" startTime="0" endTime="5115" fillType="intrinsic" mediaFillMode="stretch">
+        <transform>
+          <location>
+            <kf t="0.294819" v="483.156921,483.136688,0.000000" />
+            <kf t="0.809580" v="85.172272,564.522888,0.000000" e="cubicBezier 0.0 0.8307234 0.58 1.0" />
+            <kf t="0.979081" v="483.156921,483.136688,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </location>
+          <scale value="0.284220,0.284220" />
+          <rotation>
+            <kf t="0.001564" v="0.000000" />
+            <kf t="0.294819" v="69.378517" />
+            <kf t="0.597850" v="141.069611" e="cubicBezier 0.0 0.7252607 0.58 1.0" />
+            <kf t="0.980450" v="231.585373" e="cubicBezier 0.42 0.0 1.0 0.5297792" />
+          </rotation>
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.glow" hidden="true" locallyApplied="false">
+          <property name="radius" type="float" value="29.000000" />
+          <property name="alpha" type="float" value="0.690000" />
+          <property name="hardness" type="float" value="0.000000" />
+          <property name="color" type="color" value="#ff000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <scene title="" width="1282" height="722" exportWidth="1282" exportHeight="722" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3515" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeOut="3515" retimeAdaptFPS="false">
+          <shape id="205752" label="Circle 5" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="2.385000,2.385000" />
+            </transform>
+            <fillColor value="#ff47ce75" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="29.500000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205753" label="Rectangle 2" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.946429,0.946429" />
+            </transform>
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="13.000000" />
+              <property name="radius" type="float" value="226.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="15.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="22.000000,12.000000" />
+          </shape>
+          <shape id="205754" label="Rectangle 2" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="13.000000" />
+              <property name="radius" type="float" value="261.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="28.000000,16.000000" />
+          </shape>
+          <shape id="205755" label="Circle 6" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="2.080001,2.080001" />
+            </transform>
+            <path-stroke direction="centered" end-size="1.500000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205756" label="Circle 8" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="1.625000,1.625000" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <size value="17.000000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205757" label="Circle 9" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.875000,0.875000" />
+            </transform>
+            <path-stroke direction="centered" end-size="1.500000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205758" label="Rectangle 3" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="8.000000" />
+              <property name="radius" type="float" value="122.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="16.000000,35.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="205759" label="Sakthi tech" startTime="0" endTime="5115" fillType="intrinsic" mediaFillMode="stretch">
+        <transform>
+          <location>
+            <kf t="0.294819" v="567.287415,382.794830,0.000000" />
+            <kf t="0.979081" v="567.287415,382.794830,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+            <kf t="0.734702" v="277.323456,246.531982,0.000000" e="cubicBezier 0.0 0.79937553 0.58 1.0" />
+          </location>
+          <scale value="0.185243,0.185243" />
+          <rotation>
+            <kf t="0.001564" v="0.000000" />
+            <kf t="0.979081" v="-70.243896" />
+          </rotation>
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.glow" locallyApplied="false">
+          <property name="radius" type="float" value="29.000000" />
+          <property name="alpha" type="float" value="0.690000" />
+          <property name="hardness" type="float" value="0.000000" />
+          <property name="color" type="color" value="#ff000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <shadow direction="outside" enabled="false">
+          <size value="92.000000" />
+        </shadow>
+        <scene title="" width="1282" height="722" exportWidth="1282" exportHeight="722" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3515" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeOut="3515" retimeAdaptFPS="false">
+          <shape id="205760" label="Circle 7" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="2.290000,2.290000" />
+            </transform>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205761" label="Rectangle 2" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="12.000000" />
+              <property name="radius" type="float" value="234.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="31.000000,15.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="205762" label="Sakthi tech" startTime="0" endTime="5115" fillType="intrinsic" mediaFillMode="stretch">
+        <transform>
+          <location>
+            <kf t="0.294819" v="801.311462,483.136688,0.000000" />
+            <kf t="0.979081" v="801.311462,483.136688,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+            <kf t="0.806451" v="1137.188477,408.566803,0.000000" e="cubicBezier 0.0 0.85031617 0.58 1.0" />
+          </location>
+          <scale value="0.251688,0.251688" />
+          <rotation>
+            <kf t="0.001564" v="0.000000" />
+            <kf t="0.979081" v="75.731705" />
+          </rotation>
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.glow" locallyApplied="false">
+          <property name="radius" type="float" value="29.000000" />
+          <property name="alpha" type="float" value="0.690000" />
+          <property name="hardness" type="float" value="0.000000" />
+          <property name="color" type="color" value="#ff000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <shadow direction="outside" enabled="false">
+          <size value="92.000000" />
+        </shadow>
+        <scene title="" width="1282" height="722" exportWidth="1282" exportHeight="722" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3515" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeOut="3515" retimeAdaptFPS="false">
+          <shape id="205763" label="Circle 7" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="2.290000,2.290000" />
+            </transform>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205764" label="Rectangle 2" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="12.000000" />
+              <property name="radius" type="float" value="234.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="31.000000,15.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <shape id="205772" label="Sakthi tech" startTime="0" endTime="5115" fillType="none" mediaFillMode="stretch" s=".circle">
+        <transform>
+          <location value="653.684753,483.136688,0.000000" />
+          <scale value="2.290422,2.290422" />
+        </transform>
+        <fillColor value="#ffa2f25e" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <size value="134.000000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="205773" label="Sakthi tech" startTime="0" endTime="5115" fillType="none" mediaFillMode="stretch" s=".circle">
+        <transform>
+          <location value="653.684753,483.136688,0.000000" />
+          <scale value="3.165378,3.165378" />
+        </transform>
+        <fillColor value="#ffda52eb" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="10.000000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="205774" label="Sakthi tech" startTime="0" endTime="5115" fillType="none" mediaFillMode="stretch" s=".circle">
+        <transform>
+          <location value="653.684753,483.136688,0.000000" />
+          <scale value="2.906604,2.906604" />
+        </transform>
+        <fillColor value="#ffda52eb" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="18.000000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="205775" label="Sakthi tech" startTime="0" endTime="5115" fillType="color" mediaFillMode="stretch" s=".circle">
+        <transform>
+          <location value="653.684753,483.136688,0.000000" />
+          <scale value="0.147872,0.147872" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+          <property name="count" type="float" value="12.000000" />
+          <property name="radius" type="float" value="1964.000000" />
+          <property name="orientation" type="float" value="0.000000" />
+          <property name="startAngle" type="float" value="0.000000" />
+          <property name="sweep" type="float" value="360.000000" />
+          <property name="baseScale" type="float" value="1.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="colorAltCopies" type="bool" value="false" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+          <property name="shape" type="int" value="0" />
+          <property name="invert" type="bool" value="false" />
+          <property name="randomOrder" type="bool" value="false" />
+          <property name="seed" type="float" value="0.000000" />
+        </effect>
+        <property name="size" type="vec2" value="40.000000,40.000000" />
+      </shape>
+      <shape id="205776" label="Sakthi tech" startTime="0" endTime="5115" fillType="color" mediaFillMode="stretch" s=".rect">
+        <transform>
+          <location value="653.684753,483.136688,0.000000" />
+          <scale value="0.924198,0.924198" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+          <property name="count" type="float" value="96.000000" />
+          <property name="radius" type="float" value="315.000000" />
+          <property name="orientation" type="float" value="0.000000" />
+          <property name="startAngle" type="float" value="0.000000" />
+          <property name="sweep" type="float" value="360.000000" />
+          <property name="baseScale" type="float" value="1.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="colorAltCopies" type="bool" value="false" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+          <property name="shape" type="int" value="0" />
+          <property name="invert" type="bool" value="false" />
+          <property name="randomOrder" type="bool" value="false" />
+          <property name="seed" type="float" value="0.000000" />
+        </effect>
+        <property name="size" type="vec2" value="1.000000,6.000000" />
+      </shape>
+      <shape id="205777" label="Sakthi tech" startTime="0" endTime="5115" fillType="color" mediaFillMode="stretch" s=".circle">
+        <transform>
+          <location>
+            <kf t="0.294819" v="653.684753,483.136688,0.000000" />
+            <kf t="0.803128" v="692.596497,518.197144,0.000000" e="cubicBezier 0.0 0.803793 0.58 1.0" />
+            <kf t="0.998631" v="653.684753,483.136688,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </location>
+          <scale value="0.120146,0.120146" />
+          <rotation>
+            <kf t="0.294819" v="0.000000" />
+            <kf t="0.803128" v="26.341463" e="cubicBezier 0.0 0.80329424 0.58 1.0" />
+            <kf t="0.998631" v="0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </rotation>
+        </transform>
+        <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+          <property name="count" type="float" value="12.000000" />
+          <property name="radius" type="float" value="2000.000000" />
+          <property name="orientation" type="float" value="0.000000" />
+          <property name="startAngle" type="float" value="15.000000" />
+          <property name="sweep" type="float" value="360.000000" />
+          <property name="baseScale" type="float" value="1.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="colorAltCopies" type="bool" value="false" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+          <property name="shape" type="int" value="0" />
+          <property name="invert" type="bool" value="false" />
+          <property name="randomOrder" type="bool" value="false" />
+          <property name="seed" type="float" value="0.000000" />
+        </effect>
+        <property name="size" type="vec2" value="50.000000,50.000000" />
+      </shape>
+      <shape id="205778" label="Sakthi tech" startTime="0" endTime="5115" fillType="none" mediaFillMode="stretch" s=".circle">
+        <transform>
+          <location value="653.684753,483.136688,0.000000" />
+          <scale value="1.640451,1.640451" />
+        </transform>
+        <fillColor value="#ff3ad3dd" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="4.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <embedScene id="205733" label="Sakthi tech" startTime="0" endTime="5115" fillType="intrinsic" mediaFillMode="stretch">
+        <transform>
+          <location>
+            <kf t="0.294819" v="610.064026,540.887817,0.000000" />
+            <kf t="0.845553" v="385.805847,713.625671,0.000000" e="cubicBezier 0.0 0.8581531 0.58 1.0" />
+            <kf t="0.979081" v="610.064026,540.887817,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </location>
+          <scale value="0.317261,0.317261" />
+          <rotation>
+            <kf t="0.001564" v="0.000000" />
+            <kf t="0.979081" v="230.487808" />
+          </rotation>
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.glow" locallyApplied="false">
+          <property name="radius" type="float" value="29.000000" />
+          <property name="alpha" type="float" value="0.690000" />
+          <property name="hardness" type="float" value="0.000000" />
+          <property name="color" type="color" value="#ff000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <scene title="" width="1282" height="722" exportWidth="1282" exportHeight="722" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3515" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeOut="3515" retimeAdaptFPS="false">
+          <shape id="205734" label="Circle 5" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205735" label="Rectangle 2" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="40.000000" />
+              <property name="radius" type="float" value="86.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="4.000000,19.000000" />
+          </shape>
+          <shape id="205736" label="Circle 6" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.800000,0.800000" />
+            </transform>
+            <fillColor value="#fffee1f8" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <size value="3.000000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205737" label="Circle 8" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.490000,0.490000" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="205738" label="Sakthi tech" startTime="0" endTime="5115" fillType="intrinsic" mediaFillMode="stretch">
+        <transform>
+          <location>
+            <kf t="0.294819" v="706.357178,577.924072,0.000000" />
+            <kf t="0.979081" v="706.357178,577.924072,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+            <kf t="0.777126" v="1005.341980,685.746643,0.000000" e="cubicBezier 0.0 0.7993753 0.58 1.0" />
+          </location>
+          <scale value="0.455202,0.455202" />
+          <rotation>
+            <kf t="0.001564" v="0.000000" />
+            <kf t="0.979081" v="145.975616" />
+          </rotation>
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.glow" locallyApplied="false">
+          <property name="radius" type="float" value="29.000000" />
+          <property name="alpha" type="float" value="0.690000" />
+          <property name="hardness" type="float" value="0.000000" />
+          <property name="color" type="color" value="#ff000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <scene title="" width="1282" height="722" exportWidth="1282" exportHeight="722" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3515" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeOut="3515" retimeAdaptFPS="false">
+          <shape id="205739" label="Circle 5" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205740" label="Rectangle 2" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".rect">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="40.000000" />
+              <property name="radius" type="float" value="86.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="4.000000,19.000000" />
+          </shape>
+          <shape id="205741" label="Circle 6" startTime="0" endTime="3515" fillType="none" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.800000,0.800000" />
+            </transform>
+            <fillColor value="#fffee1f8" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <size value="3.000000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205742" label="Circle 8" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.490000,0.490000" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="205765" label="Sakthi tech" startTime="0" endTime="5115" fillType="intrinsic" mediaFillMode="stretch">
+        <transform>
+          <location>
+            <kf t="0.294819" v="653.684753,483.136688,0.000000" />
+            <kf t="0.979081" v="653.684753,483.136688,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+            <kf t="0.676050" v="754.976990,683.932312,0.000000" e="cubicBezier 0.0 0.7817421 0.58 1.0" />
+          </location>
+          <scale value="0.924198,0.924198" />
+          <rotation>
+            <kf t="0.294819" v="0.000000" />
+            <kf t="0.979081" v="0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+            <kf t="0.676050" v="42.804878" e="cubicBezier 0.0 0.7445162 0.58 1.0" />
+          </rotation>
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.glow" locallyApplied="false">
+          <property name="radius" type="float" value="29.000000" />
+          <property name="alpha" type="float" value="0.690000" />
+          <property name="hardness" type="float" value="0.000000" />
+          <property name="color" type="color" value="#ff000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <scene title="" width="1282" height="722" exportWidth="1282" exportHeight="722" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3515" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeOut="3515" retimeAdaptFPS="false">
+          <shape id="205766" label="Rounded Rectangle 1" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".roundrect">
+            <transform>
+              <location value="703.164185,289.299072,0.000000" />
+              <rotation value="7.682927" />
+            </transform>
+            <property name="size" type="vec2" value="22.000000,75.000000" />
+            <property name="cornerRadius" type="float" value="94.000000" />
+          </shape>
+          <shape id="205767" label="Circle 5" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.820000,0.820000" />
+            </transform>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205768" label="Circle 6" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.105000,0.105000" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="6.000000" />
+              <property name="radius" type="float" value="564.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="0.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="145.000000,145.000000" />
+          </shape>
+          <shape id="205769" label="Circle 5" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.370000,0.370000" />
+            </transform>
+            <path-stroke direction="centered" end-size="1.500000">
+              <size value="1.500000" />
+            </path-stroke>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="205770" label="Circle 6" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.105000,0.105000" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <effect id="com.alightcreative.effects.repeat.radial" locallyApplied="false">
+              <property name="count" type="float" value="6.000000" />
+              <property name="radius" type="float" value="244.000000" />
+              <property name="orientation" type="float" value="0.000000" />
+              <property name="startAngle" type="float" value="30.000000" />
+              <property name="sweep" type="float" value="360.000000" />
+              <property name="baseScale" type="float" value="1.000000" />
+              <property name="angle" type="float" value="0.000000" />
+              <property name="scale" type="float" value="1.000000" />
+              <property name="alpha" type="float" value="1.000000" />
+              <property name="fillColor" type="color" value="#ff0088ff" />
+              <property name="blend" type="float" value="0.000000" />
+              <property name="colorAltCopies" type="bool" value="false" />
+              <property name="start" type="float" value="0.000000" />
+              <property name="end" type="float" value="1.000000" />
+              <property name="phase" type="float" value="0.000000" />
+              <property name="easeIn" type="float" value="0.000000" />
+              <property name="easeOut" type="float" value="0.000000" />
+              <property name="overlap" type="float" value="0.000000" />
+              <property name="shape" type="int" value="0" />
+              <property name="invert" type="bool" value="false" />
+              <property name="randomOrder" type="bool" value="false" />
+              <property name="seed" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="50.000000,50.000000" />
+          </shape>
+          <shape id="205771" label="Circle 6" startTime="0" endTime="3515" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="640.000000,360.000000,0.000000" />
+              <scale value="0.080862,0.080862" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <property name="size" type="vec2" value="145.000000,145.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <shape id="205783" label="Sakthi tech" startTime="0" endTime="5115" fillType="color" mediaFillMode="stretch" s=".teardrop">
+        <transform>
+          <location>
+            <kf t="0.294819" v="652.760559,482.212494,0.000000" />
+            <kf t="0.979081" v="652.760559,482.212494,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+            <kf t="0.679374" v="456.925873,582.172974,0.000000" e="cubicBezier 0.0 0.76410896 0.58 1.0" />
+          </location>
+          <scale value="0.924198,0.924198" />
+          <rotation>
+            <kf t="0.294819" v="-89.890244" />
+            <kf t="0.001564" v="-95.487793" />
+            <kf t="0.679374" v="-39.371918" e="cubicBezier 0.0 0.7817421 0.58 1.0" />
+            <kf t="0.979081" v="0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </rotation>
+        </transform>
+        <effect id="com.alightcreative.glow" locallyApplied="false">
+          <property name="radius" type="float" value="82.000000" />
+          <property name="alpha" type="float" value="0.430000" />
+          <property name="hardness" type="float" value="0.000000" />
+          <property name="color" type="color" value="#ff000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <property name="radius" type="float" value="34.313416" />
+        <property name="tail" type="float" value="847.494080" />
+        <property name="squeeze" type="float" value="10.000000" />
+        <property name="tailWidth" type="float" value="4.300000" />
+      </shape>
+      <shape id="205784" label="Sakthi tech" startTime="0" endTime="5116" fillType="color" mediaFillMode="stretch" s=".teardrop">
+        <transform>
+          <location>
+            <kf t="0.294762" v="652.760559,482.212494,0.000000" />
+            <kf t="0.978890" v="652.760559,482.212494,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+            <kf t="0.675918" v="758.695313,444.814667,0.000000" e="cubicBezier 0.0 0.6661461 0.58 1.0" />
+          </location>
+          <scale value="0.600135,0.600135" />
+          <rotation>
+            <kf t="0.294762" v="-31.500000" />
+            <kf t="0.978890" v="0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+            <kf t="0.001564" v="-36.219513" />
+            <kf t="0.675918" v="45.000000" e="cubicBezier 0.0 0.6916164 0.58 1.0" />
+          </rotation>
+        </transform>
+        <effect id="com.alightcreative.glow" locallyApplied="false">
+          <property name="radius" type="float" value="82.000000" />
+          <property name="alpha" type="float" value="0.430000" />
+          <property name="hardness" type="float" value="0.000000" />
+          <property name="color" type="color" value="#ff000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <property name="radius" type="float" value="34.313416" />
+        <property name="tail" type="float" value="847.494080" />
+        <property name="squeeze" type="float" value="10.000000" />
+        <property name="tailWidth" type="float" value="4.300000" />
+      </shape>
+    </scene>
+  </embedScene>
+</scene>

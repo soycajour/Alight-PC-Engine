@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-04-10 06:31 PM
+5.0.272.1028368 (1002592)
+a34a6c0 (Oct 7, 2024 3:17:29 PM)
+-->
+<scene title="Comment animation, small" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ffd8d8d8" totalTime="6433" fps="30" modifiedTime="1744291892844" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <shape id="635483" label="images.jpeg" startTime="0" endTime="6433" fillType="media" fillImage="content://media/external/images/media/1000150771" mediaFillMode="stretch" s=".rect">
+    <transform>
+      <location value="985.474121,670.577026,0.000000" />
+      <scale value="1.406629,1.406629" />
+    </transform>
+    <effect id="com.alightcreative.effects.exposure" hidden="true" locallyApplied="true">
+      <property name="exposure" type="float" value="0.160000" />
+      <property name="gamma" type="float" value="1.285000" />
+      <property name="offset" type="float" value="-0.690000" />
+    </effect>
+    <property name="size" type="vec2" value="720.000000,540.000000" />
+  </shape>
+  <embedScene id="635467" label="Group 1" startTime="0" endTime="6032" fillType="intrinsic" outTime="6032" mediaFillMode="stretch">
+    <transform>
+      <location value="960.000000,689.357483,0.000000" />
+      <pivot value="0.000000,349.333435" />
+      <scale value="0.751137,0.751137" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1374" exportWidth="1920" exportHeight="1374" precompose="dynamicResolution" bgcolor="#00000000" totalTime="6032" fps="30" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="635308" label="Shape" startTime="0" endTime="6032" fillType="color" mediaFillMode="stretch" s=".roundrect">
+        <transform>
+          <location>
+            <kf t="0.002653" v="960.000000,1248.453369,0.000000" />
+            <kf t="0.168435" v="960.000000,824.928406,0.000000" e="cubicBezier 0.29000002 0.0 0.0 1.0" />
+            <kf t="0.831565" v="960.000000,824.928406,0.000000" />
+            <kf t="0.997347" v="960.000000,1248.453369,0.000000" e="cubicBezier 0.54 0.0 0.0 1.0" />
+          </location>
+          <scale value="0.994186,0.994186" />
+        </transform>
+        <fillColor value="#ff1f1f1f" />
+        <property name="size" type="vec2" value="774.000000,127.000000" />
+        <property name="cornerRadius" type="float" value="50.000000" />
+      </shape>
+      <embedScene id="635315" label="Group and Mask 1" startTime="0" endTime="6032" fillType="intrinsic" outTime="6032" mediaFillMode="stretch" parent="635308">
+        <transform>
+          <location value="-11.654785,-92.230103,0.000000" />
+          <pivot value="-589.732727,92.230103" />
+          <scale value="1.019763,1.019763" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2032" fps="30" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="635309" label="Circle 1" startTime="0" endTime="2032" fillType="color" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="370.267273,632.230103,0.000000" />
+              <scale value="0.735465,0.735465" />
+            </transform>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <text id="635313" startTime="0" endTime="2032" fillType="color" mediaFillMode="stretch" size="18.000000" font="imported?name=Akira Expanded Demo.otf" wrapWidth="512" align="center">
+            <transform>
+              <location value="370.267273,632.230103,0.000000" />
+              <scale value="1.191406,1.191406" />
+            </transform>
+            <fillColor value="#ff444444" />
+            <content>M</content>
+          </text>
+          <shape id="635314" label="Mask" startTime="0" endTime="2032" fillType="color" blending="mask" mediaFillMode="stretch" s=".circle">
+            <transform>
+              <location value="370.267273,632.230103,0.000000" />
+              <scale value="0.735465,0.735465" />
+            </transform>
+            <fillColor value="#fff4b446" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <shape id="635310" label="send-message.png" startTime="0" endTime="6032" fillType="media" fillImage="content://media/external/images/media/56217" mediaFillMode="stretch" parent="635308" s=".rect">
+        <transform>
+          <location value="605.000000,0.000000,0.000000" />
+          <scale value="0.087037,0.076487" />
+        </transform>
+        <effect id="com.alightcreative.solidcolor" locallyApplied="true">
+          <property name="color" type="color" value="#ff0095ff" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <text id="635311" startTime="0" endTime="1532" fillType="color" mediaFillMode="stretch" parent="635308" size="18.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="-205.500000,-7.500000,0.000000" />
+          <scale value="1.037109,1.037109" />
+          <opacity value="0.224609" />
+        </transform>
+        <content>Add a comment...</content>
+      </text>
+      <text id="635316" startTime="1466" endTime="5998" fillType="color" mediaFillMode="stretch" parent="635308" size="18.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="1059" align="left">
+        <transform>
+          <location value="78.149300,-7.500026,0.000000" />
+          <scale value="1.037109,1.037109" />
+        </transform>
+        <effect id="com.alightcreative.effects.textprogress" locallyApplied="true">
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float">
+            <kf t="0.000000" v="0.000000" />
+            <kf t="0.327229" v="1.000000" e="cubicBezier 0.75666666 0.0 0.58 1.0" />
+          </property>
+          <property name="cursor" type="int" value="0" />
+          <property name="blink" type="bool" value="false" />
+        </effect>
+        <content>Enter your comment here</content>
+      </text>
+    </scene>
+  </embedScene>
+</scene>

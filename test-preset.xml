@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<scene title="test" totalTime="3000" fps="30">
+  <shape id="1" startTime="0" endTime="3000">
+    <effect id="test_effect">
+      <!-- Mag will animate grid_spacing from 10 to 100 -->
+      <property name="mag" type="float">
+        <kf t="0.0" v="10.0" />
+        <kf t="0.5" v="100.0" e="cubicBezier 0.25 0.1 0.25 1.0" />
+        <kf t="1.0" v="10.0" e="cubicBezier 0.25 0.1 0.25 1.0" />
+      </property>
+      <!-- Speed will animate line_width -->
+      <property name="speed" type="float">
+        <kf t="0.0" v="0.5" />
+        <kf t="1.0" v="5.0" />
+      </property>
+    </effect>
+  </shape>
+</scene>

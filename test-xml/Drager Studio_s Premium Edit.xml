@@ -1,0 +1,1501 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-07-14 11:43 PM
+5.0.270.1002578 (1002351)
+6dff462 (11-Apr-2024 6:17:55 pm)
+-->
+<scene title="Drager Studio's Premium Edit" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#ffffffff" totalTime="7415" fps="60" modifiedTime="1752516802421" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <media uri="content://media/external/images/media/1000200673" filename="money-png-40450.png" title="money-png-40450.png" type="image/png" size="1573844" orientation="0" infoUpdated="1752501542894" width="1663" height="1248" />
+  <media uri="content://media/external/images/media/1000200694" filename="bar-code-types-set_1284-26540.jpeg" title="bar-code-types-set_1284-26540.jpeg" type="image/jpeg" size="405907" orientation="0" infoUpdated="1752501542894" width="2000" height="2000" />
+  <media uri="content://media/external/images/media/1000200674" filename="Bitcoin-background-with-golden-coin-Premium-vector-PNG.png" title="Bitcoin-background-with-golden-coin-Premium-vector-PNG.png" type="image/png" size="3748605" orientation="0" infoUpdated="1752501950407" width="4500" height="4500" />
+  <media uri="content://media/external/images/media/1000200695" filename="—Pngtree—old-fashioned oil lamp on transparent_16539727.png" title="—Pngtree—old-fashioned oil lamp on transparent_16539727.png" type="image/png" size="2467455" orientation="0" infoUpdated="1752504572431" width="2500" height="2500" />
+  <media uri="content://media/external/images/media/1000200705" filename="Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" title="Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" type="image/jpeg" size="47581" orientation="0" infoUpdated="1752507937045" width="330" height="492" />
+  <media uri="content://media/external/images/media/1000200683" filename="picture-frame-antique-gold-gold-photo-frame-c7a6f8540c52e640e4c7badd212bea77.png" title="picture-frame-antique-gold-gold-photo-frame-c7a6f8540c52e640e4c7badd212bea77.png" type="image/png" size="603520" orientation="0" infoUpdated="1752507917454" width="700" height="787" />
+  <media uri="content://media/external/images/media/1000200696" filename="—Pngtree—tree leaves shadows aesthetic image_9004549.png" title="—Pngtree—tree leaves shadows aesthetic image_9004549.png" type="image/png" size="1208394" orientation="0" infoUpdated="1752504919139" width="5000" height="5000" />
+  <bookmark t="1958" />
+  <bookmark t="3108" />
+  <bookmark t="3675" />
+  <bookmark t="4775" />
+  <bookmark t="5591" />
+  <bookmark t="7408" />
+  <embedScene id="10259698" label="Group 1" startTime="0" endTime="7415" fillType="intrinsic" outTime="7415" mediaFillMode="fill">
+    <transform>
+      <location value="540.000000,960.000000,0.000000" />
+      <pivot value="-0.999084,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.solidcolor" locallyApplied="true">
+      <property name="color" type="color" value="#ff000000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="blendMode" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.100000" />
+    </effect>
+    <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7415" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10259694" label="Shape 1" startTime="0" endTime="2015" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="18.551636,992.398438,0.000000" />
+          <rotation value="-90.000000" />
+        </transform>
+        <fillColor value="#ff48907e" />
+        <path d="M 568.0498 0.0L -566.44727 0.0L 568.0498 0.0" />
+      </shape>
+      <shape id="10259695" label="Rounded Rectangle 1" startTime="0" endTime="7415" fillType="color" speed="0.271746" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="538.001831,960.000000,0.000000" />
+          <scale value="0.170000,0.170000" />
+        </transform>
+        <fillColor value="#ff9081af" />
+        <effect id="com.alightcreative.effects.repeat.path" locallyApplied="true">
+          <property name="count" type="float" value="50.000000" />
+          <property name="startPos" type="float" value="0.000000" />
+          <property name="endPos" type="float" value="1.000000" />
+          <property name="pathPhase" type="float">
+            <kf t="0.000000" v="0.000000" />
+            <kf t="1.000000" v="-0.285000" />
+          </property>
+          <property name="tangent" type="bool" value="true" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="fillColor" type="color" value="#ff2d1ef6" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="colorAltCopies" type="bool" value="false" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+          <property name="shape" type="int" value="0" />
+          <property name="invert" type="bool" value="false" />
+          <property name="randomOrder" type="bool" value="false" />
+          <property name="seed" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.repeat.line" locallyApplied="true">
+          <property name="count" type="float" value="9.000000" />
+          <property name="position" type="vec2" value="1031.000000,0.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="fillColor" type="color" value="#ff2d1ef6" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="colorAltCopies" type="bool" value="false" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+          <property name="shape" type="int" value="0" />
+          <property name="invert" type="bool" value="false" />
+          <property name="randomOrder" type="bool" value="false" />
+          <property name="seed" type="float" value="0.000000" />
+        </effect>
+        <property name="size" type="vec2" value="13.000000,32.000000" />
+        <property name="cornerRadius" type="float" value="105.000000" />
+      </shape>
+      <shape id="10259696" label="Shape 1 Copy" startTime="0" endTime="2015" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="538.001831,659.799866,0.000000" />
+        </transform>
+        <fillColor value="#ff48907e" />
+        <path d="M 568.0498 0.0L -566.44727 0.0L 568.0498 0.0" />
+      </shape>
+      <shape id="10259697" label="Rounded Rectangle 1 Copy" startTime="0" endTime="7415" fillType="color" speed="0.271746" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="540.000000,960.000000,0.000000" />
+          <scale value="0.170000,0.170000" />
+        </transform>
+        <fillColor value="#ff9081af" />
+        <effect id="com.alightcreative.effects.repeat.path" locallyApplied="true">
+          <property name="count" type="float" value="50.000000" />
+          <property name="startPos" type="float" value="0.000000" />
+          <property name="endPos" type="float" value="1.000000" />
+          <property name="pathPhase" type="float">
+            <kf t="0.000000" v="0.000000" />
+            <kf t="1.000000" v="-0.285000" />
+          </property>
+          <property name="tangent" type="bool" value="true" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="fillColor" type="color" value="#ff2d1ef6" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="colorAltCopies" type="bool" value="false" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+          <property name="shape" type="int" value="0" />
+          <property name="invert" type="bool" value="false" />
+          <property name="randomOrder" type="bool" value="false" />
+          <property name="seed" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.repeat.line" locallyApplied="true">
+          <property name="count" type="float" value="6.000000" />
+          <property name="position" type="vec2" value="0.000000,616.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="fillColor" type="color" value="#ff2d1ef6" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="colorAltCopies" type="bool" value="false" />
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float" value="1.000000" />
+          <property name="phase" type="float" value="0.000000" />
+          <property name="easeIn" type="float" value="0.000000" />
+          <property name="easeOut" type="float" value="0.000000" />
+          <property name="overlap" type="float" value="0.000000" />
+          <property name="shape" type="int" value="0" />
+          <property name="invert" type="bool" value="false" />
+          <property name="randomOrder" type="bool" value="false" />
+          <property name="seed" type="float" value="0.000000" />
+        </effect>
+        <property name="size" type="vec2" value="13.000000,32.000000" />
+        <property name="cornerRadius" type="float" value="105.000000" />
+      </shape>
+      <shape id="10259699" label="Circle 1" startTime="0" endTime="7415" fillType="color" blending="mask" mediaFillMode="fill" s=".circle">
+        <transform>
+          <location value="540.000000,960.000000,0.000000" />
+          <scale value="3.875000,3.875000" />
+        </transform>
+        <fillColor value="#ffa9e163" />
+        <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+          <property name="strength" type="float" value="0.855000" />
+        </effect>
+        <property name="size" type="vec2" value="115.000000,100.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <embedScene id="10259706" label="Group 2" startTime="0" endTime="1949" fillType="intrinsic" outTime="1949" mediaFillMode="fill" parent="10259718">
+    <transform>
+      <location value="100.417969,-34.825684,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.100000" />
+    </effect>
+    <scene title="" width="1732" height="3111" exportWidth="1732" exportHeight="3111" precompose="dynamicResolution" bgcolor="#00000000" totalTime="1949" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10259703" label="Shape 1" startTime="0" endTime="1949" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="766.053711,1590.532227,0.000000" />
+        </transform>
+        <fillColor value="#ffe2985d" />
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float">
+            <kf t="1.000000" v="0.000000" e="cubicBezier 0.4141305 0.0 0.0 1.0" />
+            <kf t="0.004105" v="772.000000" />
+          </property>
+          <property name="posy" type="float" value="0.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <size value="30.000000" />
+        </path-stroke>
+        <path d="M 474.7002 -1245.75C 474.7002 -1245.75, -40.134155 1400.9014, -666.1986 1322.501C -1292.2631 1244.1006, 474.7002 -1245.75, 474.7002 -1245.75" />
+      </shape>
+      <shape id="10259704" label="Shape 2" startTime="0" endTime="1949" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="766.053711,1590.532227,0.000000" />
+        </transform>
+        <fillColor value="#ff90d6a6" />
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float" value="0.000000" />
+          <property name="posy" type="float">
+            <kf t="0.995895" v="0.000000" e="cubicBezier 0.41 0.0 0.0 1.0" />
+            <kf t="0.004105" v="-864.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <size value="30.000000" />
+        </path-stroke>
+        <path d="M 727.08984 -726.5322C -1.1103516 -536.83203, -766.0537 -44.87799, -766.0537 -44.87799C -766.0537 -44.87799, 1455.29 -916.2324, 727.08984 -726.5322" />
+      </shape>
+      <shape id="10259705" label="Shape 2 Copy" startTime="0" endTime="1949" fillType="none" speed="1.033864" mediaFillMode="fill">
+        <transform>
+          <location value="766.053711,1590.532227,0.000000" />
+        </transform>
+        <fillColor value="#ff90d6a6" />
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float">
+            <kf t="0.996526" v="0.000000" e="cubicBezier 0.41 0.0 0.0 1.0" />
+            <kf t="0.003970" v="242.500000" />
+          </property>
+          <property name="posy" type="float">
+            <kf t="0.995895" v="0.000000" e="cubicBezier 0.41 0.0 0.0 1.0" />
+            <kf t="0.004105" v="850.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <size value="30.000000" />
+        </path-stroke>
+        <path d="M 724.38965 5.130867C 97.98926 670.88086, -705.749 576.02246, -705.749 576.02246C -705.749 576.02246, 1350.79 -660.61914, 724.38965 5.130867" />
+      </shape>
+    </scene>
+  </embedScene>
+  <text id="10259710" label="You're Making Copy" startTime="633" endTime="1949" fillType="color" speed="0.848024" mediaFillMode="fill" parent="10259718" size="18.000000" font="imported?name=Cocogoose-Pro-Light-trial.ttf" wrapWidth="230" align="left">
+    <transform>
+      <location value="175.298828,87.697388,0.000000" />
+      <scale value="1.360870,1.360870" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+      <property name="color1" type="color" value="#ffffffff" />
+      <property name="color2" type="color" value="#ff000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="offset" type="vec2" value="0.000000,-81.000000" />
+      <property name="scale" type="float" value="0.740000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="gradType" type="int" value="0" />
+      <property name="blendMode" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="49.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="0.235000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float">
+        <kf t="0.005457" v="0.000000" />
+        <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+    </effect>
+    <content>Dollar</content>
+  </text>
+  <text id="10259702" startTime="566" endTime="1949" fillType="color" speed="0.939262" mediaFillMode="fill" parent="10259718" size="32.000000" font="imported?name=Cocogoose-Pro-Darkmode-trial.ttf" wrapWidth="579" align="center">
+    <transform>
+      <scale value="1.283247,1.283247" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+      <property name="color1" type="color" value="#ffffffff" />
+      <property name="color2" type="color" value="#ff000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="offset" type="vec2" value="0.000000,-81.000000" />
+      <property name="scale" type="float" value="0.740000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="gradType" type="int" value="0" />
+      <property name="blendMode" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.inner-glow" locallyApplied="true">
+      <property name="radius" type="float" value="7.200000" />
+      <property name="alpha" type="float" value="0.490000" />
+      <property name="hardness" type="float" value="0.000000" />
+      <property name="color" type="color" value="#ff000000" />
+      <property name="blendMode" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="49.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="0.235000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float">
+        <kf t="0.005457" v="0.000000" />
+        <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+    </effect>
+    <content>MILLION</content>
+  </text>
+  <text id="10259711" label="You're Making Copy 2" startTime="483" endTime="1949" fillType="color" mediaFillMode="fill" parent="10259718" size="18.000000" font="imported?name=Cocogoose-Pro-Light-trial.ttf" wrapWidth="512" align="left">
+    <transform>
+      <location value="-25.700195,-88.550781,0.000000" />
+      <scale value="0.996094,0.996094" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+      <property name="color1" type="color" value="#ffffffff" />
+      <property name="color2" type="color" value="#ff000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="offset" type="vec2" value="0.000000,-81.000000" />
+      <property name="scale" type="float" value="0.740000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="gradType" type="int" value="0" />
+      <property name="blendMode" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="49.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="0.235000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float">
+        <kf t="0.005457" v="0.000000" />
+        <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+    </effect>
+    <content>You're Making</content>
+  </text>
+  <shape id="10259700" label="money-png-40450.png" startTime="0" endTime="1949" fillType="media" fillImage="content://media/external/images/media/1000200673" speed="1.033864" mediaFillMode="fill" parent="10259718" s=".rect">
+    <transform>
+      <location value="-294.579102,514.927734,0.000000" />
+      <scale value="1.242593,1.242593" />
+    </transform>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float">
+        <kf t="0.996526" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.003970" v="-670.000000" />
+      </property>
+      <property name="posy" type="float" value="0.000000" />
+      <property name="angle" type="float">
+        <kf t="0.996526" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.003970" v="23.500000" />
+      </property>
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.longshadow2" locallyApplied="true">
+      <property name="size" type="float" value="0.190000" />
+      <property name="angle" type="float" value="80.000000" />
+      <property name="color" type="color" value="#ff000000" />
+      <property name="alpha" type="float" value="0.274000" />
+      <property name="solidity" type="float" value="1.000000" />
+      <property name="fill" type="float" value="1.000000" />
+      <property name="fade" type="float" value="1.000000" />
+      <property name="fadeType" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.effects.lensblur2" locallyApplied="true">
+      <property name="centerPoint" type="vec2" value="25.000000,-119.000000" />
+      <property name="strength" type="float" value="0.110000" />
+      <property name="radius" type="float" value="0.150000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,405.000000" />
+  </shape>
+  <shape id="10259707" label="money-png-40450.png Copy 2" startTime="0" endTime="1949" fillType="media" fillImage="content://media/external/images/media/1000200673" speed="1.033864" mediaFillMode="fill" parent="10259718" s=".rect">
+    <transform>
+      <location value="-294.579102,514.927734,0.000000" />
+      <scale value="1.242593,1.242593" />
+    </transform>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float">
+        <kf t="0.996526" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.003970" v="-670.000000" />
+      </property>
+      <property name="posy" type="float" value="0.000000" />
+      <property name="angle" type="float">
+        <kf t="0.996526" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.003970" v="23.500000" />
+      </property>
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,405.000000" />
+  </shape>
+  <shape id="10259701" label="money-png-40450.png Copy" startTime="0" endTime="1949" fillType="media" fillImage="content://media/external/images/media/1000200673" speed="1.033864" mediaFillMode="fill" parent="10259718" s=".rect">
+    <transform>
+      <location value="450.201660,-480.864258,0.000000" />
+      <scale value="0.909259,0.909259" />
+    </transform>
+    <effect id="com.alightcreative.effects.mirror" locallyApplied="true">
+      <property name="type" type="int" value="0" />
+      <property name="blendMode" type="int" value="0" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.060000" />
+      <property name="posx" type="float">
+        <kf t="1.000000" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.004105" v="449.000000" />
+      </property>
+      <property name="posy" type="float" value="0.000000" />
+      <property name="angle" type="float">
+        <kf t="0.004105" v="-76.500000" />
+        <kf t="1.000000" v="-64.500000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.longshadow2" locallyApplied="true">
+      <property name="size" type="float" value="0.190000" />
+      <property name="angle" type="float" value="57.500000" />
+      <property name="color" type="color" value="#ff000000" />
+      <property name="alpha" type="float" value="0.274000" />
+      <property name="solidity" type="float" value="1.000000" />
+      <property name="fill" type="float" value="1.000000" />
+      <property name="fade" type="float" value="1.000000" />
+      <property name="fadeType" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.effects.lensblur2" locallyApplied="true">
+      <property name="centerPoint" type="vec2" value="25.000000,-119.000000" />
+      <property name="strength" type="float" value="0.110000" />
+      <property name="radius" type="float" value="0.150000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,405.000000" />
+  </shape>
+  <shape id="10259708" label="money-png-40450.png Copy 3" startTime="0" endTime="1949" fillType="media" fillImage="content://media/external/images/media/1000200673" speed="1.033864" mediaFillMode="fill" parent="10259718" s=".rect">
+    <transform>
+      <location value="450.201660,-480.864258,0.000000" />
+      <scale value="0.909259,0.909259" />
+    </transform>
+    <effect id="com.alightcreative.effects.mirror" locallyApplied="true">
+      <property name="type" type="int" value="0" />
+      <property name="blendMode" type="int" value="0" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.060000" />
+      <property name="posx" type="float">
+        <kf t="1.000000" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.004105" v="449.000000" />
+      </property>
+      <property name="posy" type="float" value="0.000000" />
+      <property name="angle" type="float">
+        <kf t="0.004105" v="-76.500000" />
+        <kf t="1.000000" v="-64.500000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,405.000000" />
+  </shape>
+  <shape id="10259709" label="bar-code-types-set_1284-26540.jpeg" startTime="0" endTime="1949" fillType="media" blending="darken" fillImage="content://media/external/images/media/1000200694" mediaFillMode="fill" parent="10259718" s=".rect">
+    <transform>
+      <location value="-229.201172,-892.193359,0.000000" />
+      <scale value="0.459259,0.459259" />
+    </transform>
+    <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+      <property name="start" type="float" value="0.808000" />
+      <property name="end" type="float" value="0.957000" />
+      <property name="angle" type="float" value="90.000000" />
+      <property name="feather" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+      <property name="start" type="float" value="0.067000" />
+      <property name="end" type="float" value="0.677000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="feather" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <nullobj id="10259718" label="Null 1" startTime="0" endTime="1949" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,960.000000,0.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.scaleassist" locallyApplied="true">
+      <property name="axis" type="int" value="2" />
+      <property name="scale" type="float">
+        <kf t="0.713699" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.004105" v="1.257000" />
+      </property>
+      <property name="damp" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.scaleassist" locallyApplied="true">
+      <property name="axis" type="int" value="2" />
+      <property name="scale" type="float">
+        <kf t="0.542843" v="1.000000" />
+        <kf t="0.995895" v="0.810000" e="cubicBezier 1.0 0.0 1.0 1.0" />
+      </property>
+      <property name="damp" type="float" value="1.000000" />
+    </effect>
+  </nullobj>
+  <embedScene id="10259730" label="Group 4" startTime="1950" endTime="3665" fillType="intrinsic" outTime="1715" mediaFillMode="fill">
+    <transform>
+      <location value="606.976563,857.976563,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.100000" />
+    </effect>
+    <scene title="" width="1708" height="3516" exportWidth="1708" exportHeight="3516" precompose="dynamicResolution" bgcolor="#00000000" totalTime="1715" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10259728" label="Shape 1" startTime="0" endTime="1715" fillType="none" speed="1.174927" mediaFillMode="fill">
+        <transform>
+          <location value="787.148438,1860.498047,0.000000" />
+        </transform>
+        <fillColor value="#ff7ae06a" />
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float">
+            <kf t="0.996526" v="0.000000" e="cubicBezier 0.41 0.0 0.0 1.0" />
+            <kf t="0.003970" v="425.000000" />
+          </property>
+          <property name="posy" type="float">
+            <kf t="0.995895" v="0.000000" e="cubicBezier 0.41 0.0 0.0 1.0" />
+            <kf t="0.004105" v="850.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <size value="30.000000" />
+        </path-stroke>
+        <path d="M 390.4463 -1193.5C 390.4463 -1193.5, 496.10156 621.166, -692.94727 806.4512C -1881.9961 991.7363, 390.4463 -1193.5, 390.4463 -1193.5" />
+      </shape>
+      <shape id="10259729" label="Shape 2" startTime="0" endTime="1715" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="787.148438,1860.498047,0.000000" />
+        </transform>
+        <fillColor value="#ffcc87f1" />
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float">
+            <kf t="1.000000" v="0.000000" e="cubicBezier 0.4141305 0.0 0.0 1.0" />
+            <kf t="0.004105" v="-80.000000" />
+          </property>
+          <property name="posy" type="float">
+            <kf t="0.995918" v="0.000000" e="cubicBezier 0.41 0.0 0.0 1.0" />
+            <kf t="0.004665" v="-1027.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <size value="30.000000" />
+        </path-stroke>
+        <path d="M 654.5 -58.195312C 96.17871 237.4043, -707.14844 -833.49805, -707.14844 -833.49805C -707.14844 -833.49805, 1212.8213 -353.79492, 654.5 -58.195312" />
+      </shape>
+    </scene>
+  </embedScene>
+  <shape id="10259720" label="Bitcoin-background-with-golden-coin-Premium-vector-PNG.png" startTime="1950" endTime="3665" fillType="media" fillImage="content://media/external/images/media/1000200674" mediaFillMode="fill" parent="10259727" s=".rect">
+    <transform>
+      <location value="370.600464,813.293213,0.000000" />
+      <scale value="0.736111,0.736111" />
+    </transform>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float" value="0.220000" />
+    </effect>
+    <effect id="com.alightcreative.effects.dropshadow" locallyApplied="true">
+      <property name="colorshadow" type="color" value="#ba000000" />
+      <property name="position" type="vec2" value="-14.000000,17.000000" />
+      <property name="strength" type="float" value="0.865000" />
+      <property name="alpha" type="float" value="0.500000" />
+      <property name="alphac" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float" value="0.000000" />
+      <property name="angle" type="float">
+        <kf t="0.995918" v="49.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.004665" v="75.000000" />
+      </property>
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.replacecolor" locallyApplied="true">
+      <property name="oldcolor" type="color" value="#ff8a6a37" />
+      <property name="newcolor" type="color" value="#ffc3b336" />
+      <property name="threshold" type="float" value="0.250000" />
+      <property name="feather" type="float" value="0.250000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="lockLuminance" type="bool" value="false" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="10259726" label="Bitcoin-background-with-golden-coin-Premium-vector-PNG.png Copy 2" startTime="1950" endTime="3665" fillType="media" fillImage="content://media/external/images/media/1000200674" mediaFillMode="fill" parent="10259727" s=".rect">
+    <transform>
+      <location value="-481.141022,-1090.388794,0.000000" />
+      <scale value="0.702778,0.702778" />
+    </transform>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float" value="0.220000" />
+    </effect>
+    <effect id="com.alightcreative.effects.dropshadow" locallyApplied="true">
+      <property name="colorshadow" type="color" value="#ba000000" />
+      <property name="position" type="vec2" value="-14.000000,17.000000" />
+      <property name="strength" type="float" value="0.830000" />
+      <property name="alpha" type="float" value="0.500000" />
+      <property name="alphac" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.replacecolor" locallyApplied="true">
+      <property name="oldcolor" type="color" value="#ff8a6a37" />
+      <property name="newcolor" type="color" value="#ffb5a73f" />
+      <property name="threshold" type="float" value="0.250000" />
+      <property name="feather" type="float" value="0.250000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="lockLuminance" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float" value="0.000000" />
+      <property name="angle" type="float">
+        <kf t="0.995918" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.004665" v="-39.500000" />
+      </property>
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="10259725" label="Bitcoin-background-with-golden-coin-Premium-vector-PNG.png Copy" startTime="1950" endTime="3665" fillType="media" fillImage="content://media/external/images/media/1000200674" mediaFillMode="fill" parent="10259727" s=".rect">
+    <transform>
+      <location value="0.000000,-86.599609,0.000000" />
+      <scale value="0.397222,0.397222" />
+    </transform>
+    <effect id="com.alightcreative.effects.dropshadow" locallyApplied="true">
+      <property name="colorshadow" type="color" value="#ba000000" />
+      <property name="position" type="vec2" value="-14.000000,17.000000" />
+      <property name="strength" type="float" value="0.835000" />
+      <property name="alpha" type="float" value="0.500000" />
+      <property name="alphac" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float" value="0.000000" />
+      <property name="angle" type="float">
+        <kf t="0.995918" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.004665" v="-39.500000" />
+      </property>
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.replacecolor" locallyApplied="true">
+      <property name="oldcolor" type="color" value="#ff8a6a37" />
+      <property name="newcolor" type="color" value="#ffb5a73f" />
+      <property name="threshold" type="float" value="0.370000" />
+      <property name="feather" type="float" value="0.250000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="lockLuminance" type="bool" value="false" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <text id="10259721" startTime="2066" endTime="3665" fillType="color" mediaFillMode="fill" parent="10259727" size="8.000000" font="imported?name=Cocogoose-Pro-Light-trial.ttf" wrapWidth="527" align="left">
+    <transform>
+      <location value="-220.049805,416.750977,0.000000" />
+      <scale value="0.929688,0.929688" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.textprogress" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float">
+        <kf t="0.005629" v="0.000000" />
+        <kf t="0.245153" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+      <property name="cursor" type="int" value="0" />
+      <property name="blink" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.textprogress" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float">
+        <kf t="0.005003" v="0.882000" />
+        <kf t="0.484678" v="1.000000" />
+      </property>
+      <property name="cursor" type="int" value="5" />
+      <property name="blink" type="bool" value="false" />
+    </effect>
+    <content>It uses blockchain technology to record every transaction securely, offering transparency, lower fees, and financial freedom.</content>
+  </text>
+  <text id="10259722" label="Bitcoin is a decentralized digital currency used for peer-to-peer transactions without the need for a central authority. Copy" startTime="1950" endTime="3665" fillType="color" mediaFillMode="fill" parent="10259727" size="8.000000" font="imported?name=Cocogoose-Pro-Light-trial.ttf" wrapWidth="594" align="left">
+    <transform>
+      <location value="82.500000,-370.000000,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.textprogress" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float">
+        <kf t="0.005248" v="0.000000" />
+        <kf t="0.228571" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+      <property name="cursor" type="int" value="0" />
+      <property name="blink" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.textprogress" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float">
+        <kf t="0.004665" v="0.882000" />
+        <kf t="0.451895" v="1.000000" />
+      </property>
+      <property name="cursor" type="int" value="5" />
+      <property name="blink" type="bool" value="false" />
+    </effect>
+    <content>Bitcoin is a digital currency that operates without any central authority, enabling people to send and receive money directly across the world.</content>
+  </text>
+  <text id="10259724" label="Using Copy" startTime="2366" endTime="3665" fillType="color" mediaFillMode="fill" parent="10259727" size="24.000000" font="imported?name=Cocogoose-Pro-Darkmode-trial.ttf" wrapWidth="512" align="left">
+    <transform>
+      <location value="128.625000,234.000000,0.000000" />
+      <scale value="1.238281,1.238281" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+      <property name="color1" type="color" value="#ffffffff" />
+      <property name="color2" type="color" value="#ff000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="offset" type="vec2" value="0.000000,-81.000000" />
+      <property name="scale" type="float" value="0.740000" />
+      <property name="alpha" type="float" value="0.684000" />
+      <property name="gradType" type="int" value="0" />
+      <property name="blendMode" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="49.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="0.235000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float">
+        <kf t="0.005457" v="0.000000" />
+        <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+    </effect>
+    <content>BITCOIN</content>
+  </text>
+  <text id="10259723" startTime="2233" endTime="3665" fillType="color" mediaFillMode="fill" parent="10259727" size="24.000000" font="imported?name=Cocogoose-Pro-Light-trial.ttf" wrapWidth="512" align="left">
+    <transform>
+      <location value="0.000000,158.599609,0.000000" />
+      <scale value="0.914063,0.914063" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+      <property name="color1" type="color" value="#ffffffff" />
+      <property name="color2" type="color" value="#ff000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="offset" type="vec2" value="0.000000,-81.000000" />
+      <property name="scale" type="float" value="0.740000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="gradType" type="int" value="0" />
+      <property name="blendMode" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="49.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="0.235000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float">
+        <kf t="0.005457" v="0.000000" />
+        <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+    </effect>
+    <content>Using</content>
+  </text>
+  <nullobj id="10259727" label="Null 2" startTime="1950" endTime="3665" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,960.000000,0.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.scaleassist" locallyApplied="true">
+      <property name="axis" type="int" value="2" />
+      <property name="scale" type="float">
+        <kf t="0.675219" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.004665" v="1.368000" />
+      </property>
+      <property name="damp" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float">
+        <kf t="0.568513" v="0.000000" />
+        <kf t="0.995918" v="100.000000" e="cubicBezier 1.0 0.0 1.0 1.0" />
+      </property>
+      <property name="posy" type="float" value="0.000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+  </nullobj>
+  <embedScene id="10259741" label="Group 5" startTime="3666" endTime="5582" fillType="intrinsic" outTime="1916" mediaFillMode="fill" parent="10259744">
+    <transform>
+      <location value="85.680969,-576.110718,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.100000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.345000" />
+    </effect>
+    <scene title="" width="2246" height="3726" exportWidth="2246" exportHeight="3726" precompose="dynamicResolution" bgcolor="#00000000" totalTime="1916" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10259739" label="Shape 1" startTime="0" endTime="1916" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="1037.740601,2439.370850,0.000000" />
+        </transform>
+        <fillColor value="#ff3fcbd5" />
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float">
+            <kf t="1.000000" v="0.000000" e="cubicBezier 0.4141305 0.0 0.0 1.0" />
+            <kf t="0.004105" v="550.000000" />
+          </property>
+          <property name="posy" type="float" value="0.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <size value="100.000000" />
+        </path-stroke>
+        <path d="M -370.74707 1062.3994C 659.10254 1287.1494, 300.1533 -1141.3506, 300.1533 -1141.3506C 300.1533 -1141.3506, -1400.5967 837.6494, -370.74707 1062.3994" />
+      </shape>
+      <shape id="10259740" label="Shape 1 Copy" startTime="0" endTime="1916" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="1037.740601,2439.370850,0.000000" />
+          <rotation value="-140.487808" />
+        </transform>
+        <fillColor value="#ff3fcbd5" />
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float">
+            <kf t="1.000000" v="0.000000" e="cubicBezier 0.4141305 0.0 0.0 1.0" />
+            <kf t="0.004105" v="-80.000000" />
+          </property>
+          <property name="posy" type="float">
+            <kf t="0.995918" v="0.000000" e="cubicBezier 0.41 0.0 0.0 1.0" />
+            <kf t="0.004665" v="-1027.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <size value="100.000000" />
+        </path-stroke>
+        <path d="M -370.74707 1062.3994C 659.10254 1287.1494, 300.1533 -1141.3506, 300.1533 -1141.3506C 300.1533 -1141.3506, -1400.5967 837.6494, -370.74707 1062.3994" />
+      </shape>
+    </scene>
+  </embedScene>
+  <shape id="10259734" label="—Pngtree—old-fashioned oil lamp on transparent_16539727.png" startTime="3666" endTime="5582" fillType="media" fillImage="content://media/external/images/media/1000200695" mediaFillMode="fill" parent="10259744" s=".rect">
+    <transform>
+      <location value="-438.728516,0.000000,0.000000" />
+      <scale value="1.402778,1.402778" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <text id="10259735" startTime="3966" endTime="5582" fillType="color" mediaFillMode="fill" parent="10259744" size="48.000000" font="imported?name=Cocogoose-Pro-Darkmode-trial.ttf" wrapWidth="648" align="center">
+    <transform>
+      <location value="154.625000,47.999023,0.000000" />
+      <scale value="0.898148,0.898148" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+      <property name="color1" type="color" value="#ffffffff" />
+      <property name="color2" type="color" value="#ff000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="offset" type="vec2" value="0.000000,-81.000000" />
+      <property name="scale" type="float" value="0.740000" />
+      <property name="alpha" type="float" value="0.684000" />
+      <property name="gradType" type="int" value="0" />
+      <property name="blendMode" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="49.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="0.235000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float">
+        <kf t="0.005457" v="0.000000" />
+        <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+    </effect>
+    <content>SHINE</content>
+  </text>
+  <text id="10259736" label="True Value Always Copy" startTime="3850" endTime="5582" fillType="color" speed="1.106236" mediaFillMode="fill" parent="10259744" size="16.000000" font="imported?name=Cocogoose-Pro-Light-trial.ttf" wrapWidth="648" align="center">
+    <transform>
+      <location value="154.625000,-35.000000,0.000000" />
+      <scale value="0.848765,0.848765" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+      <property name="color1" type="color" value="#ffffffff" />
+      <property name="color2" type="color" value="#ff000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="offset" type="vec2" value="0.000000,-81.000000" />
+      <property name="scale" type="float" value="0.740000" />
+      <property name="alpha" type="float" value="0.684000" />
+      <property name="gradType" type="int" value="0" />
+      <property name="blendMode" type="int" value="0" />
+    </effect>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="49.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float">
+        <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.005457" v="0.235000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float">
+        <kf t="0.005457" v="0.000000" />
+        <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+    </effect>
+    <content>True Value Always</content>
+  </text>
+  <embedScene id="10259743" label="Group 6" startTime="3666" endTime="5582" fillType="intrinsic" blending="color-dodge" outTime="1916" mediaFillMode="fill" parent="10259744">
+    <transform>
+      <location value="-187.361816,0.000000,0.000000" />
+      <pivot value="-255.505676,91.794312" />
+      <opacity value="0.632813" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1454" height="1920" exportWidth="1454" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2016" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10259742" label="Circle 1" startTime="0" endTime="2016" fillType="color" mediaFillMode="fill" s=".circle">
+        <transform>
+          <location value="471.856140,1051.794312,0.000000" />
+        </transform>
+        <fillColor value="#ffffff00" />
+        <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+          <property name="strength" type="float" value="2.000000" />
+        </effect>
+        <property name="size" type="vec2" value="471.856140,674.910767" />
+      </shape>
+    </scene>
+  </embedScene>
+  <nullobj id="10259744" label="Null 3" startTime="3666" endTime="5582" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,960.000000,0.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float">
+        <kf t="0.769833" v="0.000000" e="cubicBezier 0.0 0.17486632 0.0 1.0" />
+        <kf t="0.004697" v="-70.000000" />
+      </property>
+      <property name="posy" type="float">
+        <kf t="0.543841" v="0.000000" />
+        <kf t="0.996347" v="50.000000" e="cubicBezier 1.0 0.0 1.0 1.0" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+  </nullobj>
+  <embedScene id="10259714" label="Group 3" startTime="0" endTime="5582" fillType="intrinsic" outTime="5582" mediaFillMode="fill">
+    <transform>
+      <location value="540.000000,960.000000,0.000000" />
+      <scale value="1.014249,1.014249" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.innerblurplus" locallyApplied="true">
+      <property name="mode" type="bool" value="false" />
+      <property name="strength" type="float" value="0.025000" />
+      <property name="fill" type="float" value="0.000000" />
+      <property name="iter" type="float" value="6.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.tonecurve" locallyApplied="true">
+      <property name="highlights" type="float" value="0.210000" />
+      <property name="lights" type="float" value="0.380000" />
+      <property name="shadows" type="float" value="-0.050000" />
+      <property name="darks" type="float" value="-0.220000" />
+      <property name="alpha" type="float" value="1.000000" />
+    </effect>
+    <scene title="" width="1105" height="1965" exportWidth="1105" exportHeight="1965" precompose="dynamicResolution" bgcolor="#00000000" totalTime="1949" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10259712" label="Rectangle 1" startTime="0" endTime="1949" fillType="color" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="552.656311,982.500061,0.000000" />
+          <scale value="5.526563,9.825001" />
+        </transform>
+        <fillColor value="#ffabcf67" />
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="10259713" label="Circle 1" startTime="0" endTime="1949" fillType="color" blending="exclude" mediaFillMode="fill" s=".circle">
+        <transform>
+          <location value="552.656311,982.500061,0.000000" />
+          <scale value="0.894935,0.894935" />
+        </transform>
+        <fillColor value="#ff40ca98" />
+        <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+          <property name="strength" type="float" value="1.740000" />
+        </effect>
+        <property name="size" type="vec2" value="368.555176,674.909302" />
+      </shape>
+    </scene>
+  </embedScene>
+  <shape id="10259715" label="Rectangle 1" startTime="0" endTime="5582" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,960.000000,0.000000" />
+      <scale value="5.591252,9.940001" />
+    </transform>
+    <fillColor value="#ffc3d776" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <embedScene id="10259754" label="Group 7" startTime="5583" endTime="7415" fillType="intrinsic" mediaFillMode="fill" parent="10259756">
+    <transform>
+      <location value="467.617310,-377.871582,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.100000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.345000" />
+    </effect>
+    <scene title="" width="2503" height="2880" exportWidth="2503" exportHeight="2880" precompose="dynamicResolution" bgcolor="#00000000" totalTime="1832" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10259752" label="Shape 1" startTime="0" endTime="1832" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="784.351563,1818.134766,0.000000" />
+        </transform>
+        <fillColor value="#ff7f4a88" />
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float">
+            <kf t="1.000000" v="0.000000" e="cubicBezier 0.4141305 0.0 0.0 1.0" />
+            <kf t="0.004105" v="-80.000000" />
+          </property>
+          <property name="posy" type="float">
+            <kf t="0.995918" v="0.000000" e="cubicBezier 0.41 0.0 0.0 1.0" />
+            <kf t="0.004665" v="-1027.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <size value="100.000000" />
+        </path-stroke>
+        <path d="M -704.35156 310.5996C -704.35156 310.5996, 13.520508 -791.13477, 667.2207 -728.63477C 1320.9209 -666.13477, -704.35156 310.5996, -704.35156 310.5996" />
+      </shape>
+      <shape id="10259753" label="Shape 2" startTime="0" endTime="1832" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="784.351563,1818.134766,0.000000" />
+        </transform>
+        <fillColor value="#ffca9fd7" />
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float">
+            <kf t="1.000000" v="0.000000" e="cubicBezier 0.4141305 0.0 0.0 1.0" />
+            <kf t="0.004105" v="1024.500000" />
+          </property>
+          <property name="posy" type="float" value="0.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <size value="100.000000" />
+        </path-stroke>
+        <path d="M -480.10352 1062.3916C -480.10352 1062.3916, 695.0862 -72.76758, 611.37305 -864.7178C 527.6599 -1656.668, -480.10352 1062.3916, -480.10352 1062.3916" />
+      </shape>
+    </scene>
+  </embedScene>
+  <shape id="10259746" label="Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" startTime="5583" endTime="7415" fillType="media" fillImage="content://media/external/images/media/1000200705" mediaFillMode="fill" parent="10259745" s=".rect">
+    <transform>
+      <location value="0.000000,79.000000,0.000000" />
+      <scale value="0.655901,0.655901" />
+    </transform>
+    <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float" value="0.859000" />
+      <property name="angle" type="float" value="90.000000" />
+      <property name="feather" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,805.000000" />
+  </shape>
+  <shape id="10259745" label="picture-frame-antique-gold-gold-photo-frame-c7a6f8540c52e640e4c7badd212bea77.png" startTime="5583" endTime="7415" fillType="media" fillImage="content://media/external/images/media/1000200683" mediaFillMode="fill" parent="10259756" s=".rect">
+    <transform>
+      <location value="387.871948,-56.350586,0.000000" />
+      <scale value="0.570017,0.570017" />
+    </transform>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float">
+        <kf t="0.914301" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.000000" v="-228.500000" />
+      </property>
+      <property name="angle" type="float">
+        <kf t="0.914301" v="-15.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.000000" v="0.000000" />
+      </property>
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,607.000000" />
+  </shape>
+  <shape id="10259738" label="—Pngtree—tree leaves shadows aesthetic image_9004549.png" startTime="5583" endTime="7415" fillType="media" fillImage="content://media/external/images/media/1000200696" mediaFillMode="fill" parent="10259756" s=".rect">
+    <transform>
+      <scale value="0.923148,0.923148" />
+    </transform>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="true">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.stretchsegment" locallyApplied="true">
+      <property name="angle" type="float" value="97.500000" />
+      <property name="stretch" type="float" value="122.000000" />
+      <property name="offset" type="float" value="0.000000" />
+      <property name="smooth" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.mirror" locallyApplied="true">
+      <property name="type" type="int" value="0" />
+      <property name="blendMode" type="int" value="0" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.refractionwarp" locallyApplied="true">
+      <property name="autop" type="bool" value="true" />
+      <property name="PROGRESS" type="float" value="1.000000" />
+      <property name="SPEEED" type="float" value="1.000000" />
+      <property name="scale" type="float" value="1.000000" />
+      <property name="intensity" type="float" value="0.390000" />
+      <property name="frequency" type="float" value="12.350000" />
+      <property name="emboss" type="float" value="0.110000" />
+      <property name="steps" type="float" value="12.000000" />
+      <property name="angle" type="float" value="12.000000" />
+      <property name="delta" type="float" value="60.000000" />
+      <property name="gain" type="float" value="0.000000" />
+      <property name="reflectionCutOff" type="float" value="0.012000" />
+      <property name="reflectionIntensity" type="float" value="200.000000" />
+      <property name="speed" type="float" value="0.200000" />
+      <property name="speed_x" type="float" value="0.300000" />
+      <property name="speed_y" type="float" value="0.300000" />
+      <property name="alpha" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float" value="0.055000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <embedScene id="10259755" label="Group 8" startTime="5583" endTime="7415" fillType="intrinsic" mediaFillMode="fill" parent="10259756">
+    <transform>
+      <location value="-6.916992,0.000000,0.000000" />
+      <pivot value="-129.750000,97.298828" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1093" height="1920" exportWidth="1093" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="1832" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <text id="10259747" startTime="267" endTime="1832" fillType="color" mediaFillMode="fill" size="36.000000" font="imported?name=Cocogoose-Pro-Darkmode-trial.ttf" wrapWidth="505" align="center">
+        <transform>
+          <location value="388.708984,1008.298828,0.000000" />
+          <scale value="1.110891,1.110891" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+          <property name="color1" type="color" value="#ffffffff" />
+          <property name="color2" type="color" value="#ff000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="offset" type="vec2" value="0.000000,-81.000000" />
+          <property name="scale" type="float" value="0.740000" />
+          <property name="alpha" type="float" value="0.684000" />
+          <property name="gradType" type="int" value="0" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float" value="0.000000" />
+          <property name="posy" type="float">
+            <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+            <kf t="0.005457" v="49.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+          <property name="strength" type="float">
+            <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+            <kf t="0.005457" v="0.235000" />
+          </property>
+        </effect>
+        <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+          <property name="fill" type="float">
+            <kf t="0.005457" v="0.000000" />
+            <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+          </property>
+        </effect>
+        <content>BEHIND</content>
+      </text>
+      <text id="10259751" label="Mastermind is Always Copy 3" startTime="200" endTime="1832" fillType="color" mediaFillMode="fill" size="12.000000" font="imported?name=Cocogoose-Pro-Light-trial.ttf" wrapWidth="505" align="center">
+        <transform>
+          <location value="553.833984,926.199219,0.000000" />
+          <scale value="1.110891,1.110891" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+          <property name="color1" type="color" value="#ffffffff" />
+          <property name="color2" type="color" value="#ff000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="offset" type="vec2" value="0.000000,-81.000000" />
+          <property name="scale" type="float" value="0.740000" />
+          <property name="alpha" type="float" value="0.684000" />
+          <property name="gradType" type="int" value="0" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float" value="0.000000" />
+          <property name="posy" type="float">
+            <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+            <kf t="0.005457" v="49.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+          <property name="strength" type="float">
+            <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+            <kf t="0.005457" v="0.235000" />
+          </property>
+        </effect>
+        <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+          <property name="fill" type="float">
+            <kf t="0.005457" v="0.000000" />
+            <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+          </property>
+        </effect>
+        <content>Always</content>
+      </text>
+      <text id="10259750" label="Mastermind is Always Copy 2" startTime="100" endTime="1832" fillType="color" mediaFillMode="fill" size="12.000000" font="imported?name=Cocogoose-Pro-Light-trial.ttf" wrapWidth="505" align="center">
+        <transform>
+          <location value="446.508789,926.199219,0.000000" />
+          <scale value="1.110891,1.110891" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+          <property name="color1" type="color" value="#ffffffff" />
+          <property name="color2" type="color" value="#ff000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="offset" type="vec2" value="0.000000,-81.000000" />
+          <property name="scale" type="float" value="0.740000" />
+          <property name="alpha" type="float" value="0.684000" />
+          <property name="gradType" type="int" value="0" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float" value="0.000000" />
+          <property name="posy" type="float">
+            <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+            <kf t="0.005457" v="49.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+          <property name="strength" type="float">
+            <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+            <kf t="0.005457" v="0.235000" />
+          </property>
+        </effect>
+        <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+          <property name="fill" type="float">
+            <kf t="0.005457" v="0.000000" />
+            <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+          </property>
+        </effect>
+        <content>is</content>
+      </text>
+      <text id="10259748" label="Mastermind is Always Copy" startTime="0" endTime="1832" fillType="color" mediaFillMode="fill" size="12.000000" font="imported?name=Cocogoose-Pro-Light-trial.ttf" wrapWidth="505" align="center">
+        <transform>
+          <location value="280.500000,926.199219,0.000000" />
+          <scale value="1.110891,1.110891" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.gradientoverlay2" locallyApplied="true">
+          <property name="color1" type="color" value="#ffffffff" />
+          <property name="color2" type="color" value="#ff000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="offset" type="vec2" value="0.000000,-81.000000" />
+          <property name="scale" type="float" value="0.740000" />
+          <property name="alpha" type="float" value="0.684000" />
+          <property name="gradType" type="int" value="0" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+          <property name="posz" type="float" value="1.000000" />
+          <property name="posx" type="float" value="0.000000" />
+          <property name="posy" type="float">
+            <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+            <kf t="0.005457" v="49.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="zinv" type="bool" value="false" />
+          <property name="xinv" type="bool" value="false" />
+          <property name="yinv" type="bool" value="false" />
+          <property name="ainv" type="bool" value="false" />
+        </effect>
+        <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+          <property name="strength" type="float">
+            <kf t="0.175989" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+            <kf t="0.005457" v="0.235000" />
+          </property>
+        </effect>
+        <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+          <property name="fill" type="float">
+            <kf t="0.005457" v="0.000000" />
+            <kf t="0.175989" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+          </property>
+        </effect>
+        <content>Mastermind</content>
+      </text>
+    </scene>
+  </embedScene>
+  <nullobj id="10259756" label="Null 4" startTime="5583" endTime="7415" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location value="540.000000,960.000000,0.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.transform2" locallyApplied="true">
+      <property name="posz" type="float" value="1.000000" />
+      <property name="posx" type="float" value="0.000000" />
+      <property name="posy" type="float">
+        <kf t="0.777838" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.004367" v="-100.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="zinv" type="bool" value="false" />
+      <property name="xinv" type="bool" value="false" />
+      <property name="yinv" type="bool" value="false" />
+      <property name="ainv" type="bool" value="false" />
+    </effect>
+  </nullobj>
+</scene>

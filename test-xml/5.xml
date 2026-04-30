@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2022-09-21 01:13 PM
+4.2.0 (0594)
+40c3633 (Jun 24, 2022 2:33:30 PM)
+-->
+<scene title="5" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5232" fps="30" modifiedTime="1663746232079" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <shape id="634499" label="Rectangle 1" startTime="0" endTime="5232" fillType="color" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="9.710001,5.461875" />
+    </transform>
+    <fillColor value="#ff0e0e0e" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <embedScene id="634625" label="2" startTime="0" endTime="5232" fillType="intrinsic" outTime="5232">
+    <transform>
+      <location value="975.681274,697.423462,0.000000" />
+      <pivot value="503.876221,-154.028503" />
+      <scale>
+        <kf t="0.391820" v="0.000000,0.000000" />
+        <kf t="0.519304" v="0.724337,0.724337" e="cubicBezier 0.0 0.09 0.1 1.86" />
+      </scale>
+      <rotation>
+        <kf t="0.391820" v="0.000000" />
+        <kf t="0.519304" v="0.000000" e="cubicBezier 0.8 0.0 1.0 1.0" />
+        <kf t="0.455657" v="10.975610" />
+      </rotation>
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5232" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="634500" label="Rounded Rectangle 1" startTime="0" endTime="5232" fillType="color" s=".roundrect">
+        <transform>
+          <location value="1111.999878,540.000000,0.000000" />
+        </transform>
+        <fillColor value="#ff55e5c5" />
+        <property name="size" type="vec2" value="346.000000,100.000000" />
+        <property name="cornerRadius" type="float" value="145.000000" />
+      </shape>
+      <shape id="634507" label="Triangle 1 Copy" startTime="0" endTime="5232" fillType="color">
+        <transform>
+          <location value="1434.204468,440.500000,0.000000" />
+          <scale value="-0.714094,0.714094" />
+          <rotation value="26.341463" />
+        </transform>
+        <fillColor value="#ff55e5c5" />
+        <path d="M -85.269684 116.99765C -51.481064 58.92775, 0.0 -100.0, 0.0 -100.0L 100.0 100.0C 100.0 100.0, -119.058304 175.06755, -85.269684 116.99765Z" />
+      </shape>
+      <text id="634503" startTime="0" endTime="5232" fillType="color" size="18.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="710" align="center">
+        <transform>
+          <location value="1117.499878,534.500000,0.000000" />
+        </transform>
+        <content>Aligh Motion.</content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="634626" label="1" startTime="0" endTime="5232" fillType="intrinsic" outTime="5232">
+    <transform>
+      <location value="942.000000,425.009033,0.000000" />
+      <pivot value="-511.199005,-159.747314" />
+      <scale>
+        <kf t="0.194190" v="0.000000,0.000000" />
+        <kf t="0.321674" v="0.724337,0.724337" e="cubicBezier 0.0 0.0882353 0.103333324 1.8602941" />
+      </scale>
+      <rotation>
+        <kf t="0.194190" v="0.000000" />
+        <kf t="0.321674" v="0.000000" e="cubicBezier 0.8 0.0 1.0 1.0" />
+        <kf t="0.258028" v="-10.975616" e="cubicBezier 0.55 0.0 0.0 1.0" />
+      </rotation>
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5232" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="634500" label="Rounded Rectangle 1" startTime="0" endTime="5232" fillType="color" s=".roundrect">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+        </transform>
+        <fillColor value="#fff985ff" />
+        <property name="size" type="vec2" value="498.000000,100.000000" />
+        <property name="cornerRadius" type="float" value="145.000000" />
+      </shape>
+      <shape id="634501" label="Triangle 1" startTime="0" endTime="5232" fillType="color">
+        <transform>
+          <location value="480.486755,440.500000,0.000000" />
+          <scale value="0.714094,0.714094" />
+          <rotation value="-26.341461" />
+        </transform>
+        <fillColor value="#fff985ff" />
+        <path d="M -84.62387 122.00531C -50.83525 63.93541, 0.0 -100.0, 0.0 -100.0L 100.0 100.0C 100.0 100.0, -118.41249 180.07521, -84.62387 122.00531Z" />
+      </shape>
+      <text id="634503" startTime="0" endTime="5232" fillType="color" size="18.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="710" align="center">
+        <transform>
+          <location value="960.000000,534.520630,0.000000" />
+        </transform>
+        <content>Hello! Who Are you?</content>
+      </text>
+    </scene>
+  </embedScene>
+  <text id="634623" startTime="0" endTime="5232" fillType="color" size="20.000000" font="imported?name=ArgentumSans-Regular.ttf" wrapWidth="1074" align="center">
+    <transform>
+      <location value="960.000000,960.000000,0.000000" />
+      <scale value="0.675047,0.675047" />
+      <opacity value="0.699219" />
+    </transform>
+    <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+      <property name="letterspacing" type="float" value="0.200000" />
+      <property name="linespacing" type="float" value="1.000000" />
+    </effect>
+    <content>Message Animation</content>
+  </text>
+</scene>

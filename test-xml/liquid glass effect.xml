@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-08-30 09:45 AM
+5.0.270.1002578 (1002351)
+6dff462 (11 Apr 2024 6:17:55 pm)
+-->
+<scene title="New Project 111" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ffffffff" totalTime="5032" fps="60" modifiedTime="1756527338597" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <embedScene id="2774" label="Group 1" startTime="0" endTime="5032" fillType="intrinsic" outTime="5032" mediaFillMode="fill">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1920" exportWidth="1920" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5032" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="2772" label="Rounded Rectangle 2" startTime="0" endTime="5032" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="960.000061,960.000061,0.000000" />
+          <scale value="9.600000,9.600000" />
+        </transform>
+        <fillColor value="#ffeb7484" />
+        <effect id="com.alightcreative.effects.wingsline" locallyApplied="true">
+          <property name="color1" type="color" value="#ff000000" />
+          <property name="color2" type="color" value="#ffffa100" />
+          <property name="position" type="vec2" value="1274.000000,-237.000000" />
+          <property name="PROGRESS" type="float">
+            <kf t="0.001590" v="1.000000" />
+            <kf t="0.998609" v="11.830000" />
+          </property>
+          <property name="scale" type="float" value="1.820000" />
+          <property name="angle" type="float" value="15.000000" />
+          <property name="stretch" type="vec2" value="1.000000,1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="hardness" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <effect id="com.alightcreative.effects.exposure" locallyApplied="true">
+          <property name="exposure" type="float" value="0.160000" />
+          <property name="gamma" type="float" value="1.000000" />
+          <property name="offset" type="float" value="0.000000" />
+        </effect>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <shape id="2768" label="Rounded Rectangle 1" startTime="0" endTime="5032" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="953.437561,960.646057,0.000000" />
+          <scale>
+            <kf t="0.001590" v="0.000000,0.000000" />
+            <kf t="0.243442" v="6.285088,2.002527" e="elastic 0.24292164 1.0 0.282722 0.6733985" />
+          </scale>
+        </transform>
+        <fillColor value="#ff918e98" />
+        <effect id="com.alightcreative.effect.glass2" locallyApplied="true">
+          <property name="radius" type="float" value="38.100002" />
+          <property name="angle" type="float" value="45.000000" />
+          <property name="elevation" type="float" value="2.190000" />
+          <property name="intensity" type="float" value="1.840000" />
+          <property name="color_d" type="color" value="#ffffffff" />
+          <property name="color_s" type="color" value="#ffffffff" />
+          <property name="refract" type="float" value="0.280000" />
+          <property name="shine" type="float" value="1.000000" />
+          <property name="spec" type="float" value="50.000000" />
+          <property name="fill" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+          <property name="strength" type="float">
+            <kf t="0.001590" v="0.150000" />
+            <kf t="0.024841" v="0.000000" />
+          </property>
+        </effect>
+        <property name="size" type="vec2" value="114.000000,181.000000" />
+        <property name="cornerRadius" type="float" value="11.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+</scene>

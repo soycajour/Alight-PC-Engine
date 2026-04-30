@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-04-10 06:34 PM
+5.0.272.1028368 (1002592)
+a34a6c0 (Oct 7, 2024 3:17:29 PM)
+-->
+<scene title="small paper animation " width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="2249" fps="30" modifiedTime="1744292075575" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <text id="10186699" startTime="984" endTime="2249" fillType="color" mediaFillMode="fill" size="28.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="310" align="center">
+    <transform>
+      <location value="820.549072,2233.463623,0.000000" />
+      <scale value="5.745162,5.745162" />
+      <rotation value="-5.487793" />
+      <opacity>
+        <kf t="0.546245" v="0.082031" />
+      </opacity>
+    </transform>
+    <fillColor value="#fffb8500" />
+    <effect id="com.alightcreative.effects.flip3" locallyApplied="true">
+      <property name="angle" type="float" value="-11.500000" />
+      <property name="axis" type="float" value="0.000000" />
+      <property name="crop" type="float" value="1.000000" />
+      <property name="zdist" type="float" value="0.000000" />
+      <property name="solid" type="bool" value="false" />
+      <property name="solidColor" type="color" value="#ffdd4455" />
+      <property name="thickness" type="float" value="1.000000" />
+      <property name="enableLight" type="bool" value="false" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="shine" type="float" value="0.800000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="-100.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float">
+        <kf t="0.652174" v="1.000000" />
+        <kf t="0.006324" v="-0.115000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="feather" type="float" value="30.800001" />
+    </effect>
+    <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+      <property name="letterspacing" type="float" value="0.000000" />
+      <property name="linespacing" type="float" value="0.784000" />
+    </effect>
+    <content>colors on your face</content>
+  </text>
+  <text id="10186700" label="colors on your face Copy" startTime="984" endTime="2249" fillType="color" mediaFillMode="fill" size="20.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="816" align="center">
+    <transform>
+      <location value="898.729492,524.458008,0.000000" />
+      <scale value="1.167969,1.167969" />
+    </transform>
+    <fillColor value="#fffb8500" />
+    <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float">
+        <kf t="0.652174" v="1.000000" />
+        <kf t="0.006324" v="-0.115000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="feather" type="float" value="30.800001" />
+    </effect>
+    <effect id="com.alightcreative.effects.flip3" locallyApplied="true">
+      <property name="angle" type="float" value="-11.500000" />
+      <property name="axis" type="float" value="0.000000" />
+      <property name="crop" type="float" value="1.000000" />
+      <property name="zdist" type="float" value="0.000000" />
+      <property name="solid" type="bool" value="false" />
+      <property name="solidColor" type="color" value="#ffdd4455" />
+      <property name="thickness" type="float" value="1.000000" />
+      <property name="enableLight" type="bool" value="false" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="shine" type="float" value="0.800000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="-100.000000" />
+    </effect>
+    <content>kcolors on your face</content>
+  </text>
+  <embedScene id="10186701" label="photo" startTime="0" endTime="2249" fillType="intrinsic" outTime="2249" mediaFillMode="fill">
+    <transform>
+      <location>
+        <kf t="0.000000" v="1546.839355,1448.991211,0.000000" />
+        <kf t="0.441084" v="703.371948,560.511230,0.000000" e="cubicBezier 0.57 0.19 0.38 0.8" />
+        <kf t="0.811472" v="1232.199707,497.593262,0.000000" e="cubicBezier 0.24241096 0.011787713 0.15797769 1.0" />
+      </location>
+      <scale value="0.422156,0.422156" />
+      <rotation>
+        <kf t="0.441084" v="-11.972313" e="cubicBezier 0.57 0.19 0.38 0.8" />
+        <kf t="0.819030" v="-7.582054" e="cubicBezier 0.57 0.19 0.38 0.8" />
+        <kf t="0.004002" v="76.930130" />
+      </rotation>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.pagecurl" locallyApplied="true">
+      <property name="progress" type="float">
+        <kf t="0.000000" v="0.640000" />
+        <kf t="0.967096" v="0.000000" e="cubicBezier 0.57 0.19 0.38 0.8" />
+      </property>
+      <property name="radius" type="float" value="0.061000" />
+      <property name="angle" type="float" value="38.000000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="strength" type="float" value="0.100000" />
+      <property name="backColor" type="color" value="#ffa35600" />
+      <property name="backAlpha" type="float" value="1.000000" />
+      <property name="backBlendMode" type="int" value="0" />
+      <property name="shineColor" type="color" value="#fffb8500" />
+      <property name="shineAlpha" type="float" value="1.000000" />
+      <property name="shineSpec" type="float" value="30.000000" />
+      <property name="shineBlendMode" type="int" value="2" />
+      <property name="dropShadowColor" type="color" value="#ff000000" />
+      <property name="dropShadowAlpha" type="float" value="0.000000" />
+      <property name="softDropShadow" type="bool" value="true" />
+      <property name="frontShadowColor" type="color" value="#fffb8500" />
+      <property name="frontShadowAlpha" type="float" value="1.000000" />
+      <property name="frontShadowBlendMode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.flip3" locallyApplied="true">
+      <property name="angle" type="float">
+        <kf t="0.001716" v="83.500000" />
+        <kf t="0.747459" v="-26.700001" e="cubicBezier 0.57 0.19 0.38 0.8" />
+      </property>
+      <property name="axis" type="float">
+        <kf t="0.000000" v="329.000000" />
+        <kf t="0.747459" v="135.000000" e="cubicBezier 0.57 0.19 0.38 0.8" />
+      </property>
+      <property name="crop" type="float" value="1.000000" />
+      <property name="zdist" type="float" value="0.000000" />
+      <property name="solid" type="bool" value="false" />
+      <property name="solidColor" type="color" value="#ffdd4455" />
+      <property name="thickness" type="float" value="1.000000" />
+      <property name="enableLight" type="bool" value="false" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="shine" type="float" value="0.800000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="-100.000000" />
+    </effect>
+    <border direction="inside" id="1">
+      <color value="#fffb8500" />
+      <size value="21.000000" />
+    </border>
+    <scene title="" width="1080" height="1350" exportWidth="1080" exportHeight="1350" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2249" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10102715" label="777465b9bde80ca7bf6bb3e26636f8ed.jpg" startTime="0" endTime="2249" fillType="media" fillImage="content://media/external/images/media/1000139476" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="540.000000,675.000000,0.000000" />
+        </transform>
+        <property name="size" type="vec2" value="540.000000,333.000000" />
+      </shape>
+      <shape id="10102716" label="Rectangle 2" startTime="0" endTime="2249" fillType="color" blending="mask" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="540.000000,675.000000,0.000000" />
+          <scale value="3.340000,3.340000" />
+        </transform>
+        <fillColor value="#ff9d7f95" />
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+</scene>

@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2022-09-21 01:14 PM
+4.2.0 (0594)
+40c3633 (Jun 24, 2022 2:33:30 PM)
+-->
+<scene title="10" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7233" fps="30" modifiedTime="1663746280376" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <shape id="634576" label="Rectangle 1" startTime="0" endTime="7233" fillType="color" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="9.679999,5.445000" />
+    </transform>
+    <gradient type="linear" startColor="#ffffffff" endColor="#ffe4ebff" start="0.000000,0.000000" end="1.000000,1.000000" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <embedScene id="634641" label="Group 2" startTime="0" endTime="7232" fillType="intrinsic" outTime="7232">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <pivot value="-10.500000,0.000000" />
+      <scale value="0.691829,0.691829" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7232" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="634577" label="Rounded Rectangle 1" startTime="0" endTime="7232" fillType="color" s=".roundrect">
+        <transform>
+          <location value="949.500000,540.000000,0.000000" />
+          <scale value="3.540881,3.540881" />
+        </transform>
+        <fillColor value="#ff2f3248" />
+        <property name="size" type="vec2" value="159.000000,112.000000" />
+        <property name="cornerRadius" type="float" value="9.000000" />
+      </shape>
+      <text id="634598" startTime="0" endTime="7232" fillType="color" size="18.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="798.000000,745.000000,0.000000" />
+        </transform>
+        <content>Option 4</content>
+      </text>
+      <text id="634599" label="Option 3" startTime="0" endTime="7232" fillType="color" size="18.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="798.000000,628.147400,0.000000" />
+        </transform>
+        <content>Option 3</content>
+      </text>
+      <text id="634600" label="Option 2" startTime="0" endTime="7232" fillType="color" size="18.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="798.000000,511.294769,0.000000" />
+        </transform>
+        <content>Option 2</content>
+      </text>
+      <text id="634601" startTime="0" endTime="7232" fillType="color" size="18.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="798.000000,394.442139,0.000000" />
+        </transform>
+        <content>Option 1</content>
+      </text>
+      <text id="634578" startTime="0" endTime="7232" fillType="color" size="18.000000" font="imported?name=ArgentumSans-SemiBold.ttf" wrapWidth="836" align="left">
+        <transform>
+          <location value="960.499939,255.979736,0.000000" />
+          <scale value="1.168660,1.168660" />
+        </transform>
+        <fillColor value="#ff55e5c5" />
+        <content>Choose Any One Option.</content>
+      </text>
+      <shape id="634591" label="Circle 4" startTime="0" endTime="7232" fillType="none" s=".circle">
+        <transform>
+          <location value="496.000000,745.500000,0.000000" />
+          <scale value="0.240000,0.240000" />
+        </transform>
+        <fillColor value="#fffccfd2" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ff4dd6ba" />
+          <size value="9.000000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="634590" label="Circle 3" startTime="0" endTime="7232" fillType="none" s=".circle">
+        <transform>
+          <location value="496.000000,630.314026,0.000000" />
+          <scale value="0.240000,0.240000" />
+        </transform>
+        <fillColor value="#fffccfd2" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ff4dd6ba" />
+          <size value="9.000000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="634589" label="Circle 2" startTime="0" endTime="7232" fillType="none" s=".circle">
+        <transform>
+          <location value="496.000000,515.128113,0.000000" />
+          <scale value="0.240000,0.240000" />
+        </transform>
+        <fillColor value="#fffccfd2" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ff4dd6ba" />
+          <size value="9.000000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="634588" label="Circle 1" startTime="0" endTime="7232" fillType="none" s=".circle">
+        <transform>
+          <location value="496.000000,399.942139,0.000000" />
+          <scale value="0.240000,0.240000" />
+        </transform>
+        <fillColor value="#fffccfd2" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ff4dd6ba" />
+          <size value="9.000000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="634592" label="Circle 5" startTime="0" endTime="7232" fillType="color" s=".circle">
+        <transform>
+          <location>
+            <kf t="0.209624" v="496.000000,399.942139,0.000000" />
+            <kf t="0.283462" v="496.000000,515.128113,0.000000" e="cubicBezier 0.49 0.0 0.31 1.0" />
+            <kf t="0.347898" v="496.000000,515.128113,0.000000" />
+            <kf t="0.417035" v="496.000000,630.314026,0.000000" e="cubicBezier 0.49 0.0 0.31 1.0" />
+            <kf t="0.486173" v="496.000000,630.314026,0.000000" />
+            <kf t="0.555310" v="496.000000,745.500000,0.000000" e="cubicBezier 0.49 0.0 0.31 1.0" />
+            <kf t="0.693584" v="496.000000,745.500000,0.000000" />
+            <kf t="0.762721" v="496.000000,515.128113,0.000000" e="cubicBezier 0.49 0.0 0.31 1.0" />
+          </location>
+          <scale>
+            <kf t="0.071350" v="0.000000,0.000000" />
+            <kf t="0.140487" v="0.115000,0.115000" e="cubicBezier 0.48333335 0.0 0.1566667 1.0" />
+            <kf t="0.177406" v="0.115000,0.115000" />
+            <kf t="0.209624" v="0.050000,0.050000" />
+            <kf t="0.283462" v="0.115000,0.115000" e="cubicBezier 0.49 0.0 0.31 1.0" />
+            <kf t="0.315680" v="0.115000,0.115000" />
+            <kf t="0.347898" v="0.050000,0.050000" />
+            <kf t="0.417035" v="0.115000,0.115000" e="cubicBezier 0.49 0.0 0.31 1.0" />
+            <kf t="0.453955" v="0.115000,0.115000" />
+            <kf t="0.486173" v="0.050000,0.050000" />
+            <kf t="0.555310" v="0.115000,0.115000" e="cubicBezier 0.49 0.0 0.31 1.0" />
+            <kf t="0.661366" v="0.115000,0.115000" />
+            <kf t="0.693584" v="0.050000,0.050000" />
+            <kf t="0.762721" v="0.115000,0.115000" e="cubicBezier 0.49 0.0 0.31 1.0" />
+          </scale>
+        </transform>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <embedScene id="634595" label="Group 1" startTime="0" endTime="7232" fillType="intrinsic" outTime="7232">
+        <transform>
+          <location value="944.500000,515.128113,0.000000" />
+          <pivot value="335.499878,284.500000" />
+          <scale>
+            <kf t="0.831858" v="1.000000,1.000000" />
+            <kf t="0.868778" v="0.758333,0.758333" e="cubicBezier 0.49 0.0 0.31 1.0" />
+            <kf t="0.900996" v="1.000000,1.000000" e="cubicBezier 0.69 0.0 0.51 1.0" />
+          </scale>
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7232" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="634593" label="Rounded Rectangle 2" startTime="0" endTime="7232" fillType="color" s=".roundrect">
+            <transform lockAspectRatio="false">
+              <location value="1295.499878,824.500000,0.000000" />
+            </transform>
+            <fillColor>
+              <kf t="0.900996" v="#ff888888" />
+              <kf t="0.868778" v="#ff4dd6ba" />
+            </fillColor>
+            <property name="size" type="vec2" value="131.000000,41.000000" />
+            <property name="cornerRadius" type="float" value="25.000000" />
+          </shape>
+          <text id="634594" startTime="0" endTime="7232" fillType="color" size="18.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="512" align="center">
+            <transform>
+              <location value="1295.499878,822.000000,0.000000" />
+              <scale value="0.703125,0.703125" />
+            </transform>
+            <content>Submit</content>
+          </text>
+        </scene>
+      </embedScene>
+    </scene>
+  </embedScene>
+</scene>

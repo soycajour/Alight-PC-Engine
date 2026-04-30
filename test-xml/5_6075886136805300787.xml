@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-11-04 06:22 PM
+5.0.270.1002578 (1002351)
+6dff462 (Apr 11, 2024 6:17:55 PM)
+-->
+<scene title="Fictic Like Shake" width="1080" height="1350" exportWidth="1080" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="1265" fps="60" modifiedTime="1762260779837" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <media uri="content://media/external/video/media/1000084204" type="video/mp4" duration="2133300" orientation="90" infoUpdated="1762200135990" width="2560" height="1440" />
+  <media uri="content://media/external/video/media/1000084206" type="video/mp4" duration="2137000" orientation="0" infoUpdated="1762200135990" width="1080" height="1920" />
+  <bookmark t="508" />
+  <bookmark t="841" />
+  <bookmark t="158" />
+  <bookmark t="1008" />
+  <shape id="20002049" label="IMG_20250703_172053_290.jpg" startTime="0" endTime="515" fillType="media" fillVideo="content://media/external/video/media/1000084204" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,671.088867,0.000000" />
+      <pivot value="0.000000,-0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.24492785 0.74117047 0.80600214 0.28339875" />
+        <kf t="0.000000" v="1.388889,1.388889" />
+      </scale>
+      <skew value="-0.000000,-0.000000" />
+      <rotation value="90.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.shake2" locallyApplied="true">
+      <property name="mag" type="float">
+        <kf t="1.000000" v="50.000000" e="cubicBezier 1.0 0.0 1.0 1.0" />
+        <kf t="0.000000" v="0.000000" />
+      </property>
+      <property name="freq" type="float" value="5.000000" />
+      <property name="evolution" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="1.000000" v="6.000000" e="cubicBezier 1.0 0.0 1.0 1.0" />
+      </property>
+      <property name="seed" type="float" value="0.000000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="slack" type="float" value="0.250000" />
+      <property name="zshake" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="true">
+      <property name="mag" type="float">
+        <kf t="0.000000" v="25.000000" />
+        <kf t="1.000000" v="50.000000" e="cubicBezier 1.0 0.0 1.0 1.0" />
+      </property>
+      <property name="evolution" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="1.000000" v="2.500000" e="cubicBezier 1.0 0.0 1.0 1.0" />
+      </property>
+      <property name="seed" type="float" value="0.000000" />
+      <property name="scatter" type="float" value="2.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="true">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="20002050" label="IMG_20250703_172055_214.jpg" startTime="500" endTime="1265" fillType="media" fillVideo="content://media/external/video/media/1000084206" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.625000,675.000000,0.000000" />
+      <scale>
+        <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.2099134 0.7338338 0.80485356 0.27930385" />
+        <kf t="0.000000" v="1.388889,1.388889" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.shake2" locallyApplied="true">
+      <property name="mag" type="float">
+        <kf t="0.000000" v="50.000000" />
+        <kf t="0.664052" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+      <property name="freq" type="float" value="5.000000" />
+      <property name="evolution" type="float">
+        <kf t="0.000000" v="6.000000" />
+        <kf t="0.664052" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+      <property name="seed" type="float" value="0.000000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="slack" type="float" value="0.250000" />
+      <property name="zshake" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="true">
+      <property name="mag" type="float">
+        <kf t="0.000000" v="50.000000" />
+        <kf t="0.664052" v="25.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+      <property name="evolution" type="float">
+        <kf t="0.000000" v="2.500000" />
+        <kf t="0.664052" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+      <property name="seed" type="float" value="0.000000" />
+      <property name="scatter" type="float" value="2.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="true">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="20002060" label="Rectangle 2" startTime="150" endTime="515" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,675.000000,0.000000" />
+      <scale value="6.750000,6.750000" />
+    </transform>
+    <fillColor value="#ffeed2e4" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="true">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.pinchbulge2" locallyApplied="true">
+      <property name="strength" type="float">
+        <kf t="1.000000" v="-0.500000" e="cubicBezier 0.7590033 0.0 1.0 1.0" />
+        <kf t="0.000000" v="0.000000" />
+      </property>
+      <property name="radius" type="float" value="1.000000" />
+    </effect>
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <shape id="20002061" label="Rectangle 3" startTime="500" endTime="1015" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,675.000000,0.000000" />
+      <scale value="6.750000,6.750000" />
+    </transform>
+    <fillColor value="#ff71f498" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.lensd" locallyApplied="true">
+      <property name="offs" type="bool" value="false" />
+      <property name="amp" type="float">
+        <kf t="0.000000" v="-1.000000" />
+        <kf t="1.000000" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </property>
+      <property name="strength" type="float" value="100.000000" />
+      <property name="blurMax" type="float" value="0.200000" />
+      <property name="aberrationMax" type="float" value="1.200000" />
+      <property name="numIters" type="float" value="50.000000" />
+      <property name="bright" type="float" value="1.000000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="new" type="bool" value="true" />
+      <property name="iter" type="float" value="1.000000" />
+    </effect>
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <shape id="20002059" label="Rectangle 1" startTime="150" endTime="849" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,675.000000,0.000000" />
+      <scale value="6.750000,6.750000" />
+    </transform>
+    <fillColor value="#ffdb4bae" />
+    <effect id="com.alightcreative.effects.lift" locallyApplied="true">
+      <property name="fill" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.lensd" locallyApplied="true">
+      <property name="offs" type="bool" value="false" />
+      <property name="amp" type="float" value="0.000000" />
+      <property name="strength" type="float">
+        <kf t="0.512160" v="500.000000" />
+        <kf t="0.000000" v="2.000000" />
+        <kf t="1.000000" v="0.000000" />
+      </property>
+      <property name="blurMax" type="float" value="0.200000" />
+      <property name="aberrationMax" type="float" value="1.200000" />
+      <property name="numIters" type="float" value="50.000000" />
+      <property name="bright" type="float" value="1.000000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="new" type="bool" value="true" />
+      <property name="iter" type="float" value="1.000000" />
+    </effect>
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <shape id="20002062" label="Rectangle 4" startTime="500" endTime="849" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,675.000000,0.000000" />
+      <scale value="6.750000,6.750000" />
+      <opacity>
+        <kf t="0.000000" v="1.000000" />
+        <kf t="0.977077" v="0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </opacity>
+    </transform>
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+</scene>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-07-06 10:02 AM
+5.0.260.1002351 (1001615)
+d4944c5 (Dec 15, 2023 7:48:33 PM)
+-->
+<scene title="New Project 397" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="4932" fps="30" modifiedTime="1751776329010" amver="1001615" ffver="106" am="com.alightcreative.motion/5.0.260.1002351" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <bookmark t="116" />
+  <embedScene id="10106616" label="Group and Mask 1 Copy" startTime="0" endTime="4932" fillType="intrinsic" outTime="4932" mediaFillMode="fill">
+    <transform>
+      <location value="540.000000,1284.000122,0.000000" />
+      <pivot value="-16.500000,332.582153" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.edgeglow" locallyApplied="true">
+      <property name="smoothing" type="float" value="10.000000" />
+      <property name="threshold" type="float" value="0.000000" />
+      <property name="invert" type="bool" value="false" />
+      <property name="strength" type="float" value="0.570000" />
+      <property name="spread" type="float" value="1.210000" />
+      <property name="fillColor" type="color" value="#ff0088ff" />
+      <property name="blend" type="float" value="0.000000" />
+      <property name="gamma" type="float" value="0.885000" />
+      <property name="brightness" type="float" value="0.000000" />
+      <property name="tintColor" type="color" value="#ff000000" />
+      <property name="tint" type="float" value="0.000000" />
+    </effect>
+    <scene title="" width="1080" height="2568" exportWidth="1080" exportHeight="2568" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4932" fps="30" modifiedTime="0" amver="1001615" ffver="106" am="com.alightcreative.motion/5.0.260.1002351" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <embedScene id="10106599" label="Group 1" startTime="0" endTime="4932" fillType="intrinsic" outTime="4932" mediaFillMode="fill">
+        <transform>
+          <location value="540.000000,1078.562744,0.000000" />
+          <pivot value="-12.449158,332.550781" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.effects.edgeglow" hidden="true" locallyApplied="true">
+          <property name="smoothing" type="float" value="10.000000" />
+          <property name="threshold" type="float" value="0.000000" />
+          <property name="invert" type="bool" value="false" />
+          <property name="strength" type="float" value="0.570000" />
+          <property name="spread" type="float" value="1.210000" />
+          <property name="fillColor" type="color" value="#ff0088ff" />
+          <property name="blend" type="float" value="0.000000" />
+          <property name="gamma" type="float" value="0.885000" />
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="tintColor" type="color" value="#ff000000" />
+          <property name="tint" type="float" value="0.000000" />
+        </effect>
+        <scene title="" width="1080" height="2157" exportWidth="1080" exportHeight="2157" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4932" fps="30" modifiedTime="0" amver="1001615" ffver="106" am="com.alightcreative.motion/5.0.260.1002351" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="10106548" label="Circle 1" startTime="0" endTime="4932" fillType="gradient" mediaFillMode="fill" s=".circle">
+            <transform>
+              <location value="527.550842,1599.439819,0.000000" />
+            </transform>
+            <fillColor value="#ff4739dc" />
+            <gradient type="radial" startColor="#ff000000" endColor="#ff2900f5" start="0.484877,0.645694" end="0.561451,-0.902141" />
+            <effect id="com.alightcreative.inner-glow" locallyApplied="true">
+              <property name="radius" type="float" value="29.800001" />
+              <property name="alpha" type="float" value="0.370000" />
+              <property name="hardness" type="float" value="0.020000" />
+              <property name="color" type="color" value="#ffffffff" />
+              <property name="blendMode" type="int" value="2" />
+            </effect>
+            <property name="size" type="vec2" value="331.068542,557.685669" />
+          </shape>
+          <shape id="10106549" label="Circle 2" startTime="0" endTime="4932" fillType="gradient" mediaFillMode="fill" s=".circle">
+            <transform>
+              <location value="527.550842,818.101563,0.000000" />
+              <scale value="1.530000,1.530000" />
+            </transform>
+            <fillColor value="#fff0c973" />
+            <gradient type="radial" startColor="#ff000000" endColor="#ff2900f5" start="0.508364,0.523512" end="1.372502,1.476190" />
+            <effect id="com.alightcreative.inner-glow" locallyApplied="true">
+              <property name="radius" type="float" value="29.800001" />
+              <property name="alpha" type="float" value="0.370000" />
+              <property name="hardness" type="float" value="0.020000" />
+              <property name="color" type="color" value="#ffffffff" />
+              <property name="blendMode" type="int" value="2" />
+            </effect>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="10106592" label="Circle 4" startTime="0" endTime="4932" fillType="color" blending="overlay" mediaFillMode="fill" s=".circle">
+            <transform>
+              <location value="527.550842,1025.865479,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+              <property name="strength" type="float" value="0.930000" />
+            </effect>
+            <property name="size" type="vec2" value="248.000000,186.000000" />
+          </shape>
+          <embedScene id="10106608" label="Group 1" startTime="0" endTime="4932" fillType="intrinsic" outTime="4932" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.000000" v="540.000000,1078.500000,0.000000" />
+                <kf t="0.648824" v="558.500000,1035.153687,0.000000" e="cubicBezier 0.55 0.0 0.38 1.0" />
+                <kf t="0.226277" v="516.050842,1039.000000,0.000000" e="cubicBezier 0.5466666 0.0 0.38131234 1.0" />
+                <kf t="0.442619" v="538.500000,1020.500000,0.000000" e="cubicBezier 0.55 0.0 0.38 1.0" />
+                <kf t="0.854826" v="543.000000,1056.653687,0.000000" e="cubicBezier 0.55 0.0 0.38 1.0" />
+              </location>
+              <pivot value="-14.398193,-295.000000" />
+              <scale value="1.087720,1.087720" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <scene title="" width="1080" height="2157" exportWidth="1080" exportHeight="2157" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2132" fps="30" modifiedTime="0" amver="1001615" ffver="106" am="com.alightcreative.motion/5.0.260.1002351" amplatform="android" retime="off" retimeAdaptFPS="false">
+              <shape id="10106590" label="Circle 3" startTime="0" endTime="2132" fillType="color" mediaFillMode="fill" s=".circle">
+                <transform>
+                  <location value="467.851837,783.500000,0.000000" />
+                  <scale value="0.135000,0.135000" />
+                </transform>
+                <property name="size" type="vec2" value="100.000000,100.000000" />
+              </shape>
+              <shape id="10106591" label="Circle 3 Copy" startTime="0" endTime="2132" fillType="color" mediaFillMode="fill" s=".circle">
+                <transform>
+                  <location value="583.351807,783.500000,0.000000" />
+                  <scale value="0.135000,0.135000" />
+                </transform>
+                <property name="size" type="vec2" value="100.000000,100.000000" />
+              </shape>
+            </scene>
+          </embedScene>
+        </scene>
+      </embedScene>
+      <shape id="10106600" label="Circle 1" startTime="0" endTime="4932" fillType="color" blending="exclude" mediaFillMode="fill" s=".circle">
+        <transform lockAspectRatio="false">
+          <location value="523.500000,2018.500000,0.000000" />
+          <scale value="4.325000,5.495002" />
+        </transform>
+        <fillColor value="#ffa059e5" />
+        <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+          <property name="strength" type="float" value="1.070000" />
+        </effect>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+</scene>

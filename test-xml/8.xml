@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2022-09-21 01:14 PM
+4.2.0 (0594)
+40c3633 (Jun 24, 2022 2:33:30 PM)
+-->
+<scene title="8" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5099" fps="30" modifiedTime="1663746263932" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <shape id="634540" label="Rectangle 1" startTime="0" endTime="5099" fillType="color" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="10.089999,5.675625" />
+    </transform>
+    <fillColor value="#ff0e0e0e" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <embedScene id="634554" label="Group 1" startTime="0" endTime="5099" fillType="intrinsic" outTime="5099">
+    <transform>
+      <location value="1047.500000,280.500000,0.000000" />
+      <pivot value="-519.782471,265.098877" />
+      <scale>
+        <kf t="0.003137" v="0.000000,0.000000" />
+        <kf t="0.107864" v="1.000000,1.000000" e="cubicBezier 0.26999998 0.0 0.13999999 1.0" />
+      </scale>
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5099" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="634548" label="Rounded Rectangle 1" startTime="0" endTime="5099" fillType="color" s=".roundrect">
+        <transform>
+          <location value="871.973328,713.118286,0.000000" />
+          <scale value="0.829371,0.829371" />
+        </transform>
+        <fillColor value="#ff6b91ff" />
+        <property name="size" type="vec2" value="498.000000,100.000000" />
+        <property name="cornerRadius" type="float" value="145.000000" />
+      </shape>
+      <shape id="634549" label="Triangle 1" startTime="0" endTime="5099" fillType="color" parent="634548">
+        <transform>
+          <location value="-488.470306,89.224281,0.000000" />
+          <scale value="0.387453,0.387453" />
+          <rotation value="-124.024384" />
+        </transform>
+        <fillColor value="#ff6b91ff" />
+        <path d="M -84.62387 122.00531C -50.83525 63.93541, 0.0 -100.0, 0.0 -100.0L 100.0 100.0C 100.0 100.0, -118.41249 180.07521, -84.62387 122.00531Z" />
+      </shape>
+      <text id="634546" startTime="1766" endTime="5098" fillType="color" size="18.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="710" align="center">
+        <transform>
+          <location value="871.973328,709.020630,0.000000" />
+          <scale>
+            <kf t="0.005102" v="1.169014,1.169014" />
+            <kf t="0.115246" v="1.169014,1.169014" />
+            <kf t="0.055222" v="1.464789,1.464789" />
+          </scale>
+          <opacity>
+            <kf t="0.054922" v="1.000000" />
+            <kf t="0.004802" v="0.000000" />
+          </opacity>
+        </transform>
+        <content>Hello! Let's Talk</content>
+      </text>
+      <embedScene id="634553" label="Dots" startTime="0" endTime="3032" fillType="intrinsic" outTime="3032">
+        <transform>
+          <location value="1045.000000,536.663269,0.000000" />
+          <pivot value="-178.263306,184.506470" />
+          <scale>
+            <kf t="0.500000" v="0.580557,0.580557" />
+            <kf t="0.610158" v="0.580557,0.580557" />
+            <kf t="0.555079" v="0.786390,0.786390" />
+          </scale>
+          <opacity>
+            <kf t="0.555079" v="0.820313" />
+            <kf t="0.610158" v="0.000000" />
+          </opacity>
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3032" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="634552" label="Circle 3" startTime="0" endTime="3032" fillType="color" s=".circle">
+            <transform>
+              <location value="852.473328,712.618286,0.000000" />
+              <scale value="0.240000,0.240000" />
+            </transform>
+            <effect id="com.alightcreative.effects.oscillate3" locallyApplied="true">
+              <property name="direction" type="int" value="0" />
+              <property name="angle" type="float" value="90.000000" />
+              <property name="freq" type="float" value="0.990000" />
+              <property name="mag" type="float" value="25.000000" />
+              <property name="type" type="int" value="0" />
+              <property name="phase" type="float" value="0.500000" />
+            </effect>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="634550" label="Circle 2" startTime="0" endTime="3032" fillType="color" s=".circle">
+            <transform>
+              <location value="782.500000,712.618286,0.000000" />
+              <scale value="0.240000,0.240000" />
+            </transform>
+            <effect id="com.alightcreative.effects.oscillate3" locallyApplied="true">
+              <property name="direction" type="int" value="0" />
+              <property name="angle" type="float" value="90.000000" />
+              <property name="freq" type="float" value="0.990000" />
+              <property name="mag" type="float" value="25.000000" />
+              <property name="type" type="int" value="0" />
+              <property name="phase" type="float" value="0.300000" />
+            </effect>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="634551" label="Circle 1" startTime="0" endTime="3032" fillType="color" s=".circle">
+            <transform>
+              <location value="711.000000,712.618286,0.000000" />
+              <scale value="0.240000,0.240000" />
+            </transform>
+            <effect id="com.alightcreative.effects.oscillate3" locallyApplied="true">
+              <property name="direction" type="int" value="0" />
+              <property name="angle" type="float" value="90.000000" />
+              <property name="freq" type="float" value="0.990000" />
+              <property name="mag" type="float" value="25.000000" />
+              <property name="type" type="int" value="0" />
+              <property name="phase" type="float" value="0.000000" />
+            </effect>
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+    </scene>
+  </embedScene>
+  <text id="634638" hidden="true" startTime="0" endTime="5099" fillType="color" size="20.000000" font="imported?name=ArgentumSans-Regular.ttf" wrapWidth="1473" align="center">
+    <transform>
+      <location value="960.000000,960.000000,0.000000" />
+      <scale value="0.675047,0.675047" />
+      <opacity value="0.699219" />
+    </transform>
+    <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+      <property name="letterspacing" type="float" value="0.200000" />
+      <property name="linespacing" type="float" value="1.000000" />
+    </effect>
+    <content>Chat Receive</content>
+  </text>
+</scene>

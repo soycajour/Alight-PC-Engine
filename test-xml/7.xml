@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2022-09-21 01:14 PM
+4.2.0 (0594)
+40c3633 (Jun 24, 2022 2:33:30 PM)
+-->
+<scene title="7" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7132" fps="30" modifiedTime="1663746257078" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <shape id="634528" label="Rectangle 1" startTime="0" endTime="7132" fillType="color" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="9.860001,5.546249" />
+    </transform>
+    <fillColor value="#ff0e0e0e" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <embedScene id="634636" label="Group 1 Copy" startTime="0" endTime="7132" fillType="intrinsic" outTime="7132">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <pivot value="-17.000000,0.000000" />
+      <scale>
+        <kf t="0.072350" v="0.797740,0.797740" />
+        <kf t="0.105160" v="0.661629,0.661629" e="cubicBezier 0.42 0.0 1.0 1.0" />
+        <kf t="0.142457" v="0.797740,0.797740" e="cubicBezier 0.0 0.0 0.58 1.0" />
+      </scale>
+    </transform>
+    <fillColor value="#ff000000" />
+    <shadow direction="outside" enabled="false">
+      <color value="#fff9afb2" />
+      <opacity value="0.150000" />
+      <size value="124.000000" />
+      <offset value="0.000000,55.000000" />
+    </shadow>
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7132" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="634529" label="Rounded Rectangle 1" startTime="0" endTime="7132" fillType="color" s=".roundrect">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <scale value="1.121312,1.121312" />
+        </transform>
+        <property name="size" type="vec2">
+          <kf t="0.142456" v="271.000000,100.000000" />
+          <kf t="0.235979" v="742.000000,100.000000" e="cubicBezier 0.35 0.0 0.14 1.0" />
+          <kf t="0.680034" v="742.000000,100.000000" />
+          <kf t="0.773416" v="271.000000,100.000000" e="cubicBezier 0.35 0.0 0.14 1.0" />
+        </property>
+        <property name="cornerRadius" type="float" value="137.000000" />
+      </shape>
+      <shape id="634531" label="Rounded Rectangle 1 Copy" startTime="0" endTime="7132" fillType="color" s=".roundrect">
+        <transform>
+          <location>
+            <kf t="0.142457" v="960.000000,540.000000,0.000000" />
+            <kf t="0.235979" v="1557.000000,540.000000,0.000000" e="cubicBezier 0.35 0.0 0.14 1.0" />
+            <kf t="0.680034" v="1557.000000,540.000000,0.000000" />
+            <kf t="0.773416" v="960.000000,540.000000,0.000000" e="cubicBezier 0.35 0.0 0.14 1.0" />
+          </location>
+          <scale>
+            <kf t="0.609927" v="0.833922,0.833922" />
+            <kf t="0.647224" v="0.639583,0.639583" e="cubicBezier 0.0 0.05735294 0.58 1.0" />
+            <kf t="0.680034" v="0.833922,0.833922" e="cubicBezier 0.42 0.0 1.0 1.0" />
+          </scale>
+          <opacity>
+            <kf t="0.165872" v="0.000000" />
+            <kf t="0.235979" v="1.000000" e="cubicBezier 0.35 0.0 0.14 1.0" />
+            <kf t="0.680034" v="1.000000" />
+            <kf t="0.750140" v="0.000000" e="cubicBezier 0.35 0.0 0.14 1.0" />
+          </opacity>
+        </transform>
+        <fillColor value="#fff9767b" />
+        <property name="size" type="vec2" value="240.000000,100.000000" />
+        <property name="cornerRadius" type="float" value="137.000000" />
+      </shape>
+      <text id="634535" startTime="1366" endTime="5165" fillType="color" parent="634531" size="20.000000" font="imported?name=ArgentumSans-SemiBold.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location value="0.000000,-7.194917,0.000000" />
+          <scale>
+            <kf t="0.000000" v="0.000000,0.000000" />
+            <kf t="0.109766" v="1.269416,1.269416" e="cubicBezier 0.35 0.0 0.14 1.0" />
+          </scale>
+          <opacity>
+            <kf t="0.109766" v="1.000000" />
+            <kf t="-0.004212" v="0.000000" />
+          </opacity>
+        </transform>
+        <content>SEND</content>
+      </text>
+      <text id="634530" startTime="0" endTime="1199" fillType="color" size="20.000000" font="imported?name=ArgentumSans-SemiBold.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location value="960.000000,533.500000,0.000000" />
+          <scale value="1.058594,1.058594" />
+          <opacity>
+            <kf t="0.847373" v="1.000000" />
+            <kf t="0.986656" v="0.000000" />
+          </opacity>
+        </transform>
+        <fillColor value="#fff9767b" />
+        <content>Email Me</content>
+      </text>
+      <text id="634532" startTime="1000" endTime="2365" fillType="color" size="20.000000" font="imported?name=ArgentumSans-SemiBold.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location>
+            <kf t="0.011722" v="863.358643,532.500000,0.000000" />
+            <kf t="0.500366" v="329.000000,532.500000,0.000000" e="cubicBezier 0.35 0.0 0.14 1.0" />
+          </location>
+          <scale value="1.058594,1.058594" />
+          <opacity>
+            <kf t="0.134066" v="0.000000" />
+            <kf t="0.500366" v="0.318359" e="cubicBezier 0.35 0.0 0.14 1.0" />
+            <kf t="0.989011" v="0.318359" />
+          </opacity>
+        </transform>
+        <fillColor value="#ff888888" />
+        <content>E-Mail</content>
+      </text>
+      <text id="634536" startTime="2366" endTime="4965" fillType="color" size="20.000000" font="imported?name=ArgentumSans-Medium.ttf" wrapWidth="1030" align="left">
+        <transform>
+          <location value="774.500000,531.000000,0.000000" />
+          <scale value="1.058594,1.058594" />
+          <opacity>
+            <kf t="0.891497" v="1.000000" />
+            <kf t="0.994229" v="0.000000" />
+          </opacity>
+        </transform>
+        <fillColor value="#ff888888" />
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+          <property name="letterspacing" type="float" value="0.030000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.textprogress" locallyApplied="true">
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float">
+            <kf t="0.006541" v="0.000000" />
+            <kf t="0.442478" v="1.000000" e="cubicBezier 0.42 0.0 1.0 1.0" />
+          </property>
+          <property name="cursor" type="int" value="0" />
+          <property name="blink" type="bool" value="false" />
+        </effect>
+        <content>Sample007@gamil.com</content>
+      </text>
+      <text id="634537" startTime="5200" endTime="7132" fillType="color" size="20.000000" font="imported?name=ArgentumSans-SemiBold.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location value="960.000000,533.500000,0.000000" />
+          <scale value="1.058594,1.058594" />
+          <opacity>
+            <kf t="0.163561" v="1.000000" />
+            <kf t="0.008799" v="0.000000" />
+          </opacity>
+        </transform>
+        <fillColor value="#fff9767b" />
+        <content>Done</content>
+      </text>
+    </scene>
+  </embedScene>
+  <text id="634634" startTime="0" endTime="7132" fillType="color" size="20.000000" font="imported?name=ArgentumSans-Regular.ttf" wrapWidth="1074" align="center">
+    <transform>
+      <location value="960.000000,960.000000,0.000000" />
+      <scale value="0.675047,0.675047" />
+      <opacity value="0.699219" />
+    </transform>
+    <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+      <property name="letterspacing" type="float" value="0.200000" />
+      <property name="linespacing" type="float" value="1.000000" />
+    </effect>
+    <content>Send Animation</content>
+  </text>
+</scene>

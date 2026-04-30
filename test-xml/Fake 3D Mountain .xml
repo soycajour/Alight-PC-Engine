@@ -1,0 +1,946 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2026-04-30 09:50 AM
+5.0.161.106019 (106019)
+d914fff (30 Aug 2023 20:06:06)
+-->
+<scene title="Fake 3D Mountain " width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="7132" fps="60" modifiedTime="1777522851690" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <shape id="102375087" label="Rounded Rectangle 1" startTime="0" endTime="7132" fillType="gradient" mediaFillMode="fill" s=".roundrect">
+    <transform>
+      <location value="540.000000,960.000000,0.000000" />
+      <scale value="9.600000,9.600000" />
+    </transform>
+    <fillColor value="#ff0f171d" />
+    <gradient type="linear" startColor="#ff0f171d" endColor="#ff000000" start="0.499894,0.021177" end="0.523687,1.030512" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+    <property name="cornerRadius" type="float" value="25.000000" />
+  </shape>
+  <embedScene id="102375086" label="Fake 3D kachre ka dabba" startTime="0" endTime="7132" fillType="intrinsic" mediaFillMode="fill">
+    <transform>
+      <location value="494.092712,852.990234,0.000000" />
+      <pivot value="39.494751,128.613037" />
+      <scale value="2.179778,2.179778" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.full_image_soft_glow_mp" locallyApplied="true">
+      <property name="radius" type="float" value="74.000000" />
+      <property name="exposure" type="float" value="0.050000" />
+      <property name="softClipKnee" type="float" value="5.000000" />
+      <property name="spread" type="float" value="1.200000" />
+      <property name="glowTail" type="float" value="1.100000" />
+      <property name="glowOcclusion" type="float" value="3.000000" />
+      <property name="threshold" type="float" value="0.000000" />
+      <property name="thresholdSmooth" type="float" value="0.150000" />
+      <property name="thresholdGamma" type="float" value="1.000000" />
+      <property name="blendMode" type="int" value="1" />
+      <property name="tint" type="color" value="#00ffffff" />
+      <property name="tintStrength" type="float" value="0.500000" />
+      <property name="sshadow" type="bool" value="false" />
+      <property name="alphaa" type="float" value="1.250000" />
+      <property name="shadowColor" type="color" value="#00000000" />
+      <property name="shadowAlpha" type="float" value="1.000000" />
+      <property name="direction" type="float" value="135.000000" />
+      <property name="distance" type="float" value="5.000000" />
+      <property name="softness" type="float" value="8.000000" />
+      <property name="shadowOnly" type="bool" value="false" />
+      <property name="quality" type="int" value="2" />
+      <property name="glowOnly" type="bool" value="false" />
+      <property name="ditherAmount" type="float" value="0.015000" />
+    </effect>
+    <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4682" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="loop" retimeAdaptFPS="false">
+      <embedScene id="102375084" label="Group 1" startTime="0" endTime="2349" fillType="intrinsic" outTime="2349" mediaFillMode="fill">
+        <transform>
+          <location value="540.000000,960.000000,0.000000" />
+          <pivot value="39.494751,128.613037" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2349" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="102375070" label="Shape 1" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="580.250000,1174.750000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ffdd0f10" />
+            <gradient type="linear" startColor="#ffdd0f10" endColor="#ff000000" start="-0.183504,-0.675222" end="0.073971,1.515487" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="true">
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-380.250000,-748.116211" />
+                  <kf t="0.570881" v="-386.250000,-695.991211" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="-377.405273,-745.491211" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-203.750000,-749.866211" />
+                  <kf t="0.570881" v="-249.142578,-749.866211" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="-197.392609,-753.616211" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p value="-100.278381,-622.339844" />
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="432.471619,69.785217" />
+                  <kf t="0.570881" v="249.471680,-22.589783" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="442.221649,66.214905" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="145.721619,236.160217" />
+                  <kf t="0.570881" v="354.221619,219.910217" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="149.471619,233.410217" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-87.028351,232.160217" />
+                  <kf t="0.570881" v="128.221649,253.160217" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="-98.278351,232.456116" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-437.193329,68.410217" />
+                  <kf t="0.570881" v="-448.443329,123.535217" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="-442.443329,70.437561" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+          <shape id="102375072" label="Shape 2" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="580.250000,1174.750000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ff819aac" />
+            <gradient type="linear" startColor="#ffff0200" endColor="#ffffffff" start="0.842875,1.566980" end="0.668631,-0.606778" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="true">
+              <knot>
+                <p>
+                  <kf t="0.571307" v="-387.750000,-690.263184" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.003831" v="-386.250000,-743.603760" />
+                  <kf t="0.997020" v="-380.499969,-742.763123" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003831" v="-296.500000,-651.750000" />
+                  <kf t="0.997020" v="-296.500000,-651.750000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="-242.749969,-634.750000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003831" v="-204.104401,-616.427429" />
+                  <kf t="0.997020" v="-204.104401,-616.427429" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="-179.354370,-635.927490" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p value="-111.548775,-632.750000" />
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.571307" v="-250.933960,-751.250000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.003831" v="-200.183960,-753.500000" />
+                  <kf t="0.997020" v="-192.170166,-752.875244" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+          <shape id="102375080" label="Shape 3" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="540.000000,960.000000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ffb9f4ea" />
+            <gradient type="linear" startColor="#ffa40103" endColor="#ff000000" start="0.000000,0.000000" end="1.000000,1.000000" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="false">
+              <knot>
+                <p>
+                  <kf t="0.003406" v="262.746094,880.928711" />
+                  <kf t="0.997020" v="262.746094,880.928711" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="470.021973,855.144531" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="49.125000,407.750000" />
+                  <kf t="0.997020" v="49.125000,407.750000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="146.375000,467.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="553.412109,717.500000" />
+                  <kf t="0.997020" v="553.412109,717.500000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="360.437500,597.724609" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-13.591797,238.898438" />
+                  <kf t="0.997020" v="-13.591797,238.898438" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="93.727539,224.433960" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+          <shape id="102375082" label="Shape 5" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="540.000000,960.000000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ffe4e442" />
+            <gradient type="linear" startColor="#ffdd0f10" endColor="#ff000000" start="0.252689,-0.467435" end="0.697285,1.186137" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="false">
+              <knot>
+                <p>
+                  <kf t="0.003406" v="28.000000,870.250000" />
+                  <kf t="0.997020" v="28.000000,870.250000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="246.750000,898.125000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.571307" v="-121.185455,6.246582" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.003406" v="-176.583252,-7.859375" />
+                  <kf t="0.997020" v="-176.685455,-10.772888" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-262.000000,327.578125" />
+                  <kf t="0.997020" v="-262.000000,327.578125" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="-215.750000,340.328125" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-212.947266,761.078125" />
+                  <kf t="0.571307" v="-127.019531,815.203125" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+          <shape id="102375083" label="Shape 6" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="540.000000,960.000000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ffb099c6" />
+            <gradient type="linear" startColor="#ffdd0f10" endColor="#ff000000" start="1.194676,0.308034" end="0.914244,1.164774" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="false">
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-176.695313,3.833557" />
+                  <kf t="1.000000" v="-176.695313,3.833557" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="-119.767548,10.514282" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-205.130249,412.297485" />
+                  <kf t="0.571307" v="-163.130249,413.047485" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="1.000000" v="-197.825562,409.561157" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="30.924561,870.852173" />
+                  <kf t="0.997020" v="21.762085,875.642944" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="256.290405,901.392944" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-11.763123,235.145691" />
+                  <kf t="0.997020" v="-11.763123,235.145691" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="101.986877,231.179871" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+          <shape id="102375081" label="Shape 4" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="540.000000,960.000000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ffef4d4b" />
+            <gradient type="linear" startColor="#ffffffff" endColor="#ffdd0f10" start="0.261869,-0.582319" end="1.000000,1.000000" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="false">
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-85.784729,26.000000" />
+                  <kf t="0.997020" v="-85.784729,26.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="3.710632,6.875000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="47.375000,410.369141" />
+                  <kf t="0.997020" v="47.375000,410.369141" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="103.000000,246.869141" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="26.625000,879.619141" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.997020" v="26.625000,879.619141" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="252.750000,895.900391" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="102375097" label="Group 1 Copy" startTime="2333" endTime="4682" fillType="intrinsic" outTime="2349" mediaFillMode="fill">
+        <transform>
+          <location value="540.000000,960.000000,0.000000" />
+          <pivot value="39.494751,128.613037" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2349" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="102375070" label="Shape 1" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="580.250000,1174.750000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ffdd0f10" />
+            <gradient type="linear" startColor="#ffdd0f10" endColor="#ff000000" start="-0.183504,-0.675222" end="0.073971,1.515487" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="true">
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-380.250000,-748.116211" />
+                  <kf t="0.570881" v="-386.250000,-695.991211" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="-377.405273,-745.491211" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-203.750000,-749.866211" />
+                  <kf t="0.570881" v="-249.142578,-749.866211" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="-197.392609,-753.616211" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p value="-100.278381,-622.339844" />
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="432.471619,69.785217" />
+                  <kf t="0.570881" v="249.471680,-22.589783" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="442.221649,66.214905" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="145.721619,236.160217" />
+                  <kf t="0.570881" v="354.221619,219.910217" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="149.471619,233.410217" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-87.028351,232.160217" />
+                  <kf t="0.570881" v="128.221649,253.160217" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="-98.278351,232.456116" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-437.193329,68.410217" />
+                  <kf t="0.570881" v="-448.443329,123.535217" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.996594" v="-442.443329,70.437561" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+          <shape id="102375072" label="Shape 2" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="580.250000,1174.750000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ff819aac" />
+            <gradient type="linear" startColor="#ffff0200" endColor="#ffffffff" start="0.842875,1.566980" end="0.668631,-0.606778" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="true">
+              <knot>
+                <p>
+                  <kf t="0.571307" v="-387.750000,-690.263184" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.003831" v="-386.250000,-743.603760" />
+                  <kf t="0.997020" v="-380.499969,-742.763123" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003831" v="-296.500000,-651.750000" />
+                  <kf t="0.997020" v="-296.500000,-651.750000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="-242.749969,-634.750000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003831" v="-204.104401,-616.427429" />
+                  <kf t="0.997020" v="-204.104401,-616.427429" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="-179.354370,-635.927490" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p value="-111.548775,-632.750000" />
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.571307" v="-250.933960,-751.250000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.003831" v="-200.183960,-753.500000" />
+                  <kf t="0.997020" v="-192.170166,-752.875244" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+          <shape id="102375080" label="Shape 3" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="540.000000,960.000000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ffb9f4ea" />
+            <gradient type="linear" startColor="#ffa40103" endColor="#ff000000" start="0.000000,0.000000" end="1.000000,1.000000" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="false">
+              <knot>
+                <p>
+                  <kf t="0.003406" v="262.746094,880.928711" />
+                  <kf t="0.997020" v="262.746094,880.928711" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="470.021973,855.144531" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="49.125000,407.750000" />
+                  <kf t="0.997020" v="49.125000,407.750000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="146.375000,467.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="553.412109,717.500000" />
+                  <kf t="0.997020" v="553.412109,717.500000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="360.437500,597.724609" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-13.591797,238.898438" />
+                  <kf t="0.997020" v="-13.591797,238.898438" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="93.727539,224.433960" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+          <shape id="102375082" label="Shape 5" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="540.000000,960.000000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ffe4e442" />
+            <gradient type="linear" startColor="#ffdd0f10" endColor="#ff000000" start="0.252689,-0.467435" end="0.697285,1.186137" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="false">
+              <knot>
+                <p>
+                  <kf t="0.003406" v="28.000000,870.250000" />
+                  <kf t="0.997020" v="28.000000,870.250000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="246.750000,898.125000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.571307" v="-121.185455,6.246582" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.003406" v="-176.583252,-7.859375" />
+                  <kf t="0.997020" v="-176.685455,-10.772888" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-262.000000,327.578125" />
+                  <kf t="0.997020" v="-262.000000,327.578125" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="-215.750000,340.328125" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-212.947266,761.078125" />
+                  <kf t="0.571307" v="-127.019531,815.203125" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+          <shape id="102375083" label="Shape 6" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="540.000000,960.000000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ffb099c6" />
+            <gradient type="linear" startColor="#ffdd0f10" endColor="#ff000000" start="1.194676,0.308034" end="0.914244,1.164774" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="false">
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-176.695313,3.833557" />
+                  <kf t="1.000000" v="-176.695313,3.833557" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="-119.767548,10.514282" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-205.130249,412.297485" />
+                  <kf t="0.571307" v="-163.130249,413.047485" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="1.000000" v="-197.825562,409.561157" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="30.924561,870.852173" />
+                  <kf t="0.997020" v="21.762085,875.642944" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="256.290405,901.392944" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-11.763123,235.145691" />
+                  <kf t="0.997020" v="-11.763123,235.145691" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="101.986877,231.179871" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+          <shape id="102375081" label="Shape 4" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location value="540.000000,960.000000,0.000000" />
+              <scale value="0.333333,0.333333" />
+            </transform>
+            <fillColor value="#ffef4d4b" />
+            <gradient type="linear" startColor="#ffffffff" endColor="#ffdd0f10" start="0.261869,-0.582319" end="1.000000,1.000000" />
+            <path-stroke direction="centered" end-size="1.500000">
+              <color value="#ffffffff" />
+              <size value="0.500000" />
+            </path-stroke>
+            <path closed="false">
+              <knot>
+                <p>
+                  <kf t="0.003406" v="-85.784729,26.000000" />
+                  <kf t="0.997020" v="-85.784729,26.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="3.710632,6.875000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="47.375000,410.369141" />
+                  <kf t="0.997020" v="47.375000,410.369141" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="103.000000,246.869141" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+              <knot>
+                <p>
+                  <kf t="0.003406" v="26.625000,879.619141" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.997020" v="26.625000,879.619141" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                  <kf t="0.571307" v="252.750000,895.900391" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                </p>
+              </knot>
+            </path>
+          </shape>
+        </scene>
+      </embedScene>
+    </scene>
+  </embedScene>
+  <text id="102375091" startTime="1000" endTime="7132" fillType="color" mediaFillMode="fill" size="28.000000" font="googlefonts?name=Archivo Black&amp;weight=400" wrapWidth="480" align="center">
+    <transform>
+      <location value="540.000000,293.122070,0.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.texttransform" locallyApplied="true">
+      <property name="start" type="float">
+        <kf t="0.001304" v="0.000000" />
+        <kf t="0.164384" v="1.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+      </property>
+      <property name="end" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="component" type="int" value="1" />
+      <property name="anchor" type="int" value="0" />
+      <property name="offset" type="vec2" value="20.000000,26.000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="scale" type="float" value="0.000000" />
+      <property name="stretch" type="float" value="0.000000" />
+      <property name="alpha" type="float" value="-1.000000" />
+      <property name="useFillColor" type="bool" value="false" />
+      <property name="fillColor" type="color" value="#ff00ff00" />
+      <property name="easeIn" type="float" value="1.000000" />
+      <property name="easeOut" type="float" value="-1.000000" />
+      <property name="overlap" type="float" value="4.400000" />
+      <property name="shape" type="int" value="0" />
+      <property name="randomOrder" type="bool" value="false" />
+      <property name="seed" type="float" value="0.000000" />
+    </effect>
+    <content>Fake 3D Mountain </content>
+  </text>
+  <embedScene id="102375103" label="Group 2" startTime="0" endTime="7132" fillType="intrinsic" mediaFillMode="fill">
+    <transform>
+      <location value="478.673157,724.921814,0.000000" />
+      <pivot value="114.065918,747.973267" />
+      <scale value="0.793225,0.793225" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4682" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="loop" retimeAdaptFPS="false">
+      <embedScene id="102375101" label="Group 1" startTime="0" endTime="2349" fillType="intrinsic" mediaFillMode="fill">
+        <transform>
+          <location value="540.000000,960.000000,0.000000" />
+          <pivot value="114.065918,747.973267" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2349" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="102375100" label="Shape 4" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="717.527222,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff4fa7be" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="0.000000,0.000000" end="1.574304,1.653437" />
+            <path d="M 3.375 344.0L -100.125 143.5L 75.74219 285.0L 3.375 344.0Z" />
+          </shape>
+          <shape id="102375098" label="Shape 2" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.570881" v="719.948853,1529.974121,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff8d84a9" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.606436,-0.059984" end="1.692686,1.266365" />
+            <path d="M 1.0 345.0L 13.5 76.5L 115.48048 343.0L 1.0 345.0Z" />
+          </shape>
+          <shape id="102375099" label="Shape 3" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="760.000000,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ffaaf83e" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.553845,0.281250" end="-0.407890,1.443920" />
+            <path d="M 3.375 346.48828L 117.87499 203.39453L 117.27636 361.89453L 3.375 346.48828Z" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="102375102" label="Group 1 Copy" startTime="2333" endTime="4682" fillType="intrinsic" mediaFillMode="fill">
+        <transform>
+          <location value="540.000000,960.000000,0.000000" />
+          <pivot value="114.065918,747.973267" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2349" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="102375100" label="Shape 4" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="717.527222,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff4fa7be" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="0.000000,0.000000" end="1.574304,1.653437" />
+            <path d="M 3.375 344.0L -100.125 143.5L 75.74219 285.0L 3.375 344.0Z" />
+          </shape>
+          <shape id="102375098" label="Shape 2" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.570881" v="719.948853,1529.974121,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff8d84a9" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.606436,-0.059984" end="1.692686,1.266365" />
+            <path d="M 1.0 345.0L 13.5 76.5L 115.48048 343.0L 1.0 345.0Z" />
+          </shape>
+          <shape id="102375099" label="Shape 3" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="760.000000,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ffaaf83e" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.553845,0.281250" end="-0.407890,1.443920" />
+            <path d="M 3.375 346.48828L 117.87499 203.39453L 117.27636 361.89453L 3.375 346.48828Z" />
+          </shape>
+        </scene>
+      </embedScene>
+    </scene>
+  </embedScene>
+  <embedScene id="102375104" label="Group 2 Copy" startTime="0" endTime="7132" fillType="intrinsic" mediaFillMode="fill">
+    <transform>
+      <location value="133.964722,609.067627,0.000000" />
+      <pivot value="114.065918,747.973267" />
+      <scale value="0.311889,0.311889" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4682" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="loop" retimeAdaptFPS="false">
+      <embedScene id="102375101" label="Group 1" startTime="0" endTime="2349" fillType="intrinsic" mediaFillMode="fill">
+        <transform>
+          <location value="540.000000,960.000000,0.000000" />
+          <pivot value="114.065918,747.973267" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2349" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="102375100" label="Shape 4" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="717.527222,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff4fa7be" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="0.000000,0.000000" end="1.574304,1.653437" />
+            <path d="M 3.375 344.0L -100.125 143.5L 75.74219 285.0L 3.375 344.0Z" />
+          </shape>
+          <shape id="102375098" label="Shape 2" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.570881" v="719.948853,1529.974121,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff8d84a9" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.606436,-0.059984" end="1.692686,1.266365" />
+            <path d="M 1.0 345.0L 13.5 76.5L 115.48048 343.0L 1.0 345.0Z" />
+          </shape>
+          <shape id="102375099" label="Shape 3" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="760.000000,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ffaaf83e" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.553845,0.281250" end="-0.407890,1.443920" />
+            <path d="M 3.375 346.48828L 117.87499 203.39453L 117.27636 361.89453L 3.375 346.48828Z" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="102375102" label="Group 1 Copy" startTime="2333" endTime="4682" fillType="intrinsic" mediaFillMode="fill">
+        <transform>
+          <location value="540.000000,960.000000,0.000000" />
+          <pivot value="114.065918,747.973267" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2349" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="102375100" label="Shape 4" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="717.527222,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff4fa7be" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="0.000000,0.000000" end="1.574304,1.653437" />
+            <path d="M 3.375 344.0L -100.125 143.5L 75.74219 285.0L 3.375 344.0Z" />
+          </shape>
+          <shape id="102375098" label="Shape 2" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.570881" v="719.948853,1529.974121,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff8d84a9" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.606436,-0.059984" end="1.692686,1.266365" />
+            <path d="M 1.0 345.0L 13.5 76.5L 115.48048 343.0L 1.0 345.0Z" />
+          </shape>
+          <shape id="102375099" label="Shape 3" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="760.000000,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ffaaf83e" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.553845,0.281250" end="-0.407890,1.443920" />
+            <path d="M 3.375 346.48828L 117.87499 203.39453L 117.27636 361.89453L 3.375 346.48828Z" />
+          </shape>
+        </scene>
+      </embedScene>
+    </scene>
+  </embedScene>
+  <embedScene id="102375105" label="Group 2 Copy 2" startTime="0" endTime="7132" fillType="intrinsic" mediaFillMode="fill">
+    <transform>
+      <location value="704.293579,556.295898,0.000000" />
+      <pivot value="114.065918,747.973267" />
+      <scale value="0.311889,0.311889" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4682" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="loop" retimeAdaptFPS="false">
+      <embedScene id="102375101" label="Group 1" startTime="0" endTime="2349" fillType="intrinsic" mediaFillMode="fill">
+        <transform>
+          <location value="540.000000,960.000000,0.000000" />
+          <pivot value="114.065918,747.973267" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2349" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="102375100" label="Shape 4" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="717.527222,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff4fa7be" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="0.000000,0.000000" end="1.574304,1.653437" />
+            <path d="M 3.375 344.0L -100.125 143.5L 75.74219 285.0L 3.375 344.0Z" />
+          </shape>
+          <shape id="102375098" label="Shape 2" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.570881" v="719.948853,1529.974121,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff8d84a9" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.606436,-0.059984" end="1.692686,1.266365" />
+            <path d="M 1.0 345.0L 13.5 76.5L 115.48048 343.0L 1.0 345.0Z" />
+          </shape>
+          <shape id="102375099" label="Shape 3" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="760.000000,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ffaaf83e" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.553845,0.281250" end="-0.407890,1.443920" />
+            <path d="M 3.375 346.48828L 117.87499 203.39453L 117.27636 361.89453L 3.375 346.48828Z" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="102375102" label="Group 1 Copy" startTime="2333" endTime="4682" fillType="intrinsic" mediaFillMode="fill">
+        <transform>
+          <location value="540.000000,960.000000,0.000000" />
+          <pivot value="114.065918,747.973267" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2349" fps="60" modifiedTime="0" amver="106019" ffver="106" am="com.alightcreative.aftermotionskexnxx/5.0.161.106019" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="102375100" label="Shape 4" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="717.527222,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff4fa7be" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="0.000000,0.000000" end="1.574304,1.653437" />
+            <path d="M 3.375 344.0L -100.125 143.5L 75.74219 285.0L 3.375 344.0Z" />
+          </shape>
+          <shape id="102375098" label="Shape 2" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.570881" v="719.948853,1529.974121,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ff8d84a9" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.606436,-0.059984" end="1.692686,1.266365" />
+            <path d="M 1.0 345.0L 13.5 76.5L 115.48048 343.0L 1.0 345.0Z" />
+          </shape>
+          <shape id="102375099" label="Shape 3" startTime="0" endTime="2349" fillType="gradient" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.003406" v="534.402954,1546.893921,0.000000" />
+                <kf t="0.996594" v="534.402954,1546.893921,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+                <kf t="0.570881" v="760.000000,1533.826660,0.000000" e="cubicBezier 1.0 0.0 0.58 1.0" />
+              </location>
+              <scale value="0.773455,0.773455" />
+            </transform>
+            <fillColor value="#ffaaf83e" />
+            <gradient type="linear" startColor="#ffb80000" endColor="#ff000000" start="1.553845,0.281250" end="-0.407890,1.443920" />
+            <path d="M 3.375 346.48828L 117.87499 203.39453L 117.27636 361.89453L 3.375 346.48828Z" />
+          </shape>
+        </scene>
+      </embedScene>
+    </scene>
+  </embedScene>
+</scene>

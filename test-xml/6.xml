@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2022-09-21 01:14 PM
+4.2.0 (0594)
+40c3633 (Jun 24, 2022 2:33:30 PM)
+-->
+<scene title="6" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7099" fps="30" modifiedTime="1663746244989" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <bookmark t="2250" />
+  <bookmark t="4250" />
+  <shape id="634508" label="BG" startTime="0" endTime="7099" fillType="color" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="9.685000,5.447813" />
+    </transform>
+    <fillColor value="#ff0e0e0e" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <text id="634627" hidden="true" startTime="0" endTime="7099" fillType="color" size="20.000000" font="imported?name=ArgentumSans-Regular.ttf" wrapWidth="1074" align="center">
+    <transform>
+      <location value="960.000000,960.000000,0.000000" />
+      <scale value="0.675047,0.675047" />
+      <opacity value="0.699219" />
+    </transform>
+    <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+      <property name="letterspacing" type="float" value="0.200000" />
+      <property name="linespacing" type="float" value="1.000000" />
+    </effect>
+    <content>Upload Animation</content>
+  </text>
+  <embedScene id="634527" label="Group 1" startTime="0" endTime="7099" fillType="intrinsic" outTime="7099">
+    <transform>
+      <location value="977.981934,547.276123,0.000000" />
+      <pivot value="-60.750366,-30.446594" />
+      <scale value="0.690216,0.690216" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7099" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="634518" label="Shape 5" startTime="4600" endTime="7099" fillType="color" s=".roundrect">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+        </transform>
+        <fillColor>
+          <kf t="0.100040" v="#ff0199ff" />
+          <kf t="0.206482" v="#ff14fd6a" />
+        </fillColor>
+        <property name="size" type="vec2">
+          <kf t="-0.940776" v="405.000000,129.000000" />
+          <kf t="-0.740697" v="646.000000,40.000000" e="cubicBezier 0.35508496 0.0 0.16333336 1.0" />
+          <kf t="0.006402" v="646.000000,40.000000" />
+          <kf t="0.206482" v="150.000000,150.000000" e="cubicBezier 0.35 0.0 0.14 1.0" />
+        </property>
+        <property name="cornerRadius" type="float" value="312.000000" />
+      </shape>
+      <shape id="634520" label="Shape 4" startTime="4666" endTime="7099" fillType="none">
+        <transform>
+          <location value="952.500000,559.598877,0.000000" />
+          <scale value="0.774011,0.774011" />
+        </transform>
+        <fillColor value="#ffcc6193" />
+        <effect id="com.alightcreative.effects.drawing.progress" locallyApplied="true">
+          <property name="start" type="float">
+            <kf t="0.020551" v="100.000000" />
+            <kf t="0.294698" v="0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </property>
+          <property name="end" type="float" value="100.000000" />
+        </effect>
+        <path-stroke direction="centered" join="round" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="28.500000" />
+        </path-stroke>
+        <path d="M -80.0 -15.0L -19.0 41.0L 97.0 -77.0L -80.0 -15.0" />
+      </shape>
+      <shape id="634517" label="Shape 3" startTime="2233" endTime="4599" fillType="color" s=".roundrect">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+        </transform>
+        <fillColor>
+          <kf t="-0.246408" v="#ff00bfff" />
+          <kf t="-0.035080" v="#ffffffff" e="cubicBezier 0.36 0.0 0.16 1.0" />
+        </fillColor>
+        <property name="size" type="vec2">
+          <kf t="-0.246830" v="405.000000,129.000000" />
+          <kf t="-0.035504" v="646.000000,40.000000" e="cubicBezier 0.35508496 0.0 0.16333336 1.0" />
+        </property>
+        <property name="cornerRadius" type="float" value="168.000000" />
+      </shape>
+      <shape id="634514" label="Color Fill" startTime="2233" endTime="4365" clippingMask="true" fillType="color" s=".roundrect">
+        <transform lockAspectRatio="false">
+          <location value="960.000000,540.000000,0.000000" />
+          <pivot value="-645.703918,0.000000" />
+          <scale>
+            <kf t="0.007506" v="0.000774,1.034830" />
+            <kf t="0.945592" v="1.000774,1.034830" e="cubicBezier 0.34666666 0.0 0.13999999 1.0" />
+          </scale>
+        </transform>
+        <fillColor value="#ff0199ff" />
+        <property name="size" type="vec2" value="646.000000,40.000000" />
+        <property name="cornerRadius" type="float" value="0.000000" />
+      </shape>
+      <shape id="634512" label="Shape 2" startTime="1033" endTime="2265" fillType="color" s=".roundrect">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+        </transform>
+        <fillColor>
+          <kf t="-0.257305" v="#ff009dff" />
+          <kf t="0.000000" v="#ff009dff" />
+          <kf t="0.229708" v="#ffffffff" />
+        </fillColor>
+        <property name="size" type="vec2">
+          <kf t="0.012987" v="405.000000,129.000000" />
+          <kf t="0.418831" v="646.000000,40.000000" e="cubicBezier 0.35508496 0.0 0.16333336 1.0" />
+        </property>
+        <property name="cornerRadius" type="float" value="168.000000" />
+      </shape>
+      <shape id="634510" label="Shape 1" startTime="0" endTime="1032" fillType="color" s=".roundrect">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <scale>
+            <kf t="0.500000" v="1.000000,1.000000" />
+            <kf t="0.758721" v="0.788889,0.788889" e="cubicBezier 0.36 0.0 0.16 1.0" />
+            <kf t="1.000000" v="1.000000,1.000000" e="cubicBezier 0.36 0.0 0.16 1.0" />
+          </scale>
+        </transform>
+        <fillColor value="#ff0199ff" />
+        <property name="size" type="vec2" value="405.000000,129.000000" />
+        <property name="cornerRadius" type="float" value="168.000000" />
+      </shape>
+      <shape id="634522" label="upload.png" startTime="0" endTime="1165" fillType="media" fillImage="content://media/external/images/media/54971" parent="634510" s=".rect">
+        <transform>
+          <location value="-186.223022,0.500000,0.000000" />
+          <scale value="0.077778,0.077778" />
+          <opacity>
+            <kf t="0.872103" v="1.000000" />
+            <kf t="1.015451" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.solidcolor" locallyApplied="true">
+          <property name="color" type="color" value="#ffffffff" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <text id="634523" startTime="0" endTime="1165" fillType="color" parent="634510" size="18.000000" font="imported?name=ArgentumSans-ExtraBold.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location value="49.500000,0.000000,0.000000" />
+          <pivot value="0.000000,6.500000" />
+          <scale value="1.541016,1.541016" />
+          <opacity>
+            <kf t="0.872103" v="1.000000" />
+            <kf t="1.015451" v="0.000000" />
+          </opacity>
+        </transform>
+        <content>UPLOAD</content>
+      </text>
+      <shape id="634525" label="Callout 1" startTime="1533" endTime="4732" fillType="color" s=".callout.roundrect">
+        <transform>
+          <location value="416.000000,402.506805,0.000000" />
+          <scale value="0.524000,0.524000" />
+          <rotation>
+            <kf t="0.224133" v="0.000000" />
+          </rotation>
+          <opacity>
+            <kf t="0.099093" v="1.000000" />
+            <kf t="-0.005314" v="0.000000" />
+          </opacity>
+        </transform>
+        <fillColor value="#ff14fd6a" />
+        <property name="size" type="vec2" value="125.000000,100.000000" />
+        <property name="tail" type="vec2" value="-72.000000,167.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+        <property name="tailWidth" type="float" value="76.000000" />
+      </shape>
+      <text id="634526" startTime="1533" endTime="4732" fillType="color" parent="634525" size="18.000000" font="imported?name=ArgentumSans-ExtraBold.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location>
+            <kf t="0.786808" v="-7.633588,-6.679389,0.000000" />
+            <kf t="0.807440" v="-3.633588,-6.679389,0.000000" />
+          </location>
+          <scale value="1.643756,1.643756" />
+          <opacity>
+            <kf t="0.150985" v="1.000000" />
+            <kf t="0.005314" v="0.000000" />
+          </opacity>
+        </transform>
+        <effect id="com.alightcreative.effects.counter" locallyApplied="true">
+          <property name="offset" type="float">
+            <kf t="0.224133" v="0.000000" />
+            <kf t="0.849328" v="100.000000" e="cubicBezier 0.35 0.0 0.14 1.0" />
+          </property>
+          <property name="scale" type="float" value="1.000000" />
+        </effect>
+        <content>0</content>
+      </text>
+    </scene>
+  </embedScene>
+</scene>
