@@ -413,6 +413,9 @@ function updateTimelineUI() {
   const pct = `${Math.max(0, Math.min(100, progress * 100))}%`;
   tlPlayhead.style.left = pct;
   tlPlayheadTr.style.left = pct;
+  
+  // Real-time property update
+  if (selectedShape) renderPropertiesPanel(selectedShape);
 }
 
 // Initial setup: Load the default preset
@@ -708,6 +711,29 @@ function drawScene() {
   const offsetY = (canvas.height - projH * scale) / 2;
   
   const viewMatrix = TransformMatrix.fromTRS(offsetX, offsetY, scale, scale, 0, 0, 0);
+
+  // --- DRAW PROJECT BOUNDARY GUIDE ---
+  // We use the shapeRenderer's canvas as a temp buffer for the border
+  shapeRenderer.clear();
+  const guideCtx = shapeRenderer.ctx;
+  guideCtx.save();
+  // Apply view matrix directly to canvas for the guide
+  guideCtx.transform(scale, 0, 0, scale, offsetX, offsetY);
+  guideCtx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+  guideCtx.lineWidth = 2 / scale; // Constant pixel width
+  guideCtx.setLineDash([10 / scale, 5 / scale]);
+  guideCtx.strokeRect(0, 0, projW, projH);
+  guideCtx.restore();
+  shapeRenderer.updateTexture(gl, layerFBO.texture);
+  
+  // Compose Guide to Viewer
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+  gl.useProgram(composeProgram);
+  gl.activeTexture(gl.TEXTURE0);
+  gl.bindTexture(gl.TEXTURE_2D, layerFBO.texture);
+  gl.uniform1f(compOpacityLocation, 1.0);
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
 
   // Clear per-frame transform cache
   worldResolver.clearCache();

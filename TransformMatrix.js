@@ -26,14 +26,13 @@ export class TransformMatrix {
     const cos = Math.cos(rad);
     const sin = Math.sin(rad);
 
-    // Order: Translate to position → Rotate around pivot → Scale
-    // T(tx+px, ty+py) * R(rot) * S(sx, sy) * T(-px, -py)
+    // Standard TRS with Pivot: T(tx, ty) * R(rot) * S(sx, sy) * T(-px, -py)
     const a = cos * sx;
     const b = sin * sx;
     const c = -sin * sy;
     const d = cos * sy;
-    const e = tx + px + (cos * (-px) * sx - sin * (-py) * sy);
-    const f = ty + py + (sin * (-px) * sx + cos * (-py) * sy);
+    const e = tx - (a * px + c * py);
+    const f = ty - (b * px + d * py);
 
     mat.m = [a, b, c, d, e, f];
     return mat;

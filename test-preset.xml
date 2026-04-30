@@ -1,18 +1,123 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<scene title="test" totalTime="3000" fps="30">
-  <shape id="1" startTime="0" endTime="3000">
-    <effect id="test_effect">
-      <!-- Mag will animate grid_spacing from 10 to 100 -->
-      <property name="mag" type="float">
-        <kf t="0.0" v="10.0" />
-        <kf t="0.5" v="100.0" e="cubicBezier 0.25 0.1 0.25 1.0" />
-        <kf t="1.0" v="10.0" e="cubicBezier 0.25 0.1 0.25 1.0" />
-      </property>
-      <!-- Speed will animate line_width -->
-      <property name="speed" type="float">
-        <kf t="0.0" v="0.5" />
-        <kf t="1.0" v="5.0" />
-      </property>
-    </effect>
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2022-09-21 01:12 PM
+4.2.0 (0594)
+40c3633 (Jun 24, 2022 2:33:30 PM)
+-->
+<scene title="1" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5032" fps="30" modifiedTime="1663746173354" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <bookmark t="1016" />
+  <bookmark t="1516" />
+  <bookmark t="2016" />
+  <bookmark t="1683" />
+  <bookmark t="3516" />
+  <bookmark t="4516" />
+  <bookmark t="4016" />
+  <shape id="634425" label="Rectangle 1" startTime="0" endTime="5032" fillType="gradient" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="9.825000,5.526563" />
+    </transform>
+    <gradient type="linear" startColor="#ffffffff" endColor="#ffe4ebff" start="0.000000,0.000000" end="1.401776,1.465249" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
   </shape>
+  <embedScene id="634602" label="Group 1" startTime="0" endTime="5032" fillType="intrinsic">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <pivot value="-5.666626,0.000000" />
+      <scale value="0.756617,0.756617" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <shadow direction="outside" enabled="false">
+      <color value="#ffe4ebff" />
+      <size value="10.000000" />
+      <offset value="0.000000,13.000000" />
+    </shadow>
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5032" fps="30" modifiedTime="0" amver="594" ffver="105" am="com.alightcreative.motion/4.2.0" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="634426" label="Rounded Rectangle 1" startTime="0" endTime="5032" fillType="color" s=".roundrect">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <scale value="0.869458,0.869458" />
+        </transform>
+        <fillColor>
+          <kf t="0.301272" v="#ffe4ebff" />
+          <kf t="0.791534" v="#ff141620" />
+          <kf t="0.400636" v="#ff141620" e="cubicBezier 0.32 0.0 0.26 1.0" />
+          <kf t="0.897456" v="#ffe4ebff" />
+        </fillColor>
+        <property name="size" type="vec2" value="609.000000,125.765015" />
+        <property name="cornerRadius" type="float" value="208.000000" />
+      </shape>
+      <shape id="634430" label="Rounded Rectangle 1 Copy" startTime="0" endTime="5032" fillType="color" s=".roundrect">
+        <transform>
+          <location>
+            <kf t="0.201908" v="689.419189,540.000000,0.000000" />
+            <kf t="0.400636" v="1230.500000,540.000000,0.000000" e="cubicBezier 0.32333332 0.0 0.26333332 1.0" />
+            <kf t="0.698728" v="1230.500000,540.000000,0.000000" />
+            <kf t="0.897456" v="689.419189,540.000000,0.000000" e="cubicBezier 0.32 0.0 0.26 1.0" />
+          </location>
+          <scale value="0.570608,0.570608" />
+        </transform>
+        <fillColor>
+          <kf t="0.301272" v="#ff141620" />
+          <kf t="0.334459" v="#ffe4ebff" />
+          <kf t="0.798092" v="#ffe4ebff" />
+          <kf t="0.831280" v="#ff141620" />
+        </fillColor>
+        <property name="size" type="vec2">
+          <kf t="0.201908" v="373.000000,125.765015" />
+          <kf t="0.301272" v="562.000000,125.765015" e="cubicBezier 0.32 0.0 0.26 1.0" />
+          <kf t="0.400636" v="373.000000,125.765015" e="cubicBezier 0.32 0.0 0.26 1.0" />
+          <kf t="0.698728" v="373.000000,125.765015" />
+          <kf t="0.798092" v="562.000000,125.765015" e="cubicBezier 0.32 0.0 0.26 1.0" />
+          <kf t="0.897456" v="373.000000,125.765015" e="cubicBezier 0.32 0.0 0.26 1.0" />
+        </property>
+        <property name="cornerRadius" type="float" value="208.000000" />
+      </shape>
+      <text id="634427" startTime="0" endTime="5032" fillType="color" size="18.000000" font="imported?name=BebasNeue-Bold.otf" wrapWidth="512" align="center">
+        <transform>
+          <location value="579.833374,542.166687,0.000000" />
+          <pivot value="0.000000,5.016724" />
+          <scale value="1.931641,1.931641" />
+        </transform>
+        <fillColor>
+          <kf t="0.235095" v="#ffe4ebff" />
+          <kf t="0.301272" v="#ff141620" />
+          <kf t="0.367647" v="#ffe4ebff" />
+          <kf t="0.731916" v="#ffe4ebff" />
+          <kf t="0.864467" v="#ffe4ebff" />
+          <kf t="0.798092" v="#ff141620" />
+        </fillColor>
+        <content>ON</content>
+      </text>
+      <text id="634429" startTime="0" endTime="5032" fillType="color" size="18.000000" font="imported?name=BebasNeue-Bold.otf" wrapWidth="512" align="center">
+        <transform>
+          <location value="1328.833374,542.166687,0.000000" />
+          <pivot value="0.000000,5.016724" />
+          <scale value="1.931641,1.931641" />
+        </transform>
+        <fillColor>
+          <kf t="0.400636" v="#ff141620" />
+          <kf t="0.698728" v="#ff141620" />
+          <kf t="0.798092" v="#ffe4ebff" />
+          <kf t="0.831280" v="#ff141620" e="cubicBezier 0.32 0.0 0.26 1.0" />
+          <kf t="0.268283" v="#ff141620" />
+          <kf t="0.301272" v="#ffe4ebff" />
+        </fillColor>
+        <content>OFF</content>
+      </text>
+    </scene>
+  </embedScene>
+  <text id="634622" startTime="0" endTime="5032" fillType="color" size="20.000000" font="imported?name=ArgentumSans-Regular.ttf" wrapWidth="1074" align="center">
+    <transform>
+      <location value="960.000000,960.000000,0.000000" />
+      <scale value="0.675047,0.675047" />
+      <opacity value="0.699219" />
+    </transform>
+    <fillColor value="#ff0e0e0e" />
+    <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+      <property name="letterspacing" type="float" value="0.200000" />
+      <property name="linespacing" type="float" value="1.000000" />
+    </effect>
+    <content>On Off Animation</content>
+  </text>
 </scene>
