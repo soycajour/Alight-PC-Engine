@@ -60,39 +60,18 @@ export class ShapeRenderer {
 
 
     if (node.type === 'text') {
-      const fontSize = properties.size || node.fontSize || 18;
-      const font = node.font || 'sans-serif'; // In reality we need to map Alight's font identifiers to actual web fonts
-      ctx.font = `${fontSize}px ${font}`;
-      ctx.textAlign = node.align || 'center';
+      const fontSize = properties.size || node.fontSize || 24;
+      const fontName = node.font || 'sans-serif';
+      ctx.font = `${fontSize}px ${fontName}, sans-serif`;
+      ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       
-      const text = node.content || '';
+      const text = node.textContent || node.content || '';
       
-      if (node.fillType === 'color') {
-        ctx.fillStyle = this._parseColor(properties.fillColor || (node.fillColor ? node.fillColor.staticValue : null));
-        
-        // Simple word wrap simulation (Alight has wrapWidth)
-        if (node.wrapWidth && node.wrapWidth > 0) {
-          const words = text.split(' ');
-          let line = '';
-          let y = 0;
-          const lineHeight = fontSize * 1.2;
-          
-          for (let n = 0; n < words.length; n++) {
-            const testLine = line + words[n] + ' ';
-            const metrics = ctx.measureText(testLine);
-            if (metrics.width > node.wrapWidth && n > 0) {
-              ctx.fillText(line, 0, y);
-              line = words[n] + ' ';
-              y += lineHeight;
-            } else {
-              line = testLine;
-            }
-          }
-          ctx.fillText(line, 0, y);
-        } else {
-          ctx.fillText(text, 0, 0);
-        }
+      if (node.fillType === 'color' || node.fillColor) {
+        const color = properties.fillColor || (node.fillColor ? node.fillColor.staticValue : '#ffffffff');
+        ctx.fillStyle = this._parseColor(color);
+        ctx.fillText(text, 0, 0);
       }
       
       if (node.pathStroke) {
@@ -132,7 +111,19 @@ export class ShapeRenderer {
         ctx.fillStyle = color;
         ctx.fill();
       } else if (node.gradient) {
-        const grad = ctx.createLinearGradient(0, -height/2, 0, height/2);
+        let grad;
+        if (node.gradient.type === 'linear') {
+          // Map normalized start/end to pixel coordinates relative to center
+          const s = node.gradient.start || [0, 0];
+          const e = node.gradient.end || [0, 1];
+          grad = ctx.createLinearGradient(
+            (s[0] - 0.5) * width, (s[1] - 0.5) * height,
+            (e[0] - 0.5) * width, (e[1] - 0.5) * height
+          );
+        } else {
+          grad = ctx.createRadialGradient(0, 0, 0, 0, 0, Math.max(width, height) / 2);
+        }
+        
         grad.addColorStop(0, this._parseColor(node.gradient.startColor));
         grad.addColorStop(1, this._parseColor(node.gradient.endColor));
         ctx.fillStyle = grad;

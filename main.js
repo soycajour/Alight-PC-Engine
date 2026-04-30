@@ -6,7 +6,7 @@ import { AlightXMLParser } from './XMLParser.js'
 import { ShapeRenderer } from './ShapeRenderer.js'
 import { MediaManager } from './MediaManager.js'
 import { EffectManager } from './EffectManager.js'
-import { WorldTransformResolver } from './TransformMatrix.js'
+import { TransformMatrix, WorldTransformResolver } from './TransformMatrix.js'
 import { GraphEditor } from './GraphEditor.js'
 import testPresetXml from './test-preset.xml?raw'
 
@@ -689,15 +689,25 @@ function applyBlendMode(gl, mode) {
 }
 
 
+function drawScene() {
+  // Prepare to draw shapes
+  gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+  gl.viewport(0, 0, canvas.width, canvas.height);
   gl.clearColor(0.05, 0.05, 0.1, 1.0); // Viewer background
   gl.clear(gl.COLOR_BUFFER_BIT);
 
-  // --- Calculate Project-to-Viewer Fit ---
+  // Enable alpha blending for composing FBOs onto the main canvas
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+
+  // --- Calculate Project-to-Viewer Fit (View Matrix) ---
   const projW = sceneData.width || 1920;
   const projH = sceneData.height || 1080;
   const scale = Math.min(canvas.width / projW, canvas.height / projH);
   const offsetX = (canvas.width - projW * scale) / 2;
   const offsetY = (canvas.height - projH * scale) / 2;
+  
+  const viewMatrix = TransformMatrix.fromTRS(offsetX, offsetY, scale, scale, 0, 0, 0);
 
   // Clear per-frame transform cache
   worldResolver.clearCache();
@@ -707,8 +717,11 @@ function applyBlendMode(gl, mode) {
      if (currentAnimTime >= shape.startTime && currentAnimTime <= shape.endTime) {
         const normalizedTime = (currentAnimTime - shape.startTime) / (shape.endTime - shape.startTime);
         
-        // --- Compute World Transform (parent chain) ---
+        // --- Compute World Transform (parent chain) in Project Space ---
         const worldMatrix = worldResolver.getWorldMatrix(shape.id, currentAnimTime);
+        
+        // --- Combine with View Matrix to get Viewer Space Matrix ---
+        const finalMatrix = viewMatrix.multiply(worldMatrix);
 
         // Evaluate properties for this shape
         let currentProperties = {};
@@ -734,12 +747,7 @@ function applyBlendMode(gl, mode) {
         
         // --- STEP 1: Render shape to Canvas2D and upload to layerFBO texture ---
         shapeRenderer.clear();
-        
-        // Pass the projection info to the renderer? 
-        // No, let's keep ShapeRenderer relative to Project coordinates 
-        // and handle the Projection-to-Viewer scaling during WebGL composition.
-        
-        shapeRenderer.renderShape(shape, currentProperties, worldMatrix);
+        shapeRenderer.renderShape(shape, currentProperties, finalMatrix);
         shapeRenderer.updateTexture(gl, layerFBO.texture);
 
         // --- STEP 1.5: Apply Effects ---
@@ -775,16 +783,8 @@ function applyBlendMode(gl, mode) {
         }
         gl.uniform1f(compOpacityLocation, currentOpacity);
 
-        // --- Handle Viewport Mapping via Texture Coordinates ---
-        // We adjust the quad vertices to draw the project-space shape into viewer-space
-        // (Alternatively, we can just use the full-screen quad and pass a projection matrix)
-        // Let's use a simpler approach: a 3x3 Projection Matrix in the shader.
-        // For now, I'll update the texcoords or vertices to match the offset/scale.
-        
-        // Simple fix: Pass scale and offset to the compose shader
-        // But the current compose shader is full-screen. 
-        // Let's adjust the viewport for the composition step.
-        gl.viewport(offsetX, offsetY, projW * scale, projH * scale);
+        // Reset viewport to full canvas for composition
+        gl.viewport(0, 0, canvas.width, canvas.height);
         
         gl.drawArrays(gl.TRIANGLES, 0, 6);
      }

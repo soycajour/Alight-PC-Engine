@@ -85,16 +85,18 @@ function parseEasing(eStr) {
 function parseFloatSafe(v) { return v != null ? parseFloat(v) : 0; }
 
 function parseValue(type, valStr) {
-  if (valStr == null) return null;
-  if (type === 'float' || type === 'int') return parseFloat(valStr);
+  if (valStr == null || valStr === '') return null;
+  if (type === 'float' || type === 'int') return parseFloat(valStr) || 0;
   if (type === 'bool') return valStr === 'true';
   if (type === 'vec2') {
-    const p = valStr.split(','); return [parseFloat(p[0]), parseFloat(p[1])];
+    const p = valStr.split(',');
+    return [parseFloat(p[0]) || 0, parseFloat(p[1]) || 0];
   }
   if (type === 'vec3') {
-    const p = valStr.split(','); return [parseFloat(p[0]), parseFloat(p[1]), parseFloat(p[2])];
+    const p = valStr.split(',');
+    return [parseFloat(p[0]) || 0, parseFloat(p[1]) || 0, parseFloat(p[2]) || 0];
   }
-  if (type === 'color') return valStr; // e.g. "#ff000000"
+  if (type === 'color') return valStr;
   return valStr;
 }
 
@@ -204,8 +206,8 @@ function parseGradient(node) {
     type: gn.getAttribute('type') || 'linear',
     startColor: gn.getAttribute('startColor'),
     endColor: gn.getAttribute('endColor'),
-    start: gn.getAttribute('start'),
-    end: gn.getAttribute('end')
+    start: parseValue('vec2', gn.getAttribute('start')),
+    end: parseValue('vec2', gn.getAttribute('end'))
   };
 }
 
@@ -466,22 +468,36 @@ export class AlightXMLParser {
 
     if (transform.location) {
       const loc = this.evaluateProperty(transform.location, normalizedTime);
-      if (Array.isArray(loc)) { result.x = loc[0]; result.y = loc[1]; result.z = loc[2] || 0; }
+      if (Array.isArray(loc)) { 
+        result.x = loc[0]; 
+        result.y = loc[1]; 
+        result.z = loc[2] || 0; 
+      }
     }
     if (transform.scale) {
       const sc = this.evaluateProperty(transform.scale, normalizedTime);
-      if (Array.isArray(sc)) { result.scaleX = sc[0]; result.scaleY = sc[1]; }
-      else if (typeof sc === 'number') { result.scaleX = sc; result.scaleY = sc; }
+      if (Array.isArray(sc)) { 
+        result.scaleX = sc[0]; 
+        result.scaleY = sc[1]; 
+      } else if (typeof sc === 'number') { 
+        result.scaleX = sc; 
+        result.scaleY = sc; 
+      }
     }
     if (transform.rotation) {
-      result.rotation = this.evaluateProperty(transform.rotation, normalizedTime);
+      const rot = this.evaluateProperty(transform.rotation, normalizedTime);
+      result.rotation = typeof rot === 'number' ? rot : 0;
     }
     if (transform.pivot) {
       const pv = this.evaluateProperty(transform.pivot, normalizedTime);
-      if (Array.isArray(pv)) { result.pivotX = pv[0]; result.pivotY = pv[1]; }
+      if (Array.isArray(pv)) { 
+        result.pivotX = pv[0]; 
+        result.pivotY = pv[1]; 
+      }
     }
     if (transform.opacity) {
-      result.opacity = this.evaluateProperty(transform.opacity, normalizedTime);
+      const op = this.evaluateProperty(transform.opacity, normalizedTime);
+      result.opacity = typeof op === 'number' ? op : 1;
     }
     return result;
   }
