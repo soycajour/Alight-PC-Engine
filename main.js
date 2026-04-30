@@ -689,16 +689,15 @@ function applyBlendMode(gl, mode) {
 }
 
 
-function drawScene() {
-  // Prepare to draw shapes
-  gl.bindFramebuffer(gl.FRAMEBUFFER, null);
-  gl.viewport(0, 0, canvas.width, canvas.height);
-  gl.clearColor(0.0, 0.0, 0.0, 1.0); // Background of the whole video
+  gl.clearColor(0.05, 0.05, 0.1, 1.0); // Viewer background
   gl.clear(gl.COLOR_BUFFER_BIT);
 
-  // Enable alpha blending for composing FBOs onto the main canvas
-  gl.enable(gl.BLEND);
-  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+  // --- Calculate Project-to-Viewer Fit ---
+  const projW = sceneData.width || 1920;
+  const projH = sceneData.height || 1080;
+  const scale = Math.min(canvas.width / projW, canvas.height / projH);
+  const offsetX = (canvas.width - projW * scale) / 2;
+  const offsetY = (canvas.height - projH * scale) / 2;
 
   // Clear per-frame transform cache
   worldResolver.clearCache();
@@ -735,6 +734,11 @@ function drawScene() {
         
         // --- STEP 1: Render shape to Canvas2D and upload to layerFBO texture ---
         shapeRenderer.clear();
+        
+        // Pass the projection info to the renderer? 
+        // No, let's keep ShapeRenderer relative to Project coordinates 
+        // and handle the Projection-to-Viewer scaling during WebGL composition.
+        
         shapeRenderer.renderShape(shape, currentProperties, worldMatrix);
         shapeRenderer.updateTexture(gl, layerFBO.texture);
 
@@ -771,6 +775,16 @@ function drawScene() {
         }
         gl.uniform1f(compOpacityLocation, currentOpacity);
 
+        // --- Handle Viewport Mapping via Texture Coordinates ---
+        // We adjust the quad vertices to draw the project-space shape into viewer-space
+        // (Alternatively, we can just use the full-screen quad and pass a projection matrix)
+        // Let's use a simpler approach: a 3x3 Projection Matrix in the shader.
+        // For now, I'll update the texcoords or vertices to match the offset/scale.
+        
+        // Simple fix: Pass scale and offset to the compose shader
+        // But the current compose shader is full-screen. 
+        // Let's adjust the viewport for the composition step.
+        gl.viewport(offsetX, offsetY, projW * scale, projH * scale);
         
         gl.drawArrays(gl.TRIANGLES, 0, 6);
      }

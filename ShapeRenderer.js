@@ -51,9 +51,6 @@ export class ShapeRenderer {
     let width = properties.size ? properties.size[0] : 100;
     let height = properties.size ? properties.size[1] : 100;
 
-    // Center the drawing context at canvas origin
-    ctx.translate(this.canvas.width / 2, this.canvas.height / 2);
-
     // Apply the accumulated world transform (parent chain)
     // worldMatrix.m = [a, b, c, d, tx, ty]
     if (worldMatrix) {
