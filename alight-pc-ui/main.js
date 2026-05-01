@@ -9,6 +9,7 @@ import { EffectManager } from './EffectManager.js'
 import { TransformMatrix, WorldTransformResolver } from './TransformMatrix.js'
 import { GraphEditor } from './GraphEditor.js'
 import { StateManager } from './StateManager.js'
+import { AlightXMLSerializer } from './XMLSerializer.js'
 import testPresetXml from './test-preset.xml?raw'
 
 // Global Error Handling
@@ -52,11 +53,29 @@ const viewerOverlay= document.getElementById('viewer-overlay');
 const viewerTitle  = document.getElementById('viewer-scene-title');
 const layerList    = document.getElementById('layer-list');
 const layerCount   = document.getElementById('layer-count');
-const propsContent = document.getElementById('properties-content');
-const btnToggleProps = document.getElementById('btn-toggle-properties');
+const propsContent = document.getElementById('props-content');
+const btnToggleProps = document.getElementById('btn-toggle-props');
 const panelProps   = document.getElementById('panel-properties');
 const statusMsg    = document.getElementById('status-msg');
 const statusScene  = document.getElementById('status-scene');
+
+// Zoom logic
+let viewerZoom = 1.0;
+const zoomInBtn = document.getElementById('zoom-in');
+const zoomOutBtn = document.getElementById('zoom-out');
+const zoomResetBtn = document.getElementById('zoom-reset');
+const zoomLabel = document.getElementById('zoom-label');
+
+if (zoomInBtn) {
+  zoomInBtn.addEventListener('click', () => updateZoom(viewerZoom * 1.1));
+  zoomOutBtn.addEventListener('click', () => updateZoom(viewerZoom / 1.1));
+  zoomResetBtn.addEventListener('click', () => updateZoom(1.0));
+}
+
+function updateZoom(newZoom) {
+  viewerZoom = Math.max(0.05, Math.min(20, newZoom));
+  if (zoomLabel) zoomLabel.textContent = `${Math.round(viewerZoom * 100)}%`;
+}
 const statusLayers = document.getElementById('status-layers');
 const statusFpsLive= document.getElementById('status-fps-live');
 const statusRender = document.getElementById('status-render');
@@ -70,6 +89,7 @@ const graphPropSel = document.getElementById('graph-property-select');
 const btnCloseGph  = document.getElementById('btn-close-graph');
 const btnImport    = document.getElementById('btn-import');
 const btnExport    = document.getElementById('btn-export');
+const btnSave      = document.getElementById('btn-save');
 const btnOpenHint  = document.getElementById('btn-open-hint');
 const btnZoomFit   = document.getElementById('btn-zoom-fit');
 const btnAddLayer  = document.getElementById('btn-add-layer');
@@ -148,7 +168,7 @@ function loadShapeIntoGraph(shape) {
 // ═══════════════════════════════════════
 // Viewport Interaction (Gizmos)
 // ═══════════════════════════════════════
-let isDragging = false;
+let isDraggingGizmo = false;
 let dragStartPos = { x: 0, y: 0 };
 let dragStartLocation = [0, 0, 0];
 
@@ -159,7 +179,7 @@ canvas.addEventListener('mousedown', (e) => {
   const x = e.clientX - rect.left;
   const y = e.clientY - rect.top;
   
-  isDragging = true;
+  isDraggingGizmo = true;
   dragStartPos = { x, y };
   
   // Get current location evaluated at current time
@@ -168,7 +188,7 @@ canvas.addEventListener('mousedown', (e) => {
 });
 
 window.addEventListener('mousemove', (e) => {
-  if (!isDragging || !selectedShape) return;
+  if (!isDraggingGizmo || !selectedShape) return;
   
   const rect = canvas.getBoundingClientRect();
   const x = e.clientX - rect.left;
@@ -189,7 +209,7 @@ window.addEventListener('mousemove', (e) => {
 });
 
 window.addEventListener('mouseup', () => {
-  isDragging = false;
+  isDraggingGizmo = false;
 });
 
 // ═══════════════════════════════════════
@@ -200,60 +220,79 @@ btnToggleProps.addEventListener('click', () => {
   btnToggleProps.textContent = panelProps.classList.contains('collapsed') ? '▶' : '◀';
 });
 
-function renderPropertiesPanel(shape) {
-  if (!shape) { propsContent.innerHTML = '<div class="prop-empty">Select a layer</div>'; return; }
-  let html = '';
-  const tx = shape.transform;
-  
-  html += `<div class="prop-section">
-    <div class="prop-section-title">Identity</div>
-    <div class="prop-row"><span class="prop-label">Name</span><input type="text" class="prop-input" id="prop-name" value="${shape.label || shape.id || ''}"></div>
-    <div class="prop-row"><span class="prop-label">Type</span><span class="prop-value">${shape.type}</span></div>
-    <div class="prop-row"><span class="prop-label">Blend</span><span class="prop-blend">${shape.blending || 'normal'}</span></div>
-  </div>`;
+let lastRenderedShapeId = null;
 
-  if (tx) {
-    html += `<div class="prop-section"><div class="prop-section-title">Transform</div>`;
+function renderPropertiesPanel(shape, force = false) {
+  if (!shape) { 
+    propsContent.innerHTML = '<div class="prop-empty">Select a layer</div>'; 
+    lastRenderedShapeId = null;
+    return; 
+  }
+  
+  // Only recreate HTML if we switched shapes or force update
+  if (shape.id !== lastRenderedShapeId || force) {
+    let html = '';
+    const tx = shape.transform;
     
-    const renderProp = (p, label, path, defaultVal) => {
-      let valHtml = '';
-      const isAnimated = p && p.keyframes && p.keyframes.length > 0;
+    html += `<div class="prop-section">
+      <div class="prop-section-title">Identity</div>
+      <div class="prop-row"><span class="prop-label">Name</span><input type="text" class="prop-input" id="prop-name" value="${shape.label || shape.id || ''}"></div>
+      <div class="prop-row"><span class="prop-label">Type</span><span class="prop-value">${shape.type}</span></div>
+      <div class="prop-row"><span class="prop-label">Blend</span><span class="prop-blend">${shape.blending || 'normal'}</span></div>
+    </div>`;
+
+    if (tx) {
+      html += `<div class="prop-section"><div class="prop-section-title">Transform</div>`;
       
-      if (isAnimated) {
-        valHtml = `<span class="prop-value animated">${p.keyframes.length} KF</span>`;
-      } else {
-        const v = p ? p.staticValue : defaultVal;
-        if (Array.isArray(v)) {
-           valHtml = v.map((n, i) => `<input type="number" step="0.1" class="prop-input-small" data-path="${path}" data-index="${i}" value="${typeof n === 'number' ? n.toFixed(1) : n}">`).join('');
+      const renderProp = (p, label, path, defaultVal) => {
+        let valHtml = '';
+        const isAnimated = p && p.keyframes && p.keyframes.length > 0;
+        
+        if (isAnimated) {
+          valHtml = `<span class="prop-value animated" data-path="${path}">${p.keyframes.length} KF</span>`;
         } else {
-           valHtml = `<input type="number" step="0.01" class="prop-input" data-path="${path}" value="${typeof v === 'number' ? v.toFixed(2) : v}">`;
+          const v = p ? p.staticValue : defaultVal;
+          if (Array.isArray(v)) {
+             valHtml = v.map((n, i) => `<input type="number" step="0.1" class="prop-input-small" data-path="${path}" data-index="${i}" value="${typeof n === 'number' ? n.toFixed(1) : n}">`).join('');
+          } else {
+             valHtml = `<input type="number" step="0.01" class="prop-input" data-path="${path}" value="${typeof v === 'number' ? v.toFixed(2) : v}">`;
+          }
         }
-      }
-      
-      return `<div class="prop-row">
-        <span class="prop-label">${label}</span>
-        ${valHtml}
-        <button class="prop-kf-btn ${isAnimated ? 'active' : ''}" data-path="${path}" title="Animate Property">⬥</button>
-      </div>`;
-    };
+        
+        return `<div class="prop-row" data-prop-path="${path}">
+          <span class="prop-label">${label}</span>
+          <div class="prop-input-group">${valHtml}</div>
+          <button class="prop-kf-btn ${isAnimated ? 'active' : ''}" data-path="${path}" title="Animate Property">⬥</button>
+        </div>`;
+      };
 
-    html += renderProp(tx.location, 'Location', 'transform.location', [0, 0, 0]);
-    html += renderProp(tx.scale,    'Scale',    'transform.scale',    [1.0, 1.0]);
-    html += renderProp(tx.rotation, 'Rotation', 'transform.rotation', 0);
-    html += renderProp(tx.opacity,  'Opacity',  'transform.opacity',  1.0);
-    html += '</div>';
-  }
-  
-  if (shape.effects && shape.effects.length > 0) {
-    html += `<div class="prop-section"><div class="prop-section-title">Effects (${shape.effects.length})</div>`;
-    shape.effects.forEach(fx => {
-      html += `<div class="prop-row"><span class="prop-label" style="color:var(--accent-alt);">⚡ ${fx.id}</span></div>`;
-    });
-    html += '</div>';
-  }
-  propsContent.innerHTML = html;
+      html += renderProp(tx.location, 'Location', 'transform.location', [0, 0, 0]);
+      html += renderProp(tx.scale,    'Scale',    'transform.scale',    [1.0, 1.0]);
+      html += renderProp(tx.rotation, 'Rotation', 'transform.rotation', 0);
+      html += renderProp(tx.opacity,  'Opacity',  'transform.opacity',  1.0);
+      html += '</div>';
+    }
+    
+    if (shape.effects && shape.effects.length > 0) {
+      html += `<div class="prop-section"><div class="prop-section-title">Effects (${shape.effects.length})</div>`;
+      shape.effects.forEach(fx => {
+        html += `<div class="prop-row"><span class="prop-label" style="color:var(--accent-alt);">⚡ ${fx.id}</span></div>`;
+      });
+      html += '</div>';
+    }
+    propsContent.innerHTML = html;
+    lastRenderedShapeId = shape.id;
 
-  // Add listeners for inputs
+    // Add listeners (only once per shape change)
+    attachPropertyListeners(shape);
+  } else {
+    // Update existing inputs with current values (interpolated)
+    updatePropertyInputs(shape);
+  }
+}
+
+function attachPropertyListeners(shape) {
+  // Input listener
   propsContent.querySelectorAll('.prop-input, .prop-input-small').forEach(input => {
     input.addEventListener('input', (e) => {
       const path = input.dataset.path;
@@ -262,7 +301,6 @@ function renderPropertiesPanel(shape) {
       if (isNaN(val)) val = input.value;
 
       if (index !== undefined) {
-        const shape = stateManager.getSelectedShape();
         const currentArr = stateManager.getPropertyValue(shape, path) || [0,0,0];
         const newArr = [...currentArr];
         newArr[parseInt(index)] = val;
@@ -276,7 +314,46 @@ function renderPropertiesPanel(shape) {
   // Name listener
   document.getElementById('prop-name')?.addEventListener('input', (e) => {
     shape.label = e.target.value;
-    buildLayerList(); // Update layer list name
+    const labelEl = document.querySelector(`.layer-row[data-shape-id="${shape.id}"] .layer-name`);
+    if (labelEl) labelEl.textContent = shape.label;
+    const clipLabel = document.querySelector(`.tl-clip[data-shape-id="${shape.id}"] .tl-clip-label`);
+    if (clipLabel) clipLabel.textContent = shape.label;
+  });
+
+  // Keyframe toggle listener
+  propsContent.querySelectorAll('.prop-kf-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const path = btn.dataset.path;
+      stateManager.toggleAnimation(shape.id, path);
+      renderPropertiesPanel(shape, true); // Force full redraw to show/hide inputs
+      buildTimeline(); 
+    });
+  });
+}
+
+function updatePropertyInputs(shape) {
+  // Don't update if user is typing
+  if (document.activeElement.tagName === 'INPUT') return;
+
+  propsContent.querySelectorAll('.prop-input, .prop-input-small').forEach(input => {
+    const path = input.dataset.path;
+    const index = input.dataset.index;
+    const val = stateManager.getPropertyValue(shape, path);
+    
+    if (index !== undefined && Array.isArray(val)) {
+      input.value = val[index].toFixed(1);
+    } else if (typeof val === 'number') {
+      input.value = val.toFixed(2);
+    }
+  });
+  
+  // Update KF badges
+  propsContent.querySelectorAll('.prop-value.animated').forEach(badge => {
+    const path = badge.dataset.path;
+    const prop = stateManager.getPropertyValue(shape, path, true); // raw prop
+    if (prop && prop.keyframes) {
+      badge.textContent = `${prop.keyframes.length} KF`;
+    }
   });
 }
 
@@ -300,6 +377,9 @@ async function loadScene(data, filename = 'Project') {
   }
 
   await mediaManager.preloadMedia(sceneData);
+  stateManager.setSceneData(sceneData);
+  selectedShape = null;
+
   worldResolver = new WorldTransformResolver(
     sceneData.nodeLookup || {},
     AlightXMLParser.evaluateTransform.bind(AlightXMLParser),
@@ -429,6 +509,43 @@ function buildTimeline() {
       loadShapeIntoGraph(shape);
     });
     
+    // Clip dragging
+    let isDraggingClip = false;
+    let startX = 0;
+    let startStartTime = 0;
+    let startEndTime = 0;
+
+    clip.addEventListener('mousedown', (e) => {
+      if (e.button !== 0) return;
+      e.stopPropagation();
+      isDraggingClip = true;
+      startX = e.clientX;
+      startStartTime = shape.startTime;
+      startEndTime = shape.endTime;
+      document.body.style.cursor = 'grabbing';
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDraggingClip) return;
+      const dx = e.clientX - startX;
+      const rect = tlTracksArea.getBoundingClientRect();
+      const dt = (dx / rect.width) * sceneData.totalTime;
+      
+      shape.startTime = Math.max(0, startStartTime + dt);
+      shape.endTime = startEndTime + (shape.startTime - startStartTime);
+      
+      const leftPct = (shape.startTime / sceneData.totalTime) * 100;
+      clip.style.left = `${leftPct}%`;
+    });
+
+    window.addEventListener('mouseup', () => {
+      if (isDraggingClip) {
+        isDraggingClip = false;
+        document.body.style.cursor = 'default';
+        updateTimelineUI();
+      }
+    });
+    
     // Keyframe diamonds
     const addKfMarkers = (propObj) => {
       if (!propObj) return;
@@ -482,6 +599,21 @@ async function openProject() {
 }
 btnImport.addEventListener('click', openProject);
 if (btnOpenHint) btnOpenHint.addEventListener('click', openProject);
+
+// Save
+btnSave.addEventListener('click', async () => {
+  const xml = AlightXMLSerializer.serialize(sceneData);
+  if (window.electronAPI) {
+    const path = await window.electronAPI.saveXMLFile(xml);
+    if (path) setStatus(`Project saved to ${path.split(/[\\/]/).pop()}`, 'ok');
+  } else {
+    // Browser fallback: download blob
+    const blob = new Blob([xml], { type: 'text/xml' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'project.xml'; a.click();
+  }
+});
 
 // Export
 btnExport?.addEventListener('click', () => {
@@ -540,6 +672,7 @@ function trackFPS() {
 
 function updateTimelineUI() {
   const t = currentAnimTime;
+  stateManager.setCurrentTime(t);
   const mins = Math.floor(t / 60000);
   const secs = Math.floor((t % 60000) / 1000);
   const ms   = Math.floor(t % 1000);
@@ -840,10 +973,10 @@ function drawScene() {
   gl.enable(gl.BLEND);
   gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
 
-  // --- Calculate Project-to-Viewer Fit (View Matrix) ---
   const projW = sceneData.width || 1920;
   const projH = sceneData.height || 1080;
-  const scale = Math.min(canvas.width / projW, canvas.height / projH);
+  const fitScale = Math.min(canvas.width / projW, canvas.height / projH);
+  const scale = fitScale * viewerZoom;
   const offsetX = (canvas.width - projW * scale) / 2;
   const offsetY = (canvas.height - projH * scale) / 2;
   
@@ -875,9 +1008,9 @@ function drawScene() {
   // Clear per-frame transform cache
   worldResolver.clearCache();
   
-  for (const shape of sceneData.shapes) {
-     if (shape.hidden) continue;
-     if (currentAnimTime >= shape.startTime && currentAnimTime <= shape.endTime) {
+  for (const shape of (sceneData.shapes || [])) {
+     if (!shape || shape.hidden) continue;
+     if (currentAnimTime >= (shape.startTime || 0) && currentAnimTime <= (shape.endTime || 0)) {
         const normalizedTime = (currentAnimTime - shape.startTime) / (shape.endTime - shape.startTime);
         
         // --- Compute World Transform (parent chain) in Project Space ---
@@ -966,6 +1099,7 @@ function render(now) {
       if (currentAnimTime > sceneData.totalTime) {
         currentAnimTime %= sceneData.totalTime;
       }
+      stateManager.setCurrentTime(currentAnimTime);
       updateTimelineUI();
     }
     

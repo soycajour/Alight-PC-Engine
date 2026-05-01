@@ -2,6 +2,7 @@ const { contextBridge, ipcRenderer } = require('electron');
 
 contextBridge.exposeInMainWorld('electronAPI', {
   openXMLFile: () => ipcRenderer.invoke('dialog:openXML'),
+  saveXMLFile: (xmlString) => ipcRenderer.invoke('dialog:saveXML', xmlString),
   saveWebMFile: (buffer) => ipcRenderer.invoke('dialog:saveWebM', buffer),
   
   // Menu-triggered events

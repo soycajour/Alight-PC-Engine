@@ -5,12 +5,21 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
 // Load the native Rust core
-const nativePath = path.join(process.cwd(), 'alight-pc-core/index.node');
+let nativePath = path.join(process.cwd(), 'alight-pc-core/index.node');
+if (!fs.existsSync(nativePath)) {
+  // Try parent directory (development structure)
+  nativePath = path.join(process.cwd(), '../alight-pc-core/index.node');
+}
+
 let alightCore;
 try {
-  const { AlightCore } = require(nativePath);
-  alightCore = new AlightCore();
-  console.log('Native AlightCore successfully loaded');
+  if (fs.existsSync(nativePath)) {
+    const { AlightCore } = require(nativePath);
+    alightCore = new AlightCore();
+    console.log('Native AlightCore successfully loaded from:', nativePath);
+  } else {
+    console.warn('Native AlightCore not found at:', nativePath);
+  }
 } catch (e) {
   console.error('Failed to load native AlightCore:', e);
 }
@@ -195,6 +204,20 @@ app.whenReady().then(() => {
     });
     if (!canceled && filePath) {
       fs.writeFileSync(filePath, Buffer.from(arrayBuffer));
+      return filePath;
+    }
+    return null;
+  });
+
+  // IPC: Save XML
+  ipcMain.handle('dialog:saveXML', async (event, xmlString) => {
+    const { canceled, filePath } = await dialog.showSaveDialog({
+      title: 'Save Project',
+      defaultPath: 'alight_project.xml',
+      filters: [{ name: 'Alight Motion XML', extensions: ['xml'] }]
+    });
+    if (!canceled && filePath) {
+      fs.writeFileSync(filePath, xmlString, 'utf-8');
       return filePath;
     }
     return null;

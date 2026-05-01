@@ -67,7 +67,11 @@ export class GraphEditor {
 
   _valueRange() {
     if (!this.property || !this.property.keyframes || this.property.keyframes.length === 0) return [0, 1];
-    const vals = this.property.keyframes.map(k => typeof k.v === 'number' ? k.v : (Array.isArray(k.v) ? k.v[0] : 0));
+    const vals = this.property.keyframes.map(k => {
+      if (typeof k.v === 'number') return k.v;
+      if (Array.isArray(k.v)) return k.v[0]; // Draw the first component (X) for now
+      return 0;
+    });
     const min = Math.min(...vals);
     const max = Math.max(...vals);
     const pad = (max - min) * 0.2 || 0.5;
@@ -149,20 +153,19 @@ export class GraphEditor {
   _evaluateAtT(t) {
     const kfs = this.property.keyframes;
     if (!kfs || kfs.length === 0) return 0;
-    if (kfs.length === 1) return typeof kfs[0].v === 'number' ? kfs[0].v : 0;
-    if (t <= kfs[0].t) return typeof kfs[0].v === 'number' ? kfs[0].v : 0;
-    if (t >= kfs[kfs.length - 1].t) {
-      const last = kfs[kfs.length - 1];
-      return typeof last.v === 'number' ? last.v : 0;
-    }
+    const getVal = (v) => typeof v === 'number' ? v : (Array.isArray(v) ? v[0] : 0);
+
+    if (kfs.length === 1) return getVal(kfs[0].v);
+    if (t <= kfs[0].t) return getVal(kfs[0].v);
+    if (t >= kfs[kfs.length - 1].t) return getVal(kfs[kfs.length - 1].v);
 
     for (let i = 0; i < kfs.length - 1; i++) {
       if (t >= kfs[i].t && t <= kfs[i + 1].t) {
         const kf1 = kfs[i], kf2 = kfs[i + 1];
         const localT = (t - kf1.t) / (kf2.t - kf1.t);
         const easedT = kf1.easingFunc ? kf1.easingFunc(localT) : localT;
-        const v1 = typeof kf1.v === 'number' ? kf1.v : 0;
-        const v2 = typeof kf2.v === 'number' ? kf2.v : 0;
+        const v1 = getVal(kf1.v);
+        const v2 = getVal(kf2.v);
         return v1 + (v2 - v1) * easedT;
       }
     }
@@ -174,7 +177,7 @@ export class GraphEditor {
     const kfs = this.property.keyframes;
 
     kfs.forEach((kf, i) => {
-      const v = typeof kf.v === 'number' ? kf.v : 0;
+      const v = typeof kf.v === 'number' ? kf.v : (Array.isArray(kf.v) ? kf.v[0] : 0);
       const pt = this._toScreen(kf.t, v);
       const isSelected = i === this.selectedKfIndex;
 
@@ -264,7 +267,12 @@ export class GraphEditor {
       const prev = this.property.keyframes[this.dragging.index - 1];
       const next = this.property.keyframes[this.dragging.index + 1];
       kf.t = Math.max(prev ? prev.t + 0.001 : 0, Math.min(next ? next.t - 0.001 : 1, data.t));
-      if (typeof kf.v === 'number') kf.v = data.v;
+      
+      if (typeof kf.v === 'number') {
+        kf.v = data.v;
+      } else if (Array.isArray(kf.v)) {
+        kf.v[0] = data.v; // Only edit X in graph for now
+      }
       this.draw();
       if (this.onChangeCallback) this.onChangeCallback(this.property);
     }

@@ -32,6 +32,7 @@
       </div>
       <div class="titlebar-actions">
         <button class="tb-btn tb-import" id="btn-import" title="Open XML Project">📂 Open</button>
+        <button class="tb-btn" id="btn-save" title="Save XML Project">💾 Save</button>
         <button class="tb-btn tb-export" id="btn-export" title="Export Video">⬇ Export</button>
       </div>
     </div>
@@ -49,7 +50,6 @@
           </div>
         </div>
         <div class="layer-list" id="layer-list">
-          <!-- JS injects layer rows here -->
           <div class="layer-empty">No layers — Open an XML project</div>
         </div>
       </div>
@@ -58,13 +58,10 @@
       <div class="panel panel-viewer" id="panel-viewer">
         <div class="viewer-toolbar">
           <span class="viewer-label" id="viewer-scene-title">No Scene</span>
-          <div class="viewer-zoom">
-            <button class="icon-btn" id="btn-zoom-fit">Fit</button>
-            <span class="viewer-zoom-label" id="zoom-label">100%</span>
-          </div>
         </div>
         <div class="viewer-canvas-wrap" id="viewer-canvas-wrap">
           <canvas id="glcanvas"></canvas>
+          
           <div class="viewer-overlay" id="viewer-overlay">
             <div class="viewer-drop-hint">
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
@@ -74,17 +71,25 @@
               <button class="btn-primary" id="btn-open-hint">📂 Open Project</button>
             </div>
           </div>
+
+          <!-- Floating Zoom Controls -->
+          <div class="viewer-controls">
+            <button class="v-btn" id="zoom-out" title="Zoom Out">−</button>
+            <div class="v-zoom-label" id="zoom-label">100%</div>
+            <button class="v-btn" id="zoom-in" title="Zoom In">+</button>
+            <button class="v-btn" id="zoom-reset" title="Fit to View">⟲</button>
+          </div>
         </div>
       </div>
 
       <!-- RIGHT PANEL: Properties -->
       <div class="panel panel-properties" id="panel-properties">
-        <div class="panel-header">
-          <span>PROPERTIES</span>
-          <button class="icon-btn" id="btn-toggle-properties" title="Toggle Properties">◀</button>
-        </div>
-        <div class="properties-content" id="properties-content">
-          <div class="prop-empty">Select a layer</div>
+        <button class="toggle-props-btn" id="btn-toggle-props">◀</button>
+        <div class="properties-wrapper">
+          <div class="panel-title">Properties</div>
+          <div class="properties-content" id="props-content">
+            <div class="prop-empty">Select a layer</div>
+          </div>
         </div>
       </div>
 
@@ -101,11 +106,8 @@
         </div>
       </div>
       <div class="timeline-body" id="timeline-body">
-        <div class="tl-label-col" id="tl-label-col">
-          <!-- Layer labels injected by JS -->
-        </div>
+        <div class="tl-label-col" id="tl-label-col"></div>
         <div class="tl-tracks-col" id="timeline-track-area">
-          <!-- Tracks injected by JS -->
           <div class="tl-playhead-track" id="playhead-track"></div>
         </div>
       </div>
@@ -136,6 +138,9 @@
         <span id="status-fps-live">-- fps</span>
       </div>
     </div>
+
+    <!-- Hidden Inputs -->
+    <input type="file" id="file-input" style="display:none" accept=".xml">
 
   </div>
   <script type="module" src="/main.js"></script>

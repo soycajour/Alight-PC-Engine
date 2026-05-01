@@ -370,7 +370,7 @@ export class AlightXMLParser {
       exportWidth: parseFloatSafe(root.getAttribute('exportWidth')),
       exportHeight: parseFloatSafe(root.getAttribute('exportHeight')),
       bgColor: root.getAttribute('bgcolor') || '#ff000000',
-      totalTime: parseFloatSafe(root.getAttribute('totalTime')),
+      totalTime: Math.max(1, parseFloatSafe(root.getAttribute('totalTime')) || 5000),
       fps: parseFloatSafe(root.getAttribute('fps')) || 30,
       nodes: [],    // Full scene graph tree
       nodeLookup: {},  // id → node reference
@@ -427,10 +427,12 @@ export class AlightXMLParser {
   }
 
   // --- Evaluate a property at a given normalized time ---
-  static evaluateProperty(propData, normalizedTime) {
-    if (propData.staticValue !== undefined) return propData.staticValue;
+  static evaluateProperty(prop, normalizedTime) {
+    if (!prop) return null;
+    if (isNaN(normalizedTime)) normalizedTime = 0;
+    if (prop.staticValue !== undefined) return prop.staticValue;
     
-    const kfs = propData.keyframes;
+    const kfs = prop.keyframes;
     if (!kfs || kfs.length === 0) return 0;
     if (kfs.length === 1) return kfs[0].v;
     if (normalizedTime <= kfs[0].t) return kfs[0].v;

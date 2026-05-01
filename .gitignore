@@ -41,3 +41,4 @@ run-build-script-build
 # OS files
 .DS_Store
 Thumbs.db
+alight-pc-ui/.env
