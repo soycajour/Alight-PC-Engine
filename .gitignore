@@ -1,0 +1,43 @@
+# Rust / Cargo
+/alight-pc-core/target/
+/target/
+**/*.rs.bk
+.rustc_info.json
+CACHEDIR.TAG
+.cargo-lock
+
+# Build Artifacts
+*.d
+*.o
+*.s
+*.lib
+*.a
+*.dll
+*.exe
+!Lanzar Alight PC.bat
+
+# Machine Specific Config
+.cargo/config.toml
+
+# Node / Electron
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+out/
+
+# Temporary / Tooling files
+last_message.txt
+extract_last_msg.py
+download_*.js
+invoked.timestamp
+lib-adler2*
+dep-lib-adler2*
+run-build-script-build
+*.timestamp
+
+# OS files
+.DS_Store
+Thumbs.db

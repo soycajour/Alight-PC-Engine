@@ -1,0 +1,11 @@
+/target/
+**/*.rs.bk
+.rustc_info.json
+CACHEDIR.TAG
+.cargo-lock
+.cargo/config.toml
+invoked.timestamp
+lib-adler2*
+dep-lib-adler2*
+run-build-script-build
+*.timestamp
