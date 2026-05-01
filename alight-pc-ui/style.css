@@ -362,6 +362,43 @@ body {
   text-align: right;
 }
 .prop-value.animated { color: var(--amber); border-color: rgba(245,158,11,0.3); }
+.prop-input {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text);
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 2px 6px;
+  width: 100px;
+  text-align: right;
+  outline: none;
+}
+.prop-input:focus { border-color: var(--accent); background: #2a2a32; }
+.prop-input-small {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text);
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 2px 4px;
+  width: 45px;
+  text-align: center;
+  outline: none;
+}
+.prop-input-small:focus { border-color: var(--accent); background: #2a2a32; }
+.prop-kf-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 4px;
+  transition: all 0.2s;
+}
+.prop-kf-btn:hover { color: var(--amber); transform: scale(1.2); }
+.prop-kf-btn.active { color: var(--amber); }
 
 /* Blend mode badge */
 .prop-blend {

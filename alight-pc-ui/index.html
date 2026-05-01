@@ -43,7 +43,10 @@
       <div class="panel panel-layers" id="panel-layers">
         <div class="panel-header">
           <span>LAYERS</span>
-          <span class="panel-badge" id="layer-count">0</span>
+          <div style="display:flex; gap: 8px; align-items:center;">
+            <button class="icon-btn" id="btn-add-layer" title="Add New Layer">+</button>
+            <span class="panel-badge" id="layer-count">0</span>
+          </div>
         </div>
         <div class="layer-list" id="layer-list">
           <!-- JS injects layer rows here -->

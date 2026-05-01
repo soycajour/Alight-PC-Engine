@@ -46,18 +46,17 @@ export class ShapeRenderer {
   renderShape(node, properties, worldMatrix) {
     const ctx = this.ctx;
     ctx.save();
+    let currentPath = null;
 
     // Default dimensions
     let width = properties.size ? properties.size[0] : 100;
     let height = properties.size ? properties.size[1] : 100;
 
     // Apply the accumulated world transform (parent chain)
-    // worldMatrix.m = [a, b, c, d, tx, ty]
     if (worldMatrix) {
       const [a, b, c, d, tx, ty] = worldMatrix.m;
       ctx.transform(a, b, c, d, tx, ty);
     }
-
 
     if (node.type === 'text') {
       const fontSize = properties.size || node.fontSize || 24;
@@ -80,7 +79,6 @@ export class ShapeRenderer {
         ctx.strokeText(text, 0, 0);
       }
     } 
-    // Handle vector shapes
     else {
       // Path setup
       ctx.beginPath();
@@ -97,11 +95,8 @@ export class ShapeRenderer {
         ctx.ellipse(0, 0, width/2, height/2, 0, 0, Math.PI * 2);
       }
       else if (node.pathData) {
-        // Custom SVG path
-        const p = new Path2D(node.pathData);
-        ctx.addPath(p);
+        currentPath = new Path2D(node.pathData);
       } else {
-        // Default fallback
         ctx.rect(-width/2, -height/2, width, height);
       }
 
@@ -109,11 +104,10 @@ export class ShapeRenderer {
       if (node.fillType === 'color' && node.fillColor) {
         const color = this._parseColor(properties.fillColor || (node.fillColor ? node.fillColor.staticValue : null));
         ctx.fillStyle = color;
-        ctx.fill();
+        if (currentPath) ctx.fill(currentPath); else ctx.fill();
       } else if (node.gradient) {
         let grad;
         if (node.gradient.type === 'linear') {
-          // Map normalized start/end to pixel coordinates relative to center
           const s = node.gradient.start || [0, 0];
           const e = node.gradient.end || [0, 1];
           grad = ctx.createLinearGradient(
@@ -124,32 +118,32 @@ export class ShapeRenderer {
           grad = ctx.createRadialGradient(0, 0, 0, 0, 0, Math.max(width, height) / 2);
         }
         
-        grad.addColorStop(0, this._parseColor(node.gradient.startColor));
-        grad.addColorStop(1, this._parseColor(node.gradient.endColor));
+        if (node.gradient.startColor) grad.addColorStop(0, this._parseColor(node.gradient.startColor));
+        if (node.gradient.endColor) grad.addColorStop(1, this._parseColor(node.gradient.endColor));
         ctx.fillStyle = grad;
-        ctx.fill();
+        if (currentPath) ctx.fill(currentPath); else ctx.fill();
       } else if (node.fillType === 'media') {
         const mediaManager = properties.mediaManager;
         if (mediaManager) {
           const uri = node.fillImage || node.fillVideo;
           const mediaElement = mediaManager.getMedia(uri);
           if (mediaElement) {
-            ctx.save(); ctx.clip();
+            ctx.save();
+            if (currentPath) ctx.clip(currentPath); else ctx.clip();
             ctx.drawImage(mediaElement, -width/2, -height/2, width, height);
             ctx.restore();
           }
         }
       } else {
-        // Fallback fill to make shapes visible
         ctx.fillStyle = 'rgba(100, 100, 150, 0.5)';
-        ctx.fill();
+        if (currentPath) ctx.fill(currentPath); else ctx.fill();
       }
 
       // Stroke
       if (node.pathStroke) {
         ctx.strokeStyle = this._parseColor(node.pathStroke.color);
         ctx.lineWidth = node.pathStroke.size || 1;
-        ctx.stroke();
+        if (currentPath) ctx.stroke(currentPath); else ctx.stroke();
       }
     }
 
@@ -157,7 +151,6 @@ export class ShapeRenderer {
     return this.canvas;
   }
   
-  // Creates or updates a WebGL texture from the current canvas state
   updateTexture(gl, texture) {
     gl.bindTexture(gl.TEXTURE_2D, texture);
     gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, this.canvas);

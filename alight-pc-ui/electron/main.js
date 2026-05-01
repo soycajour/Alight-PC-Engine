@@ -1,6 +1,19 @@
 import { app, BrowserWindow, ipcMain, dialog, Menu, shell } from 'electron';
 import fs from 'fs';
 import path from 'path';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+
+// Load the native Rust core
+const nativePath = path.join(process.cwd(), 'alight-pc-core/index.node');
+let alightCore;
+try {
+  const { AlightCore } = require(nativePath);
+  alightCore = new AlightCore();
+  console.log('Native AlightCore successfully loaded');
+} catch (e) {
+  console.error('Failed to load native AlightCore:', e);
+}
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -146,14 +159,31 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
-  // IPC: Open XML file dialog
+  // IPC: Open XML and load via Rust
   ipcMain.handle('dialog:openXML', async () => {
     const { canceled, filePaths } = await dialog.showOpenDialog({
       properties: ['openFile'],
-      filters: [{ name: 'XML Presets', extensions: ['xml'] }]
+      filters: [{ name: 'Alight Motion XML', extensions: ['xml'] }]
     });
-    if (canceled) return null;
-    return fs.readFileSync(filePaths[0], 'utf-8');
+    
+    if (canceled || !filePaths[0]) return null;
+    
+    const filePath = filePaths[0];
+    
+    // If Rust core is available, use it for high-speed parsing
+    if (alightCore) {
+      try {
+        console.log(`Loading project via Rust: ${filePath}`);
+        const scene = alightCore.loadProjectFromPath(filePath);
+        return { scene, filePath };
+      } catch (e) {
+        console.error('Rust parsing failed, falling back to legacy JS parser:', e);
+        return { content: fs.readFileSync(filePath, 'utf-8'), filePath };
+      }
+    }
+    
+    // Fallback if native core is missing
+    return { content: fs.readFileSync(filePath, 'utf-8'), filePath };
   });
 
   // IPC: Save WebM

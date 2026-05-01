@@ -8,6 +8,7 @@ import { MediaManager } from './MediaManager.js'
 import { EffectManager } from './EffectManager.js'
 import { TransformMatrix, WorldTransformResolver } from './TransformMatrix.js'
 import { GraphEditor } from './GraphEditor.js'
+import { StateManager } from './StateManager.js'
 import testPresetXml from './test-preset.xml?raw'
 
 // Global Error Handling
@@ -27,6 +28,7 @@ mediaManager.preloadMedia(sceneData);
 
 // Transform resolver — resolves parent-child world matrices
 let worldResolver = new WorldTransformResolver(sceneData.nodeLookup, AlightXMLParser.evaluateTransform.bind(AlightXMLParser), AlightXMLParser);
+const stateManager = new StateManager(sceneData);
 
 // Timeline State
 let isPlaying = true;
@@ -70,6 +72,39 @@ const btnImport    = document.getElementById('btn-import');
 const btnExport    = document.getElementById('btn-export');
 const btnOpenHint  = document.getElementById('btn-open-hint');
 const btnZoomFit   = document.getElementById('btn-zoom-fit');
+const btnAddLayer  = document.getElementById('btn-add-layer');
+
+btnAddLayer.addEventListener('click', () => {
+  const newId = 'shape_' + Math.random().toString(36).substr(2, 9);
+  const newShape = {
+    id: newId,
+    type: 'shape',
+    shapeType: '.rect',
+    label: 'Rectangle',
+    startTime: 0,
+    endTime: sceneData.totalTime || 5000,
+    transform: {
+      location: { staticValue: [sceneData.width/2 || 540, sceneData.height/2 || 540, 0] },
+      scale: { staticValue: [1.0, 1.0] },
+      rotation: { staticValue: 0 },
+      opacity: { staticValue: 1.0 }
+    },
+    properties: {
+      size: { staticValue: [200, 200] },
+      fillColor: { staticValue: '#ffffffff' }
+    },
+    fillType: 'color'
+  };
+  
+  if (!sceneData.shapes) sceneData.shapes = [];
+  sceneData.shapes.unshift(newShape); 
+  if (!sceneData.nodeLookup) sceneData.nodeLookup = {};
+  sceneData.nodeLookup[newId] = newShape;
+  
+  buildLayerList();
+  buildTimeline();
+  updateStatus();
+});
 
 // ═══════════════════════════════════════
 // Graph Editor
@@ -111,6 +146,53 @@ function loadShapeIntoGraph(shape) {
 }
 
 // ═══════════════════════════════════════
+// Viewport Interaction (Gizmos)
+// ═══════════════════════════════════════
+let isDragging = false;
+let dragStartPos = { x: 0, y: 0 };
+let dragStartLocation = [0, 0, 0];
+
+canvas.addEventListener('mousedown', (e) => {
+  if (!selectedShape) return;
+  
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  
+  isDragging = true;
+  dragStartPos = { x, y };
+  
+  // Get current location evaluated at current time
+  const loc = AlightXMLParser.evaluateProperty(selectedShape.transform.location, (currentAnimTime - selectedShape.startTime) / (selectedShape.endTime - selectedShape.startTime));
+  dragStartLocation = [...(loc || [0,0,0])];
+});
+
+window.addEventListener('mousemove', (e) => {
+  if (!isDragging || !selectedShape) return;
+  
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  
+  const dx = x - dragStartPos.x;
+  const dy = y - dragStartPos.y;
+  
+  const projW = sceneData.width || 1920;
+  const projH = sceneData.height || 1080;
+  const scale = Math.min(canvas.width / projW, canvas.height / projH);
+  
+  const newX = dragStartLocation[0] + dx / scale;
+  const newY = dragStartLocation[1] + dy / scale;
+  
+  stateManager.updateProperty(selectedShape.id, 'transform.location', [newX, newY, dragStartLocation[2] || 0]);
+  renderPropertiesPanel(selectedShape);
+});
+
+window.addEventListener('mouseup', () => {
+  isDragging = false;
+});
+
+// ═══════════════════════════════════════
 // Properties Panel
 // ═══════════════════════════════════════
 btnToggleProps.addEventListener('click', () => {
@@ -125,29 +207,40 @@ function renderPropertiesPanel(shape) {
   
   html += `<div class="prop-section">
     <div class="prop-section-title">Identity</div>
-    <div class="prop-row"><span class="prop-label">Name</span><span class="prop-value">${shape.label || shape.id || '—'}</span></div>
+    <div class="prop-row"><span class="prop-label">Name</span><input type="text" class="prop-input" id="prop-name" value="${shape.label || shape.id || ''}"></div>
     <div class="prop-row"><span class="prop-label">Type</span><span class="prop-value">${shape.type}</span></div>
     <div class="prop-row"><span class="prop-label">Blend</span><span class="prop-blend">${shape.blending || 'normal'}</span></div>
   </div>`;
 
   if (tx) {
     html += `<div class="prop-section"><div class="prop-section-title">Transform</div>`;
-    const fmt = (p, defaultVal) => {
-      if (!p) return `<span class="prop-value">${defaultVal}</span>`;
-      if (p.keyframes && p.keyframes.length > 0) return `<span class="prop-value animated">${p.keyframes.length} KF</span>`;
-      if (p.staticValue !== undefined) {
-        const v = p.staticValue;
-        if (Array.isArray(v)) return `<span class="prop-value">${v.map(n => typeof n === 'number' ? n.toFixed(1) : n).join(', ')}</span>`;
-        return `<span class="prop-value">${typeof v === 'number' ? v.toFixed(2) : v}</span>`;
+    
+    const renderProp = (p, label, path, defaultVal) => {
+      let valHtml = '';
+      const isAnimated = p && p.keyframes && p.keyframes.length > 0;
+      
+      if (isAnimated) {
+        valHtml = `<span class="prop-value animated">${p.keyframes.length} KF</span>`;
+      } else {
+        const v = p ? p.staticValue : defaultVal;
+        if (Array.isArray(v)) {
+           valHtml = v.map((n, i) => `<input type="number" step="0.1" class="prop-input-small" data-path="${path}" data-index="${i}" value="${typeof n === 'number' ? n.toFixed(1) : n}">`).join('');
+        } else {
+           valHtml = `<input type="number" step="0.01" class="prop-input" data-path="${path}" value="${typeof v === 'number' ? v.toFixed(2) : v}">`;
+        }
       }
-      return `<span class="prop-value">${defaultVal}</span>`;
+      
+      return `<div class="prop-row">
+        <span class="prop-label">${label}</span>
+        ${valHtml}
+        <button class="prop-kf-btn ${isAnimated ? 'active' : ''}" data-path="${path}" title="Animate Property">⬥</button>
+      </div>`;
     };
-    html += `
-      <div class="prop-row"><span class="prop-label">Location</span>${fmt(tx.location, '0, 0, 0')}</div>
-      <div class="prop-row"><span class="prop-label">Scale</span>${fmt(tx.scale, '1.0, 1.0')}</div>
-      <div class="prop-row"><span class="prop-label">Rotation</span>${fmt(tx.rotation, '0.00')}</div>
-      <div class="prop-row"><span class="prop-label">Opacity</span>${fmt(tx.opacity, '1.00')}</div>
-    `;
+
+    html += renderProp(tx.location, 'Location', 'transform.location', [0, 0, 0]);
+    html += renderProp(tx.scale,    'Scale',    'transform.scale',    [1.0, 1.0]);
+    html += renderProp(tx.rotation, 'Rotation', 'transform.rotation', 0);
+    html += renderProp(tx.opacity,  'Opacity',  'transform.opacity',  1.0);
     html += '</div>';
   }
   
@@ -159,17 +252,56 @@ function renderPropertiesPanel(shape) {
     html += '</div>';
   }
   propsContent.innerHTML = html;
+
+  // Add listeners for inputs
+  propsContent.querySelectorAll('.prop-input, .prop-input-small').forEach(input => {
+    input.addEventListener('input', (e) => {
+      const path = input.dataset.path;
+      const index = input.dataset.index;
+      let val = parseFloat(input.value);
+      if (isNaN(val)) val = input.value;
+
+      if (index !== undefined) {
+        const shape = stateManager.getSelectedShape();
+        const currentArr = stateManager.getPropertyValue(shape, path) || [0,0,0];
+        const newArr = [...currentArr];
+        newArr[parseInt(index)] = val;
+        stateManager.updateProperty(shape.id, path, newArr);
+      } else {
+        stateManager.updateProperty(shape.id, path, val);
+      }
+    });
+  });
+
+  // Name listener
+  document.getElementById('prop-name')?.addEventListener('input', (e) => {
+    shape.label = e.target.value;
+    buildLayerList(); // Update layer list name
+  });
 }
 
 // ═══════════════════════════════════════
 // Scene Loading
 // ═══════════════════════════════════════
-async function loadScene(xmlContent, filename = 'Project') {
-  setStatus('Parsing scene...', 'loading');
-  sceneData = AlightXMLParser.parse(xmlContent);
+async function loadScene(data, filename = 'Project') {
+  setStatus('Processing scene data...', 'loading');
+  
+  // If data is a string (legacy/fallback), parse it in JS
+  if (typeof data === 'string') {
+    sceneData = AlightXMLParser.parse(data);
+  } else {
+    // If it's already an object (from Rust), use it directly
+    sceneData = data;
+    // Note: Rust parser returns scene with .shapes while JS uses .shapes (or .layers in some versions)
+    // We need to ensure compatibility.
+    if (!sceneData.shapes && sceneData.layers) {
+      sceneData.shapes = sceneData.layers;
+    }
+  }
+
   await mediaManager.preloadMedia(sceneData);
   worldResolver = new WorldTransformResolver(
-    sceneData.nodeLookup,
+    sceneData.nodeLookup || {},
     AlightXMLParser.evaluateTransform.bind(AlightXMLParser),
     AlightXMLParser
   );
@@ -234,6 +366,7 @@ function buildLayerList() {
       // Select matching timeline clip
       document.querySelector(`.tl-clip[data-shape-id="${shape.id}"]`)?.classList.add('selected');
       selectedShape = shape;
+      stateManager.selectShape(shape.id);
       renderPropertiesPanel(shape);
       loadShapeIntoGraph(shape);
     });
@@ -339,8 +472,12 @@ tbEnd.addEventListener('click', () => { currentAnimTime = sceneData.totalTime; i
 // Open buttons
 async function openProject() {
   if (window.electronAPI) {
-    const xml = await window.electronAPI.openXMLFile();
-    if (xml) await loadScene(xml, 'Project');
+    const result = await window.electronAPI.openXMLFile();
+    if (result) {
+      const { scene, content, filePath } = result;
+      const name = filePath ? filePath.split(/[\\/]/).pop() : 'Project';
+      await loadScene(scene || content, name);
+    }
   }
 }
 btnImport.addEventListener('click', openProject);

@@ -9,7 +9,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 # Native bindings for Node.js
-napi = { version = "2.12", default-features = false, features = ["napi4"] }
+napi = { version = "2.12", default-features = false, features = ["napi4", "serde-json"] }
 napi-derive = "2.12"
 
 # High-performance XML parsing
@@ -27,6 +27,8 @@ env_logger = "0.10"
 
 # Async runtime for IO/Network
 tokio = { version = "1.0", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
 
 [build-dependencies]
 napi-build = "2.0"

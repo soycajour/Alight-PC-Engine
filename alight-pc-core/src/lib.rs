@@ -2,43 +2,55 @@ mod renderer;
 mod parser;
 
 use napi_derive::napi;
-use std::sync::Arc;
-use renderer::Renderer;
-use parser::parse_alight_xml;
+use parser::{parse_alight_xml, Scene};
 
 #[napi]
 pub struct AlightCore {
-    // Future: Add WGPU instance, device, and queue here
+    // Core state will go here
 }
 
 #[napi]
 impl AlightCore {
     #[napi(constructor)]
     pub fn new() -> Self {
-        env_logger::init();
+        // Initialize logging once
+        let _ = env_logger::builder().is_test(true).try_init();
         log::info!("Alight PC Native Core initialized");
         AlightCore {}
     }
 
     #[napi]
+    pub fn load_project_from_path(&self, path: String) -> Option<Scene> {
+        log::info!("Loading project from path: {}", path);
+        match std::fs::read_to_string(&path) {
+            Ok(content) => {
+                match parse_alight_xml(&content) {
+                    Ok(scene) => {
+                        log::info!("Successfully loaded scene: {}x{} with {} shapes", 
+                            scene.width, scene.height, scene.shapes.len());
+                        Some(scene)
+                    },
+                    Err(e) => {
+                        log::error!("Failed to parse XML from {}: {}", path, e);
+                        None
+                    }
+                }
+            },
+            Err(e) => {
+                log::error!("Failed to read file {}: {}", path, e);
+                None
+            }
+        }
+    }
+
+    #[napi]
     pub fn render_frame(&self, time_ms: f64) -> String {
-        // Future: Return a buffer or a handle to the GPU texture
         format!("Rendering frame at {}ms", time_ms)
     }
 
     #[napi]
-    pub fn parse_xml(&self, xml_content: String) -> bool {
-        log::info!("Parsing XML composed of {} bytes", xml_content.len());
-        match parse_alight_xml(&xml_content) {
-            Ok(scene) => {
-                log::info!("Successfully parsed scene with {} layers", scene.layers.len());
-                true
-            },
-            Err(e) => {
-                log::error!("Failed to parse XML: {}", e);
-                false
-            }
-        }
+    pub fn get_version(&self) -> String {
+        "0.11.0-native-core".to_string()
     }
 }
 
@@ -87,9 +99,8 @@ mod tests {
                 None,
             )
             .await
-            .expect("Failed to create WGPU device. Driver might be outdated or incompatible.");
+            .expect("Failed to create WGPU device.");
 
         println!(">>> WGPU DEVICE CREATED SUCCESSFULLY. ID: {:?}", device);
-        println!("--- VALIDATION COMPLETE ---\n");
     }
 }
