@@ -298,11 +298,6 @@ function loadShapeIntoGraph(shape) {
 // ═══════════════════════════════════════
 // UI Utilities
 // ═══════════════════════════════════════
-function setStatus(msg, type = 'info') {
-  
-  stateManager.updateProperty(selectedShape.id, 'transform.location', newLoc);
-  updatePropertyInputs(selectedShape);
-});
 
 window.addEventListener('mouseup', () => {
   isDraggingGizmo = false;
@@ -1274,3 +1269,63 @@ function render(now) {
 
 
 requestAnimationFrame(render);
+
+// 🎬 INTERNAL DEMO SYSTEM
+const btnDemo = document.getElementById('btn-demo');
+if (btnDemo) {
+  btnDemo.addEventListener('click', () => {
+    console.log("🎬 Starting Alight PC Demo Sequence...");
+    
+    // 1. Reset Scene (preserving references)
+    sceneData.shapes.length = 0;
+    for (let key in sceneData.nodeLookup) delete sceneData.nodeLookup[key];
+    if (sceneData.media) sceneData.media.length = 0;
+    else sceneData.media = [];
+
+    // 2. Create Main Circle
+    const circleId = 'demo_circle_' + Math.random().toString(36).substr(2, 5);
+    const circle = {
+      id: circleId,
+      type: 'shape',
+      shapeType: '.circle',
+      label: 'Logo Circle',
+      startTime: 0,
+      endTime: 5000,
+      transform: {
+        location: { 
+          keyframes: [
+            { time: 0, value: [100, 540, 0], h1: [0.4, 0], h2: [0.6, 1] },
+            { time: 1500, value: [540, 540, 0] }
+          ]
+        },
+        scale: { 
+          keyframes: [
+            { time: 0, value: [0, 0] },
+            { time: 1000, value: [1.2, 1.2], h1: [0.2, 0.5], h2: [0.5, 1.5] },
+            { time: 1500, value: [1.0, 1.0] }
+          ]
+        }
+      },
+      properties: {
+        radius: { staticValue: 150 },
+        fillColor: { staticValue: '#7c3aedff' }
+      },
+      effects: [{
+        id: 'com.alightcreative.effects.glitch',
+        properties: { strength: { keyframes: [{time:2000,value:0},{time:2500,value:0.8},{time:3000,value:0}] }}
+      }]
+    };
+
+    sceneData.shapes.push(circle);
+    sceneData.nodeLookup[circleId] = circle;
+
+    // 3. Update Engine & UI
+    currentAnimTime = 0;
+    buildLayerList();
+    buildTimeline();
+    worldResolver.clearCache();
+    
+    statusMsg.textContent = 'Demo Loaded! Press Play (Space) to watch.';
+    console.log("✅ Demo Scene Loaded!");
+  });
+}
