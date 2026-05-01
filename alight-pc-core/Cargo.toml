@@ -1,0 +1,32 @@
+[package]
+name = "alight-pc-core"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "alight_pc_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+# Native bindings for Node.js
+napi = { version = "2.12", default-features = false, features = ["napi4"] }
+napi-derive = "2.12"
+
+# High-performance XML parsing
+roxmltree = "0.18"
+
+# Modern GPU abstraction
+wgpu = "0.17"
+
+# Math for 2D/3D transformations
+glam = "0.24"
+
+# Fast logging
+log = "0.4"
+env_logger = "0.10"
+
+# Async runtime for IO/Network
+tokio = { version = "1.0", features = ["full"] }
+
+[build-dependencies]
+napi-build = "2.0"
