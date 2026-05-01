@@ -282,6 +282,45 @@ export class GraphEditor {
       }
     });
 
+    this.canvas.addEventListener('dblclick', (e) => {
+      const { x, y } = this._getMousePos(e);
+      const hit = this._hitTestKeyframe(x, y);
+
+      if (hit === -1 && this.property && this.property.keyframes) {
+        const data = this._toData(x, y);
+        // Ensure we match the data type of the property (Array vs Number)
+        const baseKf = this.property.keyframes[0];
+        let newV = data.v;
+        if (baseKf && Array.isArray(baseKf.v)) {
+          newV = [...baseKf.v]; // Clone the array structure
+          newV[0] = data.v;     // Update the primary edited axis
+        }
+        
+        const newKf = { t: data.t, v: newV };
+        this.property.keyframes.push(newKf);
+        this.property.keyframes.sort((a, b) => a.t - b.t);
+
+        const newIndex = this.property.keyframes.findIndex(k => k === newKf);
+        this.selectedKfIndex = newIndex;
+
+        this.draw();
+        if (this.onChangeCallback) this.onChangeCallback(this.property);
+      }
+    });
+
+    this.canvas.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+      const { x, y } = this._getMousePos(e);
+      const hit = this._hitTestKeyframe(x, y);
+
+      if (hit !== -1 && this.property.keyframes.length > 1) {
+        this.property.keyframes.splice(hit, 1);
+        this.selectedKfIndex = -1;
+        this.draw();
+        if (this.onChangeCallback) this.onChangeCallback(this.property);
+      }
+    });
+
     window.addEventListener('mousemove', (e) => {
       if (!this.dragging) return;
       const { x, y } = this._getMousePos(e);
@@ -290,7 +329,17 @@ export class GraphEditor {
       const val = typeof kf.v === 'number' ? kf.v : (Array.isArray(kf.v) ? kf.v[0] : 0);
 
       if (this.dragging.type === 'kf') {
-        kf.t = data.t;
+        const idx = this.dragging.index;
+        const prevKf = idx > 0 ? this.property.keyframes[idx - 1] : null;
+        const nextKf = idx < this.property.keyframes.length - 1
+          ? this.property.keyframes[idx + 1]
+          : null;
+
+        const minT = prevKf ? prevKf.t + 0.01 : 0;
+        const maxT = nextKf ? nextKf.t - 0.01 : 1;
+
+        kf.t = Math.max(minT, Math.min(maxT, data.t));
+
         if (typeof kf.v === 'number') kf.v = data.v;
         else if (Array.isArray(kf.v)) kf.v[0] = data.v;
       } else if (this.dragging.type === 'h1') {

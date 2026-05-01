@@ -300,7 +300,7 @@ function loadShapeIntoGraph(shape) {
 // ═══════════════════════════════════════
 
 window.addEventListener('mouseup', () => {
-  isDraggingGizmo = false;
+  if (typeof gizmoManager !== 'undefined') gizmoManager.onMouseUp();
 });
 
 // ═══════════════════════════════════════

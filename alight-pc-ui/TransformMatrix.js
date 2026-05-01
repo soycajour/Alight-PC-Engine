@@ -63,6 +63,31 @@ export class TransformMatrix {
   // Extract just the translation
   get tx() { return this.m[4]; }
   get ty() { return this.m[5]; }
+
+  inverse() {
+    const [a, b, c, d, e, f] = this.m;
+    const det = a * d - b * c;
+    const result = new TransformMatrix();
+    if (Math.abs(det) < 1e-6) return result; // Return identity if singular
+    const invDet = 1 / det;
+    result.m = [
+       d * invDet,
+      -b * invDet,
+      -c * invDet,
+       a * invDet,
+      (c * f - d * e) * invDet,
+      (b * e - a * f) * invDet
+    ];
+    return result;
+  }
+
+  transformPoint(x, y) {
+    const [a, b, c, d, e, f] = this.m;
+    return {
+      x: a * x + c * y + e,
+      y: b * x + d * y + f
+    };
+  }
 }
 
 // ============================================================
