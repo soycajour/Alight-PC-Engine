@@ -61,6 +61,9 @@ const statusScene  = document.getElementById('status-scene');
 
 // Zoom logic
 let viewerZoom = 1.0;
+let viewerOffset = { x: 0, y: 0 };
+let viewerScale = 1.0;
+
 const zoomInBtn = document.getElementById('zoom-in');
 const zoomOutBtn = document.getElementById('zoom-out');
 const zoomResetBtn = document.getElementById('zoom-reset');
@@ -183,7 +186,8 @@ canvas.addEventListener('mousedown', (e) => {
   dragStartPos = { x, y };
   
   // Get current location evaluated at current time
-  const loc = AlightXMLParser.evaluateProperty(selectedShape.transform.location, (currentAnimTime - selectedShape.startTime) / (selectedShape.endTime - selectedShape.startTime));
+  const normalizedTime = (currentAnimTime - selectedShape.startTime) / (selectedShape.endTime - selectedShape.startTime);
+  const loc = AlightXMLParser.evaluateProperty(selectedShape.transform.location, normalizedTime);
   dragStartLocation = [...(loc || [0,0,0])];
 });
 
@@ -194,18 +198,18 @@ window.addEventListener('mousemove', (e) => {
   const x = e.clientX - rect.left;
   const y = e.clientY - rect.top;
   
-  const dx = x - dragStartPos.x;
-  const dy = y - dragStartPos.y;
+  // Account for zoom and offset
+  const dx = (x - dragStartPos.x) / viewerScale;
+  const dy = (y - dragStartPos.y) / viewerScale;
   
-  const projW = sceneData.width || 1920;
-  const projH = sceneData.height || 1080;
-  const scale = Math.min(canvas.width / projW, canvas.height / projH);
+  const newLoc = [
+    dragStartLocation[0] + dx,
+    dragStartLocation[1] + dy,
+    dragStartLocation[2]
+  ];
   
-  const newX = dragStartLocation[0] + dx / scale;
-  const newY = dragStartLocation[1] + dy / scale;
-  
-  stateManager.updateProperty(selectedShape.id, 'transform.location', [newX, newY, dragStartLocation[2] || 0]);
-  renderPropertiesPanel(selectedShape);
+  stateManager.updateProperty(selectedShape.id, 'transform.location', newLoc);
+  updatePropertyInputs(selectedShape);
 });
 
 window.addEventListener('mouseup', () => {
@@ -500,20 +504,15 @@ function buildTimeline() {
     clip.innerHTML = `<div class="tl-clip-label">${shape.label || shape.id}</div>`;
     clip.addEventListener('click', (e) => {
       e.stopPropagation();
-      document.querySelectorAll('.tl-clip').forEach(c => c.classList.remove('selected'));
       document.querySelectorAll('.layer-row').forEach(r => r.classList.remove('selected'));
+      document.querySelectorAll('.tl-clip').forEach(c => c.classList.remove('selected'));
       clip.classList.add('selected');
       document.querySelector(`.layer-row[data-shape-id="${shape.id}"]`)?.classList.add('selected');
       selectedShape = shape;
+      stateManager.selectShape(shape.id);
       renderPropertiesPanel(shape);
       loadShapeIntoGraph(shape);
     });
-    
-    // Clip dragging
-    let isDraggingClip = false;
-    let startX = 0;
-    let startStartTime = 0;
-    let startEndTime = 0;
 
     clip.addEventListener('mousedown', (e) => {
       if (e.button !== 0) return;
@@ -522,28 +521,9 @@ function buildTimeline() {
       startX = e.clientX;
       startStartTime = shape.startTime;
       startEndTime = shape.endTime;
+      targetShapeForDrag = shape;
+      targetClipForDrag = clip;
       document.body.style.cursor = 'grabbing';
-    });
-
-    window.addEventListener('mousemove', (e) => {
-      if (!isDraggingClip) return;
-      const dx = e.clientX - startX;
-      const rect = tlTracksArea.getBoundingClientRect();
-      const dt = (dx / rect.width) * sceneData.totalTime;
-      
-      shape.startTime = Math.max(0, startStartTime + dt);
-      shape.endTime = startEndTime + (shape.startTime - startStartTime);
-      
-      const leftPct = (shape.startTime / sceneData.totalTime) * 100;
-      clip.style.left = `${leftPct}%`;
-    });
-
-    window.addEventListener('mouseup', () => {
-      if (isDraggingClip) {
-        isDraggingClip = false;
-        document.body.style.cursor = 'default';
-        updateTimelineUI();
-      }
     });
     
     // Keyframe diamonds
@@ -567,6 +547,35 @@ function buildTimeline() {
     tlTracksArea.insertBefore(row, tlPlayheadTr);
   });
 }
+
+// Global dragging state
+let isDraggingClip = false;
+let startX = 0;
+let startStartTime = 0;
+let startEndTime = 0;
+let targetShapeForDrag = null;
+let targetClipForDrag = null;
+
+window.addEventListener('mousemove', (e) => {
+  if (!isDraggingClip || !targetShapeForDrag) return;
+  const dx = e.clientX - startX;
+  const rect = tlTracksArea.getBoundingClientRect();
+  const dt = (dx / rect.width) * sceneData.totalTime;
+  
+  targetShapeForDrag.startTime = Math.max(0, startStartTime + dt);
+  targetShapeForDrag.endTime = startEndTime + (targetShapeForDrag.startTime - startStartTime);
+  
+  const leftPct = (targetShapeForDrag.startTime / sceneData.totalTime) * 100;
+  if (targetClipForDrag) targetClipForDrag.style.left = `${leftPct}%`;
+});
+
+window.addEventListener('mouseup', () => {
+  if (isDraggingClip) {
+    isDraggingClip = false;
+    document.body.style.cursor = 'default';
+    updateTimelineUI();
+  }
+});
 
 // ═══════════════════════════════════════
 // Playback Controls
@@ -976,11 +985,11 @@ function drawScene() {
   const projW = sceneData.width || 1920;
   const projH = sceneData.height || 1080;
   const fitScale = Math.min(canvas.width / projW, canvas.height / projH);
-  const scale = fitScale * viewerZoom;
-  const offsetX = (canvas.width - projW * scale) / 2;
-  const offsetY = (canvas.height - projH * scale) / 2;
+  viewerScale = fitScale * viewerZoom;
+  viewerOffset.x = (canvas.width - projW * viewerScale) / 2;
+  viewerOffset.y = (canvas.height - projH * viewerScale) / 2;
   
-  const viewMatrix = TransformMatrix.fromTRS(offsetX, offsetY, scale, scale, 0, 0, 0);
+  const viewMatrix = TransformMatrix.fromTRS(viewerOffset.x, viewerOffset.y, viewerScale, viewerScale, 0, 0, 0);
 
   // --- DRAW PROJECT BOUNDARY GUIDE ---
   // We use the shapeRenderer's canvas as a temp buffer for the border
@@ -988,10 +997,10 @@ function drawScene() {
   const guideCtx = shapeRenderer.ctx;
   guideCtx.save();
   // Apply view matrix directly to canvas for the guide
-  guideCtx.transform(scale, 0, 0, scale, offsetX, offsetY);
+  guideCtx.transform(viewerScale, 0, 0, viewerScale, viewerOffset.x, viewerOffset.y);
   guideCtx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
-  guideCtx.lineWidth = 2 / scale; // Constant pixel width
-  guideCtx.setLineDash([10 / scale, 5 / scale]);
+  guideCtx.lineWidth = 2 / viewerScale; // Constant pixel width
+  guideCtx.setLineDash([10 / viewerScale, 5 / viewerScale]);
   guideCtx.strokeRect(0, 0, projW, projH);
   guideCtx.restore();
   shapeRenderer.updateTexture(gl, layerFBO.texture);
@@ -1109,6 +1118,26 @@ function render(now) {
   }
   
   requestAnimationFrame(render);
+}
+
+function loadShapeIntoGraph(shape) {
+  if (!shape) return;
+  // Try to find the first property with keyframes to show in graph
+  let targetProp = null;
+  
+  if (shape.transform) {
+    targetProp = Object.values(shape.transform).find(p => p && p.keyframes && p.keyframes.length > 0);
+  }
+  
+  if (!targetProp && shape.properties) {
+    targetProp = Object.values(shape.properties).find(p => p && p.keyframes && p.keyframes.length > 0);
+  }
+  
+  if (targetProp) {
+    graphEditor.setProperty(targetProp);
+  } else {
+    graphEditor.setProperty(null);
+  }
 }
 
 requestAnimationFrame(render);

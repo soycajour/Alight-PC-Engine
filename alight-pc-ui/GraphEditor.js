@@ -87,16 +87,16 @@ export class GraphEditor {
 
     // Background
     ctx.clearRect(0, 0, w, h);
-    ctx.fillStyle = '#1a1a2e';
+    ctx.fillStyle = '#08080a';
     ctx.fillRect(0, 0, w, h);
 
     this._drawGrid();
 
     if (!this.property || !this.property.keyframes || this.property.keyframes.length < 1) {
-      ctx.fillStyle = '#555';
-      ctx.font = '13px sans-serif';
+      ctx.fillStyle = '#475569';
+      ctx.font = '500 12px Inter';
       ctx.textAlign = 'center';
-      ctx.fillText('No property selected', w / 2, h / 2);
+      ctx.fillText('Select a layer with keyframes to edit curves', w / 2, h / 2);
       return;
     }
 

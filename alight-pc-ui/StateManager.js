@@ -109,7 +109,7 @@ export class StateManager {
 
   // Get value by path
   getPropertyValue(obj, path) {
-    if (!obj) return null;
+    if (!obj || !path) return null;
     const parts = path.split('.');
     let target = obj;
     for (const part of parts) {
