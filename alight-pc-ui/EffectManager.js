@@ -162,6 +162,59 @@ export class EffectManager {
         gl_FragColor = texture2D(u_texture, uv);
       }
     `));
+
+    // 7. Glitch (Blocky distortion + RGB Split)
+    this.programs.set('com.alightcreative.effects.glitch', this.createProgram(`
+      precision highp float;
+      varying vec2 v_texcoord;
+      uniform sampler2D u_texture;
+      uniform float strength;
+      uniform float seed; // Value derived from time
+      
+      float rand(vec2 co){
+        return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
+      }
+      
+      void main() {
+        vec2 uv = v_texcoord;
+        float s = strength * 0.1;
+        
+        // Blocky shift
+        float lineNoise = pow(rand(vec2(floor(uv.y * 15.0), seed)), 4.0) * s;
+        uv.x += lineNoise;
+        
+        // RGB Split
+        float r = texture2D(u_texture, uv + vec2(s * 0.5, 0.0)).r;
+        float g = texture2D(u_texture, uv).g;
+        float b = texture2D(u_texture, uv - vec2(s * 0.5, 0.0)).b;
+        float a = texture2D(u_texture, uv).a;
+        
+        gl_FragColor = vec4(r, g, b, a);
+      }
+    `));
+
+    // 8. Directional Blur
+    this.programs.set('com.alightcreative.effects.dirblur', this.createProgram(`
+      precision highp float;
+      varying vec2 v_texcoord;
+      uniform sampler2D u_texture;
+      uniform float strength;
+      uniform float angle; // degrees
+      uniform vec2 resolution;
+      
+      void main() {
+        vec4 color = vec4(0.0);
+        float rad = angle * 0.0174533;
+        vec2 dir = vec2(cos(rad), sin(rad)) * strength * 20.0 / resolution;
+        
+        float total = 0.0;
+        for(float i = -5.0; i <= 5.0; i++) {
+          color += texture2D(u_texture, v_texcoord + dir * i);
+          total += 1.0;
+        }
+        gl_FragColor = color / total;
+      }
+    `));
   }
 
   // Applies a chain of effects using FBO ping-ponging

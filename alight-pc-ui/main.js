@@ -10,6 +10,7 @@ import { TransformMatrix, WorldTransformResolver } from './TransformMatrix.js'
 import { GraphEditor } from './GraphEditor.js'
 import { StateManager } from './StateManager.js'
 import { AlightXMLSerializer } from './XMLSerializer.js'
+import { GizmoManager } from './GizmoManager.js'
 import testPresetXml from './test-preset.xml?raw'
 
 // Global Error Handling
@@ -31,12 +32,14 @@ mediaManager.preloadMedia(sceneData);
 let worldResolver = new WorldTransformResolver(sceneData.nodeLookup, AlightXMLParser.evaluateTransform.bind(AlightXMLParser), AlightXMLParser);
 const stateManager = new StateManager(sceneData);
 
+const canvas = document.getElementById('glcanvas');
+const gizmoManager = new GizmoManager(canvas, sceneData, worldResolver, stateManager);
+
 // Timeline State
 let isPlaying = true;
 let currentAnimTime = 0;
 let lastFrameTime = performance.now();
 
-const canvas = document.getElementById('glcanvas');
 const gl = canvas.getContext('webgl');
 const effectManager = new EffectManager(gl, composeVertSource);
 
@@ -130,16 +133,127 @@ btnAddLayer.addEventListener('click', () => {
 });
 
 // ═══════════════════════════════════════
+// Tab System
+// ═══════════════════════════════════════
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.getAttribute('data-tab');
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(`tab-${tab}`).classList.add('active');
+    
+    if (tab === 'assets') buildAssetGrid();
+  });
+});
+
+// ═══════════════════════════════════════
+// Asset Management
+// ═══════════════════════════════════════
+const assetGrid = document.getElementById('asset-grid');
+const btnImportAsset = document.getElementById('btn-import-asset');
+
+function buildAssetGrid() {
+  if (!assetGrid) return;
+  assetGrid.innerHTML = '';
+  
+  if (!sceneData.media || sceneData.media.length === 0) {
+    assetGrid.innerHTML = '<div class="asset-empty">No assets in project</div>';
+    return;
+  }
+  
+  sceneData.media.forEach(asset => {
+    const item = document.createElement('div');
+    item.className = 'asset-item';
+    
+    const thumb = document.createElement('div');
+    thumb.className = 'asset-thumb';
+    
+    const mediaEl = mediaManager.getMedia(asset.uri);
+    if (mediaEl) {
+      let clone;
+      if (mediaEl.tagName === 'VIDEO') {
+        clone = document.createElement('video');
+        clone.src = mediaEl.src;
+        clone.currentTime = 0;
+      } else {
+        clone = mediaEl.cloneNode();
+      }
+      clone.muted = true;
+      clone.controls = false;
+      thumb.appendChild(clone);
+    } else {
+      thumb.innerHTML = '<div style="color:#555;font-size:20px;display:flex;align-items:center;justify-content:center;height:100%;">?</div>';
+    }
+    
+    const name = document.createElement('div');
+    name.className = 'asset-name';
+    name.textContent = asset.filename || asset.uri.split('/').pop();
+    name.title = asset.uri;
+    
+    item.appendChild(thumb);
+    item.appendChild(name);
+    
+    assetGrid.appendChild(item);
+  });
+}
+
+if (btnImportAsset) {
+  btnImportAsset.addEventListener('click', () => {
+    statusMsg.textContent = 'Import Asset: Drag & Drop files coming soon...';
+  });
+}
+
+// ═══════════════════════════════════════
 // Graph Editor
 // ═══════════════════════════════════════
 const graphEditor = new GraphEditor('graph-editor-canvas-container');
 let selectedShape = null;
+
+graphEditor.onChange((newData) => {
+  if (!selectedShape) return;
+  const key = graphPropSel.value;
+  if (!key) return;
+  
+  // Find the actual reference in sceneData and update it
+  let ref = (selectedShape.transform && selectedShape.transform[key]) || (selectedShape.properties && selectedShape.properties[key]);
+  if (ref) {
+    ref.keyframes = newData.keyframes;
+    worldResolver.clearCache();
+    updateStatus();
+  }
+});
 
 btnGraph.addEventListener('click', () => {
   const vis = graphPanel.style.display !== 'none';
   graphPanel.style.display = vis ? 'none' : 'flex';
   if (!vis) graphEditor.draw();
 });
+canvas.addEventListener('mousedown', (e) => {
+  const hitId = gizmoManager.onMouseDown(e, currentAnimTime);
+  if (hitId) {
+    const shape = sceneData.nodeLookup[hitId];
+    selectedShape = shape;
+    stateManager.selectShape(hitId);
+    renderPropertiesPanel(shape);
+    loadShapeIntoGraph(shape);
+    // Select in UI list
+    document.querySelectorAll('.layer-row').forEach(r => r.classList.remove('selected'));
+    document.querySelector(`.layer-row[data-shape-id="${hitId}"]`)?.classList.add('selected');
+  }
+});
+
+window.addEventListener('mousemove', (e) => {
+  if (gizmoManager.onMouseMove(e, currentAnimTime)) {
+    // Redraw or sync UI if needed
+    if (selectedShape) renderPropertiesPanel(selectedShape);
+  }
+});
+
+window.addEventListener('mouseup', () => {
+  gizmoManager.onMouseUp();
+});
+
 btnCloseGph.addEventListener('click', () => { graphPanel.style.display = 'none'; });
 
 graphPropSel.addEventListener('change', () => {
@@ -152,61 +266,39 @@ graphPropSel.addEventListener('change', () => {
 });
 
 function loadShapeIntoGraph(shape) {
+  if (!shape) return;
   selectedShape = shape;
   graphPropSel.innerHTML = '<option value="">— Select Property —</option>';
-  const add = (val, label) => {
+  
+  let targetProp = null;
+  const add = (val, label, propObj) => {
     const o = document.createElement('option');
     o.value = val; o.textContent = label;
     graphPropSel.appendChild(o);
+    // Pick first property with keyframes as default view
+    if (!targetProp && propObj && propObj.keyframes && propObj.keyframes.length > 0) {
+      targetProp = propObj;
+      o.selected = true;
+    }
   };
+
   if (shape.transform) {
-    if (shape.transform.location) add('location', '📍 Location');
-    if (shape.transform.scale)    add('scale',    '📐 Scale');
-    if (shape.transform.rotation) add('rotation', '🔄 Rotation');
-    if (shape.transform.opacity)  add('opacity',  '💧 Opacity');
+    if (shape.transform.location) add('location', '📍 Location', shape.transform.location);
+    if (shape.transform.scale)    add('scale',    '📐 Scale',    shape.transform.scale);
+    if (shape.transform.rotation) add('rotation', '🔄 Rotation', shape.transform.rotation);
+    if (shape.transform.opacity)  add('opacity',  '💧 Opacity',  shape.transform.opacity);
   }
-  if (shape.properties) Object.keys(shape.properties).forEach(k => add(k, `⚙️ ${k}`));
+  if (shape.properties) {
+    Object.keys(shape.properties).forEach(k => add(k, `⚙️ ${k}`, shape.properties[k]));
+  }
+  
+  graphEditor.setProperty(targetProp);
 }
 
 // ═══════════════════════════════════════
-// Viewport Interaction (Gizmos)
+// UI Utilities
 // ═══════════════════════════════════════
-let isDraggingGizmo = false;
-let dragStartPos = { x: 0, y: 0 };
-let dragStartLocation = [0, 0, 0];
-
-canvas.addEventListener('mousedown', (e) => {
-  if (!selectedShape) return;
-  
-  const rect = canvas.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  
-  isDraggingGizmo = true;
-  dragStartPos = { x, y };
-  
-  // Get current location evaluated at current time
-  const normalizedTime = (currentAnimTime - selectedShape.startTime) / (selectedShape.endTime - selectedShape.startTime);
-  const loc = AlightXMLParser.evaluateProperty(selectedShape.transform.location, normalizedTime);
-  dragStartLocation = [...(loc || [0,0,0])];
-});
-
-window.addEventListener('mousemove', (e) => {
-  if (!isDraggingGizmo || !selectedShape) return;
-  
-  const rect = canvas.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  
-  // Account for zoom and offset
-  const dx = (x - dragStartPos.x) / viewerScale;
-  const dy = (y - dragStartPos.y) / viewerScale;
-  
-  const newLoc = [
-    dragStartLocation[0] + dx,
-    dragStartLocation[1] + dy,
-    dragStartLocation[2]
-  ];
+function setStatus(msg, type = 'info') {
   
   stateManager.updateProperty(selectedShape.id, 'transform.location', newLoc);
   updatePropertyInputs(selectedShape);
@@ -405,6 +497,11 @@ async function loadScene(data, filename = 'Project') {
   buildLayerList();
   buildTimeline();
   updateStatus();
+  
+  // Re-sync gizmo manager with new scene data
+  gizmoManager.sceneData = sceneData;
+  gizmoManager.worldResolver = worldResolver;
+  
   setStatus(`Loaded: ${sceneData.shapes.length} layers`, 'ok');
 }
 
@@ -468,6 +565,7 @@ function buildLayerList() {
 // Timeline
 // ═══════════════════════════════════════
 function buildTimeline() {
+  if (!tlLabelCol || !tlTracksArea) return;
   tlLabelCol.innerHTML = '';
   // Clear all track rows but keep playhead track
   tlTracksArea.querySelectorAll('.tl-track-row').forEach(r => r.remove());
@@ -846,8 +944,13 @@ function resizeCanvas() {
       gl.deleteFramebuffer(effectFBO.frameBuffer);
       gl.deleteTexture(effectFBO.texture);
     }
+    if (window.maskFBO) {
+      gl.deleteFramebuffer(window.maskFBO.frameBuffer);
+      gl.deleteTexture(window.maskFBO.texture);
+    }
     layerFBO = createFBO(gl, canvas.width, canvas.height);
     effectFBO = createFBO(gl, canvas.width, canvas.height);
+    window.maskFBO = createFBO(gl, canvas.width, canvas.height);
   }
 }
 window.addEventListener('resize', () => {
@@ -908,6 +1011,8 @@ const texcoordLocation = gl.getAttribLocation(gridProgram, "texcoord");
 const compPositionLocation = gl.getAttribLocation(composeProgram, "position");
 const compOpacityLocation = gl.getUniformLocation(composeProgram, "u_opacity");
 const compTexLocation = gl.getUniformLocation(composeProgram, "u_texture");
+const compMaskLocation = gl.getUniformLocation(composeProgram, "u_mask");
+const compUseMaskLocation = gl.getUniformLocation(composeProgram, "u_use_mask");
 
 const colorLoc = gl.getUniformLocation(gridProgram, "color");
 const gridSpacingLoc = gl.getUniformLocation(gridProgram, "grid_spacing");
@@ -1017,19 +1122,22 @@ function drawScene() {
   // Clear per-frame transform cache
   worldResolver.clearCache();
   
+  // Render project content
+  let activeMaskFBO = null;
+  let isMaskingStarted = false;
+
   for (const shape of (sceneData.shapes || [])) {
      if (!shape || shape.hidden) continue;
      if (currentAnimTime >= (shape.startTime || 0) && currentAnimTime <= (shape.endTime || 0)) {
         const normalizedTime = (currentAnimTime - shape.startTime) / (shape.endTime - shape.startTime);
         
-        // --- Compute World Transform (parent chain) in Project Space ---
         const worldMatrix = worldResolver.getWorldMatrix(shape.id, currentAnimTime);
-        
-        // --- Combine with View Matrix to get Viewer Space Matrix ---
         const finalMatrix = viewMatrix.multiply(worldMatrix);
 
-        // Evaluate properties for this shape
         let currentProperties = {};
+        if (shape.fillColor) {
+           currentProperties.fillColor = AlightXMLParser.evaluateProperty(shape.fillColor, normalizedTime);
+        }
         if (shape.properties) {
            Object.keys(shape.properties).forEach(propName => {
               currentProperties[propName] = AlightXMLParser.evaluateProperty(shape.properties[propName], normalizedTime);
@@ -1037,11 +1145,14 @@ function drawScene() {
         }
         currentProperties.mediaManager = mediaManager;
         
-        // Evaluate effect properties
         let effectProperties = {};
         if (shape.effects) {
           shape.effects.forEach(effect => {
              effectProperties[effect.id] = {};
+             // Inject global time/seed for dynamic effects
+             effectProperties[effect.id].seed = currentAnimTime / 1000.0;
+             effectProperties[effect.id].time = currentAnimTime / 1000.0;
+             
              if (effect.properties) {
                 Object.keys(effect.properties).forEach(pName => {
                    effectProperties[effect.id][pName] = AlightXMLParser.evaluateProperty(effect.properties[pName], normalizedTime);
@@ -1050,12 +1161,35 @@ function drawScene() {
           });
         }
         
-        // --- STEP 1: Render shape to Canvas2D and upload to layerFBO texture ---
+        // --- RENDERING STRATEGY ---
+        if (shape.clippingMask) {
+           // If this is the start of a mask sequence, clear the mask FBO
+           if (!isMaskingStarted) {
+             gl.bindFramebuffer(gl.FRAMEBUFFER, window.maskFBO.frameBuffer);
+             gl.clearColor(0, 0, 0, 0);
+             gl.clear(gl.COLOR_BUFFER_BIT);
+             isMaskingStarted = true;
+           }
+           
+           // Render shape to the maskFBO (additive)
+           gl.bindFramebuffer(gl.FRAMEBUFFER, window.maskFBO.frameBuffer);
+           shapeRenderer.clear();
+           shapeRenderer.renderShape(shape, currentProperties, finalMatrix);
+           shapeRenderer.updateTexture(gl, window.maskFBO.texture);
+           
+           activeMaskFBO = window.maskFBO;
+           continue; 
+        }
+
+        // Normal layer encountered, so mask accumulation stops for now
+        isMaskingStarted = false;
+
+        // --- Render normal shape to layerFBO ---
         shapeRenderer.clear();
         shapeRenderer.renderShape(shape, currentProperties, finalMatrix);
         shapeRenderer.updateTexture(gl, layerFBO.texture);
 
-        // --- STEP 1.5: Apply Effects ---
+        // --- Apply Effects ---
         let finalFBO = layerFBO;
         if (shape.effects && shape.effects.length > 0) {
            finalFBO = effectManager.applyEffects(
@@ -1064,7 +1198,7 @@ function drawScene() {
            );
         }
 
-        // --- STEP 2: Compose finalFBO to Main Canvas ---
+        // --- Compose to Main Canvas with optional Mask ---
         gl.bindFramebuffer(gl.FRAMEBUFFER, null);
         gl.viewport(0, 0, canvas.width, canvas.height);
         
@@ -1072,28 +1206,46 @@ function drawScene() {
         applyBlendMode(gl, shape.blending);
         
         gl.useProgram(composeProgram);
-        
         gl.enableVertexAttribArray(compPositionLocation);
         gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
         gl.vertexAttribPointer(compPositionLocation, 2, gl.FLOAT, false, 0, 0);
         
+        // Slot 0: Main Texture
         gl.activeTexture(gl.TEXTURE0);
         gl.bindTexture(gl.TEXTURE_2D, finalFBO.texture);
         gl.uniform1i(compTexLocation, 0);
         
-        // Extract opacity from transform
+        // Slot 1: Mask Texture
+        if (activeMaskFBO) {
+           gl.activeTexture(gl.TEXTURE1);
+           gl.bindTexture(gl.TEXTURE_2D, activeMaskFBO.texture);
+           gl.uniform1i(compMaskLocation, 1);
+           gl.uniform1f(compUseMaskLocation, 1.0);
+        } else {
+           gl.uniform1f(compUseMaskLocation, 0.0);
+        }
+        
         let currentOpacity = 1.0;
         if (shape.transform && shape.transform.opacity) {
             currentOpacity = AlightXMLParser.evaluateProperty(shape.transform.opacity, normalizedTime);
         }
         gl.uniform1f(compOpacityLocation, currentOpacity);
-
-        // Reset viewport to full canvas for composition
-        gl.viewport(0, 0, canvas.width, canvas.height);
-        
         gl.drawArrays(gl.TRIANGLES, 0, 6);
      }
   }
+
+  // --- DRAW GIZMOS ---
+  shapeRenderer.clear();
+  gizmoManager.updateView(viewMatrix);
+  gizmoManager.draw(shapeRenderer.ctx, currentAnimTime);
+  shapeRenderer.updateTexture(gl, layerFBO.texture);
+  
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+  gl.useProgram(composeProgram);
+  gl.bindTexture(gl.TEXTURE_2D, layerFBO.texture);
+  gl.uniform1f(compOpacityLocation, 1.0);
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
 }
 
 function render(now) {
@@ -1120,24 +1272,5 @@ function render(now) {
   requestAnimationFrame(render);
 }
 
-function loadShapeIntoGraph(shape) {
-  if (!shape) return;
-  // Try to find the first property with keyframes to show in graph
-  let targetProp = null;
-  
-  if (shape.transform) {
-    targetProp = Object.values(shape.transform).find(p => p && p.keyframes && p.keyframes.length > 0);
-  }
-  
-  if (!targetProp && shape.properties) {
-    targetProp = Object.values(shape.properties).find(p => p && p.keyframes && p.keyframes.length > 0);
-  }
-  
-  if (targetProp) {
-    graphEditor.setProperty(targetProp);
-  } else {
-    graphEditor.setProperty(null);
-  }
-}
 
 requestAnimationFrame(render);

@@ -118,7 +118,9 @@ function parseProperty(propNode) {
       prop.keyframes.push({
         t: parseFloat(kf.getAttribute('t')),
         v: parseValue(type, kf.getAttribute('v')),
-        easingFunc: parseEasing(kf.getAttribute('e'))
+        easingFunc: parseEasing(kf.getAttribute('e')),
+        h1: kf.getAttribute('h1') ? parseValue('vec2', kf.getAttribute('h1')) : null,
+        h2: kf.getAttribute('h2') ? parseValue('vec2', kf.getAttribute('h2')) : null
       });
     });
     prop.keyframes.sort((a, b) => a.t - b.t);
@@ -143,7 +145,9 @@ function parseTransformProp(node, name, type) {
       prop.keyframes.push({
         t: parseFloat(kf.getAttribute('t')),
         v: parseValue(type, kf.getAttribute('v')),
-        easingFunc: parseEasing(kf.getAttribute('e'))
+        easingFunc: parseEasing(kf.getAttribute('e')),
+        h1: kf.getAttribute('h1') ? parseValue('vec2', kf.getAttribute('h1')) : null,
+        h2: kf.getAttribute('h2') ? parseValue('vec2', kf.getAttribute('h2')) : null
       });
     });
     prop.keyframes.sort((a, b) => a.t - b.t);
@@ -413,13 +417,21 @@ export class AlightXMLParser {
   // Flatten tree into render list preserving full node data (including parentId/transform)
   static _flattenShapes(nodes) {
     const result = [];
-    function walk(nodeList) {
+    function walk(nodeList, parentIsMask = false) {
       for (const n of nodeList) {
-        // Renderable types only (nullobj acts as a transform parent, not drawn)
+        // Inherit mask property from parent group if set
+        if (parentIsMask) n.clippingMask = true;
+
+        // Renderable types only
         if (n.type === 'shape' || n.type === 'text' || n.type === 'embedScene') {
-          result.push(n); // push the FULL node reference — no stripping
+          result.push(n);
         }
-        if (n.children && n.children.length > 0) walk(n.children);
+        
+        // Groups/Nulls/Shapes can have children
+        if (n.children && n.children.length > 0) {
+          // If this node is a mask, all its children are part of the mask
+          walk(n.children, n.clippingMask || parentIsMask);
+        }
       }
     }
     walk(nodes);

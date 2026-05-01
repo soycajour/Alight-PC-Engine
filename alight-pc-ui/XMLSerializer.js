@@ -116,6 +116,8 @@ export class AlightXMLSerializer {
         kfEl.setAttribute('t', kf.t);
         kfEl.setAttribute('v', Array.isArray(kf.v) ? kf.v.join(',') : kf.v);
         if (kf.easing) kfEl.setAttribute('e', kf.easing);
+        if (kf.h1) kfEl.setAttribute('h1', kf.h1.map(v => v.toFixed(3)).join(','));
+        if (kf.h2) kfEl.setAttribute('h2', kf.h2.map(v => v.toFixed(3)).join(','));
         el.appendChild(kfEl);
       });
     } else if (prop.staticValue !== undefined) {

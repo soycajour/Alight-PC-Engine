@@ -40,17 +40,36 @@
     <!-- ═══════════════════════════════════════════ WORKSPACE ══ -->
     <div class="workspace" id="workspace">
 
-      <!-- LEFT PANEL: Layer List -->
+      <!-- LEFT PANEL: Layer List & Asset Panel -->
       <div class="panel panel-layers" id="panel-layers">
-        <div class="panel-header">
-          <span>LAYERS</span>
-          <div style="display:flex; gap: 8px; align-items:center;">
-            <button class="icon-btn" id="btn-add-layer" title="Add New Layer">+</button>
-            <span class="panel-badge" id="layer-count">0</span>
+        <div class="panel-tabs">
+          <button class="tab-btn active" data-tab="layers">LAYERS</button>
+          <button class="tab-btn" data-tab="assets">ASSETS</button>
+        </div>
+
+        <!-- Layers Tab Content -->
+        <div class="tab-content active" id="tab-layers">
+          <div class="panel-header">
+            <span>LAYERS</span>
+            <div style="display:flex; gap: 8px; align-items:center;">
+              <button class="icon-btn" id="btn-add-layer" title="Add New Layer">+</button>
+              <span class="panel-badge" id="layer-count">0</span>
+            </div>
+          </div>
+          <div class="layer-list" id="layer-list">
+            <div class="layer-empty">No layers — Open an XML project</div>
           </div>
         </div>
-        <div class="layer-list" id="layer-list">
-          <div class="layer-empty">No layers — Open an XML project</div>
+
+        <!-- Assets Tab Content -->
+        <div class="tab-content" id="tab-assets">
+          <div class="panel-header">
+            <span>PROJECT ASSETS</span>
+            <button class="icon-btn" id="btn-import-asset" title="Import Asset">+</button>
+          </div>
+          <div class="asset-grid" id="asset-grid">
+            <div class="asset-empty">No assets in project</div>
+          </div>
         </div>
       </div>
 
