@@ -42,3 +42,12 @@ run-build-script-build
 .DS_Store
 Thumbs.db
 alight-pc-ui/.env
+
+# Alight PC Engine Dependencies
+deps/
+sdk.7z
+7zr.exe
+build/
+out/
+.cache/
+
